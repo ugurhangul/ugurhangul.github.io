@@ -8,7 +8,6 @@
 # Internal scripts & raw data
 scripts/
 cv_extracted.txt
-ugurhangul.pdf
 
 # Sensitive / private org contribution data
 data/clockwork_contributions.json
