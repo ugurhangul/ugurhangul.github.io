@@ -1,0 +1,22 @@
+# IDE / tooling
+.agent/
+.idea/
+.vs/
+*.DotSettings
+*.DotSettings.user
+
+# Internal scripts & raw data
+scripts/
+cv_extracted.txt
+ugurhangul.pdf
+
+# Sensitive / private org contribution data
+data/clockwork_contributions.json
+data/github_stats.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/

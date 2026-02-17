@@ -1,0 +1,597 @@
+{
+  "stats": {
+    "yearsExperience": "12+",
+    "totalProjects": 148,
+    "industries": 13,
+    "totalCommits": 4199,
+    "sources": {
+      "Clockwork-Agency": {
+        "repos": 98,
+        "commits": 2718
+      },
+      "HAUS-Technology": {
+        "repos": 10,
+        "commits": 1340
+      },
+      "Personal": {
+        "repos": 40,
+        "commits": 141
+      }
+    }
+  },
+  "heroStats": {
+    "calendarContributions": 2302,
+    "yearsActive": 12,
+    "totalProjects": 148
+  },
+  "skills": {
+    "CMS & Web Platforms": [
+      {
+        "name": "Umbraco CMS",
+        "projects": 55
+      },
+      {
+        "name": "ASP.NET MVC",
+        "projects": 10
+      },
+      {
+        "name": "ASP.NET Web API",
+        "projects": 9
+      },
+      {
+        "name": "ASP.NET (Classic)",
+        "projects": 1
+      },
+      {
+        "name": "ASP.NET Identity",
+        "projects": 1
+      }
+    ],
+    "Backend & API": [
+      {
+        "name": "ASP.NET Core",
+        "projects": 66
+      },
+      {
+        "name": "AutoMapper",
+        "projects": 11
+      },
+      {
+        "name": "Quartz.NET",
+        "projects": 6
+      },
+      {
+        "name": "SignalR",
+        "projects": 4
+      },
+      {
+        "name": "Moq",
+        "projects": 3
+      },
+      {
+        "name": "MediatR",
+        "projects": 2
+      },
+      {
+        "name": "FluentValidation",
+        "projects": 2
+      },
+      {
+        "name": "Polly",
+        "projects": 1
+      },
+      {
+        "name": "xUnit",
+        "projects": 1
+      },
+      {
+        "name": "NUnit",
+        "projects": 1
+      },
+      {
+        "name": "FluentAssertions",
+        "projects": 1
+      },
+      {
+        "name": "LDAP",
+        "projects": 1
+      }
+    ],
+    "Frontend": [
+      {
+        "name": "React",
+        "projects": 12
+      },
+      {
+        "name": "Redux",
+        "projects": 8
+      },
+      {
+        "name": "Sass",
+        "projects": 7
+      },
+      {
+        "name": "TypeScript",
+        "projects": 6
+      },
+      {
+        "name": "Styled Components",
+        "projects": 5
+      },
+      {
+        "name": "jQuery",
+        "projects": 4
+      },
+      {
+        "name": "Tailwind CSS",
+        "projects": 3
+      },
+      {
+        "name": "Bootstrap",
+        "projects": 2
+      },
+      {
+        "name": "Angular",
+        "projects": 1
+      },
+      {
+        "name": "Next.js",
+        "projects": 1
+      },
+      {
+        "name": "Angular Material",
+        "projects": 1
+      },
+      {
+        "name": "ApexCharts",
+        "projects": 1
+      }
+    ],
+    "Data & Databases": [
+      {
+        "name": "Entity Framework",
+        "projects": 16
+      },
+      {
+        "name": "Entity Framework Core",
+        "projects": 16
+      },
+      {
+        "name": "SQL Server",
+        "projects": 13
+      },
+      {
+        "name": "PostgreSQL",
+        "projects": 7
+      },
+      {
+        "name": "MongoDB",
+        "projects": 3
+      },
+      {
+        "name": "Elasticsearch",
+        "projects": 1
+      }
+    ],
+    "DevOps & Infrastructure": [
+      {
+        "name": "Serilog",
+        "projects": 19
+      },
+      {
+        "name": "Docker",
+        "projects": 12
+      },
+      {
+        "name": "TeamCity",
+        "projects": 10
+      },
+      {
+        "name": "MassTransit",
+        "projects": 7
+      },
+      {
+        "name": "Swagger",
+        "projects": 6
+      },
+      {
+        "name": "Nginx",
+        "projects": 5
+      },
+      {
+        "name": "GitHub Actions",
+        "projects": 3
+      },
+      {
+        "name": "Hangfire",
+        "projects": 3
+      },
+      {
+        "name": "Portainer",
+        "projects": 2
+      },
+      {
+        "name": "Traefik",
+        "projects": 2
+      },
+      {
+        "name": "Cloudflare",
+        "projects": 2
+      },
+      {
+        "name": "Prometheus",
+        "projects": 2
+      },
+      {
+        "name": "Grafana",
+        "projects": 2
+      },
+      {
+        "name": "Loki",
+        "projects": 2
+      },
+      {
+        "name": "RabbitMQ",
+        "projects": 2
+      },
+      {
+        "name": "Redis",
+        "projects": 2
+      },
+      {
+        "name": "Kafka",
+        "projects": 2
+      }
+    ],
+    "ML & Trading": [
+      {
+        "name": "Algorithmic Trading",
+        "projects": 3
+      },
+      {
+        "name": "Python",
+        "projects": 1
+      },
+      {
+        "name": "MQL5",
+        "projects": 1
+      }
+    ],
+    "Other": [
+      {
+        "name": "NLog",
+        "projects": 1
+      },
+      {
+        "name": "MCP",
+        "projects": 1
+      }
+    ]
+  },
+  "sectors": [
+    {
+      "sector": "Other",
+      "projects": 39,
+      "commits": 571,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET Core",
+        "ASP.NET MVC",
+        "ASP.NET Web API"
+      ],
+      "color": "#FF8A65"
+    },
+    {
+      "sector": "Hospitality & Tourism",
+      "projects": 17,
+      "commits": 239,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET Core",
+        "SQL Server",
+        "ASP.NET MVC"
+      ],
+      "color": "#FF7043"
+    },
+    {
+      "sector": "E-Commerce & SaaS",
+      "projects": 15,
+      "commits": 1729,
+      "topTechs": [
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "Serilog",
+        "Docker"
+      ],
+      "color": "#E64A19"
+    },
+    {
+      "sector": "Technology & Digital",
+      "projects": 11,
+      "commits": 99,
+      "topTechs": [
+        "ASP.NET Core",
+        "Umbraco CMS",
+        "SQL Server",
+        "Hangfire"
+      ],
+      "color": "#FF9800"
+    },
+    {
+      "sector": "Automotive",
+      "projects": 11,
+      "commits": 1065,
+      "topTechs": [
+        "React",
+        "Redux",
+        "Sass",
+        "Styled Components"
+      ],
+      "color": "#FF5722"
+    },
+    {
+      "sector": "Finance & Banking",
+      "projects": 8,
+      "commits": 38,
+      "topTechs": [
+        "ASP.NET Core",
+        "Umbraco CMS",
+        "Entity Framework Core",
+        "Entity Framework"
+      ],
+      "color": "#FF8A65"
+    },
+    {
+      "sector": "Healthcare",
+      "projects": 4,
+      "commits": 48,
+      "topTechs": [
+        "ASP.NET Core",
+        "Umbraco CMS",
+        "Docker"
+      ],
+      "color": "#FFB74D"
+    },
+    {
+      "sector": "Consumer Electronics",
+      "projects": 3,
+      "commits": 11,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET Core",
+        "SQL Server",
+        "Docker"
+      ],
+      "color": "#FFB300"
+    },
+    {
+      "sector": "Trading & Fintech",
+      "projects": 3,
+      "commits": 0,
+      "topTechs": [
+        "Algorithmic Trading",
+        "Python",
+        "MQL5"
+      ],
+      "color": "#F4511E"
+    },
+    {
+      "sector": "Energy & Industrial",
+      "projects": 1,
+      "commits": 114,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET MVC",
+        "ASP.NET Web API",
+        "Entity Framework"
+      ],
+      "color": "#FFAB91"
+    },
+    {
+      "sector": "Food & Beverage",
+      "projects": 1,
+      "commits": 122,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET MVC",
+        "ASP.NET Web API",
+        "Entity Framework"
+      ],
+      "color": "#FFA726"
+    },
+    {
+      "sector": "NGO & Sports",
+      "projects": 1,
+      "commits": 21,
+      "topTechs": [
+        "Umbraco CMS",
+        "ASP.NET Core"
+      ],
+      "color": "#FFCA28"
+    },
+    {
+      "sector": "Media & Entertainment",
+      "projects": 1,
+      "commits": 1,
+      "topTechs": [],
+      "color": "#FF6E40"
+    },
+    {
+      "sector": "Telecom",
+      "projects": 1,
+      "commits": 0,
+      "topTechs": [
+        "ASP.NET MVC",
+        "Entity Framework",
+        "SQL Server",
+        "jQuery"
+      ],
+      "color": "#FF9E80"
+    }
+  ],
+  "personalHighlights": [
+    {
+      "name": "Ougha.MCP.YouTrack",
+      "lang": "TypeScript",
+      "desc": "MCP Server for YouTrack",
+      "public": true,
+      "url": "https://github.com/ugurhangul/Ougha.MCP.YouTrack"
+    },
+    {
+      "name": "passivbot_configs",
+      "lang": null,
+      "desc": "Passivbot trading configs (most starred)",
+      "public": true,
+      "url": "https://github.com/ugurhangul/passivbot_configs"
+    },
+    {
+      "name": "DictionaryToExcel",
+      "lang": "C#",
+      "desc": "NuGet published library",
+      "public": true,
+      "url": "https://github.com/ugurhangul/DictionaryToExcel"
+    },
+    {
+      "name": "fiveminScalper",
+      "lang": "Python",
+      "desc": "Algorithmic trading bot",
+      "public": true,
+      "url": "https://github.com/ugurhangul/fiveminScalper"
+    },
+    {
+      "name": "GoldTraderEA",
+      "lang": "MQL5",
+      "desc": "Gold trading expert advisor",
+      "public": true,
+      "url": "https://github.com/ugurhangul/GoldTraderEA"
+    },
+    {
+      "name": "akillikobi",
+      "lang": "JavaScript",
+      "desc": "SaaS application (private)",
+      "public": false,
+      "url": "https://github.com/ugurhangul/akillikobi"
+    },
+    {
+      "name": "project-qop",
+      "lang": "HTML",
+      "desc": "DropXML platform (private)",
+      "public": false,
+      "url": "https://github.com/ugurhangul/project-qop"
+    },
+    {
+      "name": "innova_birarada",
+      "lang": "HTML",
+      "desc": "Turkcell/Innova enterprise project (private)",
+      "public": false,
+      "url": "https://github.com/ugurhangul/innova_birarada"
+    }
+  ],
+  "languageBreakdown": [
+    {
+      "name": "HTML",
+      "bytes": 27837445,
+      "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 18253887,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "Pug",
+      "bytes": 11689518,
+      "color": "#a86454"
+    },
+    {
+      "name": "CSS",
+      "bytes": 10261379,
+      "color": "#663399"
+    },
+    {
+      "name": "C#",
+      "bytes": 5822586,
+      "color": "#178600"
+    },
+    {
+      "name": "SCSS",
+      "bytes": 5149443,
+      "color": "#c6538c"
+    },
+    {
+      "name": "Python",
+      "bytes": 3535522,
+      "color": "#3572A5"
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 2636587,
+      "color": "#3178c6"
+    },
+    {
+      "name": "MQL5",
+      "bytes": 527890,
+      "color": "#4A76B8"
+    },
+    {
+      "name": "MQL4",
+      "bytes": 367596,
+      "color": "#62A8D6"
+    },
+    {
+      "name": "Less",
+      "bytes": 929136,
+      "color": "#1d365d"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "bytes": 110554,
+      "color": "#DA5B0B"
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 6015,
+      "color": "#012456"
+    },
+    {
+      "name": "Shell",
+      "bytes": 13103,
+      "color": "#89e051"
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 7063,
+      "color": "#384d54"
+    },
+    {
+      "name": "Makefile",
+      "bytes": 5411,
+      "color": "#427819"
+    },
+    {
+      "name": "PHP",
+      "bytes": 26717,
+      "color": "#4F5D95"
+    },
+    {
+      "name": "ASP.NET",
+      "bytes": 14106,
+      "color": "#9400ff"
+    },
+    {
+      "name": "ASP",
+      "bytes": 9608,
+      "color": "#6a40fd"
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 986,
+      "color": "#C1F12E"
+    },
+    {
+      "name": "ApacheConf",
+      "bytes": 114,
+      "color": "#d12127"
+    }
+  ]
+}

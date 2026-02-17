@@ -1,7 +1,456 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uğurhan Gül — Senior Full Stack .NET Developer</title>
+    <meta name="description"
+        content="Senior Full Stack .NET Developer & Team Lead with 10+ years of experience scaling high-availability systems for Turkcell, Hepsiburada, and Vodafone.">
+    <meta name="author" content="Uğurhan Gül">
+    <meta property="og:title" content="Uğurhan Gül — Senior Full Stack .NET Developer">
+    <meta property="og:description" content="Portfolio & CV — 10+ years building enterprise systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ugurhangul.github.io">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.(naptın)</p>
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">UG</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="ugurhangul.pdf" target="_blank" class="nav__cta">Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <p class="hero__greeting">Hello, I'm</p>
+                    <h1 class="hero__name">Uğurhan <span class="accent">Gül</span></h1>
+                    <p class="hero__title">Senior Full Stack .NET Developer & Team Lead</p>
+                    <p class="hero__summary">
+                        10+ years of experience scaling high-availability systems for
+                        <strong>Turkcell</strong>, <strong>Hepsiburada</strong>, and <strong>Vodafone</strong>.
+                        Expert in .NET, Erlang, and Parallel Programming, with a focus on system performance
+                        and security (ISO 27001). Proven track record in leading cross-functional teams
+                        and managing the full SDLC to deliver robust, cost-effective enterprise solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="hero__contact">
+                <a href="mailto:ugurhangul@gmail.com" class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    ugurhangul@gmail.com
+                </a>
+                <a href="tel:+905417295700" class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +90 541 729 5700
+                </a>
+                <span class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Istanbul — Kocaeli
+                </span>
+                <a href="https://github.com/ugurhangul" target="_blank" class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    github.com/ugurhangul
+                </a>
+                <a href="https://linkedin.com/in/ugurhangul" target="_blank" class="contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    linkedin.com/in/ugurhangul
+                </a>
+            </div>
+        </div>
+        <div class="hero__gradient"></div>
+    </section>
+
+    <!-- ===== EVIDENCE STRIP ===== -->
+    <section class="evidence-strip" id="evidence-strip">
+        <div class="container">
+            <div class="evidence-strip__grid" id="evidence-stats">
+                <!-- populated by JS from evidence_data.json -->
+            </div>
+            <p class="evidence-strip__disclaimer">All statistics are auto-generated from GitHub API data across personal
+                and organization repositories.</p>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills__core">
+                <span class="pill">.NET Core</span>
+                <span class="pill">Software Architecture</span>
+                <span class="pill">Team Leadership</span>
+                <span class="pill">Erlang</span>
+                <span class="pill">Parallel Programming</span>
+                <span class="pill">Multithreading</span>
+                <span class="pill">Microservices</span>
+                <span class="pill">Web API</span>
+                <span class="pill">Dapper</span>
+                <span class="pill">Data Migration</span>
+            </div>
+            <div class="tech-radar" id="tech-radar">
+                <div class="tech-radar__chart-wrap">
+                    <canvas id="tech-radar-canvas" width="420" height="420"></canvas>
+                </div>
+                <div class="tech-radar__legend" id="tech-radar-legend">
+                    <!-- category pills rendered by JS -->
+                </div>
+                <div class="tech-radar__detail" id="tech-radar-detail">
+                    <!-- expanded tech list rendered by JS on pill click -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section__title">Work Experience</h2>
+            <div class="timeline">
+                <!-- Kafein -->
+                <div class="timeline__item" data-company="Kafein Technology Solutions">
+                    <div class="timeline__dot" aria-hidden="true">KF</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Senior Full Stack .NET Developer</h3>
+                                <p class="timeline__company">Kafein Technology Solutions</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Sep 2024 — Dec 2025</span>
+                                <span class="timeline__location">Istanbul, Türkiye</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li><strong>AssisTT (Outsourced):</strong> Directed end-to-end development of a resource
+                                planning module using Erlang, .NET, and AngularJS, implementing automated KPI metrics to
+                                optimize workforce planning and ensure strict compliance with national labor laws.</li>
+                            <li><strong>Turkcell (Outsourced):</strong> Engineered a high-performance .NET migration
+                                engine using Parallel Programming, Multithreading, and Dapper to seamlessly transfer
+                                150M+ rows from Drupal to PostgreSQL, significantly enhancing data integrity and
+                                database scalability.</li>
+                            <li><strong>Hepsiburada &amp; Vodafone (Outsourced):</strong> Engineered a high-performance
+                                multi-tenancy architecture for the storefront and mobile main page using GO and .NET,
+                                leveraging MongoDB and PostgreSQL to optimize data retrieval and system scalability for
+                                a NASDAQ-listed e-commerce platform.</li>
+                        </ul>
+                        <button class="timeline__toggle" type="button" aria-expanded="false">
+                            <span class="timeline__toggle-text">Show more</span>
+                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Clockwork -->
+                <div class="timeline__item" data-company="Clockwork Agency">
+                    <div class="timeline__dot" aria-hidden="true">CW</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Team Lead</h3>
+                                <p class="timeline__company">Clockwork Agency</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Oct 2019 — Sep 2024</span>
+                                <span class="timeline__location">Istanbul, Türkiye</span>
+                            </div>
+                        </div>
+                        <p class="timeline__desc">Award-winning digital agency specializing in full-cycle software
+                            development.</p>
+                        <ul class="timeline__bullets">
+                            <li>Directed a team of software developers in creating innovative and secure applications,
+                                achieving consistent delivery of high-quality products within tight deadlines.</li>
+                            <li>Spearheaded system vulnerability patching initiatives, identifying and addressing
+                                critical security weaknesses to enhance system robustness.</li>
+                            <li>Led the development and deployment of new features and updates, ensuring the seamless
+                                integration of enhancements into existing systems.</li>
+                            <li>Implemented best practices in coding and testing, mentoring junior developers to improve
+                                team productivity and maintain high coding standards.</li>
+                        </ul>
+                        <button class="timeline__toggle" type="button" aria-expanded="false">
+                            <span class="timeline__toggle-text">Show more</span>
+                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Bank Software -->
+                <div class="timeline__item" data-company="Bank Software Solutions">
+                    <div class="timeline__dot" aria-hidden="true">BS</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Lead Developer</h3>
+                                <p class="timeline__company">Bank Software Solutions</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Dec 2015 — Jul 2019</span>
+                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Optimized legacy codebases by revising and modularizing code, reducing operational
+                                costs, and improving overall functionality.</li>
+                            <li>Conducted rigorous testing and debugging to ensure high-quality deliverables, minimizing
+                                errors and maximizing system uptime.</li>
+                            <li>Contributed to all stages of the system development lifecycle, from gathering
+                                requirements to final deployment and post-implementation support.</li>
+                        </ul>
+                        <button class="timeline__toggle" type="button" aria-expanded="false">
+                            <span class="timeline__toggle-text">Show more</span>
+                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Pavlike -->
+                <div class="timeline__item" data-company="Pavlike Web Applications">
+                    <div class="timeline__dot" aria-hidden="true">PV</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">.NET MVC Developer</h3>
+                                <p class="timeline__company">Pavlike Web Applications &amp; Solutions</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Apr 2015 — Nov 2015</span>
+                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Participated in highly complex projects with customers, managers and end-users.</li>
+                            <li>Analyzed, evaluated and developed new web and database applications.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Piyasa -->
+                <div class="timeline__item" data-company="Piyasa Group">
+                    <div class="timeline__dot" aria-hidden="true">PG</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">.NET MVC Developer</h3>
+                                <p class="timeline__company">Piyasa Group</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Aug 2014 — Oct 2014</span>
+                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Developed functional databases, applications and servers to support websites on
+                                back-end.</li>
+                            <li>Provided software application engineering and maintenance for development lifecycle.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- LuckyEye -->
+                <div class="timeline__item" data-company="LuckyEye">
+                    <div class="timeline__dot" aria-hidden="true">LE</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Webmaster</h3>
+                                <p class="timeline__company">LuckyEye</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">May 2014 — Jun 2014</span>
+                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Developed and maintained responsive, user-centric web interfaces utilizing HTML, CSS,
+                                JavaScript, and jQuery.</li>
+                            <li>Streamlined site maintenance workflows and implemented front-end updates using Git.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Revo -->
+                <div class="timeline__item" data-company="Revo Bilişim">
+                    <div class="timeline__dot" aria-hidden="true">RB</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Webmaster</h3>
+                                <p class="timeline__company">Revo Bilişim</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Dec 2012 — Jun 2013</span>
+                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Monitored and optimized database performance to ensure smooth workflows and high
+                                availability.</li>
+                            <li>Diagnosed and resolved critical performance bottlenecks across both software and
+                                database layers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTOR BREAKDOWN ===== -->
+    <section class="section" id="sectors">
+        <div class="container">
+            <h2 class="section__title">Industry Experience</h2>
+            <p class="section__subtitle" id="sector-subtitle">Sectors I've delivered for across 98 projects</p>
+            <div class="sector-chart" id="sector-chart">
+                <!-- populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GITHUB ===== -->
+    <section class="section" id="github">
+        <div class="container">
+            <h2 class="section__title">GitHub Activity</h2>
+            <div class="github__stats" id="github-stats">
+                <!-- populated by JS -->
+            </div>
+            <div class="glass-card heatmap-card">
+                <div class="heatmap__header">
+                    <h3>Contribution Calendar</h3>
+                    <div class="heatmap__legend">
+                        <span class="heatmap__legend-label">Less</span>
+                        <span class="heatmap__legend-box" style="background: #161b22"></span>
+                        <span class="heatmap__legend-box" style="background: #0e4429"></span>
+                        <span class="heatmap__legend-box" style="background: #006d32"></span>
+                        <span class="heatmap__legend-box" style="background: #26a641"></span>
+                        <span class="heatmap__legend-box" style="background: #39d353"></span>
+                        <span class="heatmap__legend-label">More</span>
+                    </div>
+                </div>
+                <div class="heatmap__container" id="heatmap">
+                    <!-- rendered by heatmap.js -->
+                </div>
+            </div>
+            <div class="github__languages">
+                <div class="glass-card lang-bar-card">
+                    <h3>Languages</h3>
+                    <div class="lang__stacked-bar" id="lang-stacked-bar">
+                        <!-- rendered by charts.js -->
+                    </div>
+                    <div class="lang__list" id="lang-list">
+                        <!-- rendered by charts.js -->
+                    </div>
+                </div>
+                <div class="glass-card lang-chart-card">
+                    <canvas id="lang-chart" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__grid" id="projects-grid">
+                <!-- populated by JS from evidence_data.json (public only) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section__title">Education & Certifications</h2>
+            <div class="edu__grid">
+                <div class="glass-card edu__card">
+                    <div class="edu__icon">🎓</div>
+                    <h3>Associate's Degree — Computer Software Technology</h3>
+                    <p class="edu__school">Kocaeli Üniversitesi</p>
+                    <p class="edu__date">2012 — 2015</p>
+                </div>
+                <div class="glass-card edu__card">
+                    <div class="edu__icon">🏫</div>
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p class="edu__school">Kartepe Endüstri Meslek Lisesi</p>
+                    <p class="edu__date">2008 — 2012</p>
+                </div>
+            </div>
+            <div class="certs__grid">
+                <div class="glass-card cert__card">
+                    <div class="cert__badge">🛡️</div>
+                    <h4>ISO 27001</h4>
+                    <p>Information Security Management Systems</p>
+                </div>
+                <div class="glass-card cert__card">
+                    <div class="cert__badge">📋</div>
+                    <h4>ISO 37001</h4>
+                    <p>Anti-Bribery Management Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">UG</span>
+                    <p>Uğurhan Gül — Senior Full Stack .NET Developer</p>
+                </div>
+                <div class="footer__links">
+                    <a href="mailto:ugurhangul@gmail.com">Email</a>
+                    <a href="https://github.com/ugurhangul" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/ugurhangul" target="_blank">LinkedIn</a>
+                    <a href="ugurhangul.pdf" target="_blank">Download CV</a>
+                </div>
+            </div>
+            <p class="footer__copy">&copy; 2026 Uğurhan Gül. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <script src="js/main.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/charts.js"></script>
 </body>
+
 </html>
