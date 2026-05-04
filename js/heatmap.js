@@ -12,8 +12,30 @@ async function renderHeatmap() {
     if (!container) return;
 
     try {
-        const res = await fetch('data/calendar_heatmap.json');
-        const raw = await res.json();
+        const CACHE_KEY = 'github_heatmap_cache';
+        const CACHE_EXPIRY = 24 * 60 * 60 * 1000; // 24 hours
+
+        let raw;
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
+            try {
+                const parsed = JSON.parse(cached);
+                if (Date.now() - parsed.timestamp < CACHE_EXPIRY) {
+                    raw = parsed.data;
+                }
+            } catch (e) {
+                console.warn('Heatmap cache invalid');
+            }
+        }
+
+        if (!raw) {
+            const res = await fetch('https://github-contributions-api.deno.dev/ugurhangul.json');
+            raw = await res.json();
+            localStorage.setItem(CACHE_KEY, JSON.stringify({
+                timestamp: Date.now(),
+                data: raw
+            }));
+        }
 
         // normalize: handle both array-of-objects and nested formats
         let days;
@@ -24,6 +46,13 @@ async function renderHeatmap() {
                 count: item.count ?? item.c ?? 0,
                 color: item.color || item.clr
             }));
+        } else if (raw.contributions) {
+            // Deno API proxy format
+            days = raw.contributions.flatMap(week => week.map(d => ({
+                date: d.date,
+                count: d.contributionCount,
+                color: d.color
+            })));
         } else if (raw.weeks) {
             days = raw.weeks.flatMap(w =>
                 w.contributionDays.map(d => ({
@@ -33,7 +62,7 @@ async function renderHeatmap() {
                 }))
             );
         } else {
-            console.error('Unknown heatmap format');
+            console.error('Unknown heatmap format', raw);
             return;
         }
 

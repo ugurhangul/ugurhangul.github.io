@@ -489,34 +489,14 @@
   ],
   "languageBreakdown": [
     {
-      "name": "HTML",
-      "bytes": 27837445,
-      "color": "#e34c26"
-    },
-    {
       "name": "JavaScript",
       "bytes": 18253887,
       "color": "#f1e05a"
     },
     {
-      "name": "Pug",
-      "bytes": 11689518,
-      "color": "#a86454"
-    },
-    {
-      "name": "CSS",
-      "bytes": 10261379,
-      "color": "#663399"
-    },
-    {
       "name": "C#",
       "bytes": 5822586,
       "color": "#178600"
-    },
-    {
-      "name": "SCSS",
-      "bytes": 5149443,
-      "color": "#c6538c"
     },
     {
       "name": "Python",
@@ -537,11 +517,6 @@
       "name": "MQL4",
       "bytes": 367596,
       "color": "#62A8D6"
-    },
-    {
-      "name": "Less",
-      "bytes": 929136,
-      "color": "#1d365d"
     },
     {
       "name": "Jupyter Notebook",

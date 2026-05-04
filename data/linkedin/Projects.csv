@@ -1,0 +1,13 @@
+Title,Description,Url,Started On,Finished On
+Çiftçi Tv,,https://ciftcitv.com,Sep 2016,Oct 2016
+Acente Online,,http://acenteonline.com/,Feb 2016,Jan 2018
+Kenway.Statistics,Statistical information about Social Media accounts for Bank Solutions Clients.,http://istatistik.bankbilisim.com,Jan 2018,Mar 2018
+Renatus Network Marketing,,http://renatus.com.tr/,Aug 2018,Jan 2019
+Regnum Hotels,,http://regnumhotels.com,Feb 2020,Apr 2020
+İnci Akü,,https://inciaku.com/,Mar 2020,Jul 2020
+Fiat Online,,https://online.fiat.com.tr/,May 2022,Oct 2024
+Geleceği Yazanlar,,,Feb 2025,Apr 2025
+You Track MCP,"A Model Context Protocol (MCP) server that integrates with JetBrains YouTrack's REST API, providing comprehensive tools for issue tracking, project management, and user administration.",,Jan 2026,
+ML-Driven Algorithmic Trading Platform,"Designed and executed the migration of a multi-strategy Python trading environment to a highly optimized .NET 10 architecture. ● Integrated TorchSharp with CUDA support to enable hardware-accelerated Deep Reinforcement Learning inference directly within the .NET environment. ● Built a low-latency data pipeline utilizing QuestDB for sub-millisecond retrieval of historical time-series data and PythonNet for seamless MetaTrader 5 API integration. ● Developed a 47-feature state-building pipeline and custom reward functions (DQN Rainbow, PPO) evaluating equity curves and drawdown penalties. ● Engineered low-latency data pipelines and analytical systems utilizing QuestDB for sub-millisecond retrieval of historical time-series data, establishing a highly scalable data platform for seamless MetaTrader 5 API integration.",,Dec 2025,
+DropXML Platform — Multi-tenant AI-Powered SaaS ,"● Architected a 9-service system using .NET 10 and MassTransit/RabbitMQ for event-driven messaging, ensuring high scalability for marketplace integration. ● Integrated OpenAI APIs for intelligent XML schema detection and automated product categorization, reducing manual data-entry efforts via asynchronous processing. ● Designed a dual-layer product model (Global Catalog vs. Tenant Overlay) with multi-tenant data isolation and route-level authorization. ● Engineered API connectors for Trendyol, Hepsiburada, and N11, featuring a 3-tier cascade pricing engine. ",,,
+Enterprise Aerospace Compliance Platform (Confidential Client),● Engineered a 3-stage cascade AI classifier (Keyword → LLM → VLM) utilizing Ollama to automate the categorization of 12 aerospace document types. ● Built a deterministic NRules engine for supply chain traceability (PO ↔ MTR ↔ Shipping) against ASTM and DIN EN 10204 standards. ● Developed a modular 8-project .NET 8 solution with config-driven pipeline orchestration and SHA-256 content-addressed caching.,,Apr 2026,
