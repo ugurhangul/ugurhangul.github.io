@@ -13,6 +13,99 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
 });
 
+let cachedDataPromise = null;
+async function getPortfolioData() {
+    if (cachedDataPromise) return cachedDataPromise;
+    
+    cachedDataPromise = (async () => {
+        const res = await fetch('data/evidence_data.json');
+        const data = await res.json();
+        
+        const CACHE_KEY = 'github_public_repos';
+        const CACHE_EXPIRY = 24 * 60 * 60 * 1000;
+        let publicRepos = [];
+        
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
+            try {
+                const parsed = JSON.parse(cached);
+                if (Date.now() - parsed.timestamp < CACHE_EXPIRY) {
+                    publicRepos = parsed.data;
+                }
+            } catch(e) {}
+        }
+        
+        if (!publicRepos.length) {
+            try {
+                const reposRes = await fetch('https://api.github.com/users/ugurhangul/repos?type=public&per_page=100&sort=updated');
+                if (reposRes.ok) {
+                    const repos = await reposRes.json();
+                    
+                    for (const repo of repos) {
+                        if (repo.fork) continue;
+                        
+                        let langs = {};
+                        if (repo.languages_url) {
+                            const lRes = await fetch(repo.languages_url);
+                            if (lRes.ok) langs = await lRes.json();
+                        }
+                        
+                        publicRepos.push({
+                            name: repo.name,
+                            description: repo.description,
+                            url: repo.html_url,
+                            languages: langs
+                        });
+                    }
+                    
+                    localStorage.setItem(CACHE_KEY, JSON.stringify({
+                        timestamp: Date.now(),
+                        data: publicRepos
+                    }));
+                }
+            } catch (err) {
+                console.warn('Failed to fetch live repos, using static data fallback', err);
+            }
+        }
+        
+        if (publicRepos.length > 0) {
+            const existingNames = data.personalHighlights.map(p => (p.name || '').toLowerCase());
+            
+            publicRepos.forEach(repo => {
+                const primaryLang = Object.keys(repo.languages).reduce((a, b) => repo.languages[a] > repo.languages[b] ? a : b, "") || "";
+                
+                const idx = existingNames.indexOf((repo.name || '').toLowerCase());
+                if (idx > -1) {
+                    if (!data.personalHighlights[idx].lang && primaryLang) {
+                        data.personalHighlights[idx].lang = primaryLang;
+                    }
+                } else {
+                    data.personalHighlights.push({
+                        name: repo.name,
+                        lang: primaryLang,
+                        desc: repo.description || '',
+                        public: true,
+                        url: repo.url
+                    });
+                }
+                
+                Object.entries(repo.languages).forEach(([lang, bytes]) => {
+                    const existing = data.languageBreakdown.find(l => l.name === lang);
+                    if (existing) {
+                        existing.bytes += bytes;
+                    } else {
+                        data.languageBreakdown.push({ name: lang, bytes, color: '#888888' });
+                    }
+                });
+            });
+        }
+        
+        return data;
+    })();
+    
+    return cachedDataPromise;
+}
+
 /* ===== NAVIGATION ===== */
 function initNav() {
     const toggle = document.getElementById('nav-toggle');
@@ -83,8 +176,7 @@ function initScrollReveal() {
 /* ===== HERO STATS ===== */
 async function loadHeroStats() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
 
         const container = document.getElementById('hero-stats');
         const hero = data.heroStats || {};
@@ -110,8 +202,7 @@ async function loadHeroStats() {
 /* ===== EVIDENCE STRIP (count-up) ===== */
 async function loadEvidenceStrip() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
         const stats = data.stats;
 
         const container = document.getElementById('evidence-stats');
@@ -190,8 +281,7 @@ let activeCategory = null;
 
 async function loadTechRadar() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
         const skills = data.skills;
         if (!skills) return;
 
@@ -427,8 +517,7 @@ function initTimeline() {
 /* ===== PROJECTS (public only) ===== */
 async function loadProjects() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
 
         const container = document.getElementById('projects-grid');
         const projects = data.personalHighlights || [];
@@ -478,8 +567,7 @@ async function loadProjects() {
 /* ===== SECTOR BREAKDOWN (enhanced with tech pills) ===== */
 async function loadSectorBreakdown() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
         const sectors = data.sectors || [];
 
         const container = document.getElementById('sector-chart');

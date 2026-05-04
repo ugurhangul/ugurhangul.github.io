@@ -2,14 +2,23 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B806M88F9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B806M88F9C');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uğurhan Gül — Senior Full Stack .NET Developer</title>
     <meta name="description"
-        content="Senior Full Stack .NET Developer & Team Lead with 10+ years of experience scaling high-availability systems for Turkcell, Hepsiburada, and Vodafone.">
+        content="Senior Full Stack .NET Developer & Software Architect with 12+ years of experience scaling high-availability systems for Turkcell, Hepsiburada, and Vodafone.">
     <meta name="author" content="Uğurhan Gül">
     <meta property="og:title" content="Uğurhan Gül — Senior Full Stack .NET Developer">
-    <meta property="og:description" content="Portfolio & CV — 10+ years building enterprise systems.">
+    <meta property="og:description" content="Portfolio & CV — 12+ years building enterprise systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ugurhangul.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,13 +54,9 @@
                 <div class="hero__text">
                     <p class="hero__greeting">Hello, I'm</p>
                     <h1 class="hero__name">Uğurhan <span class="accent">Gül</span></h1>
-                    <p class="hero__title">Senior Full Stack .NET Developer & Team Lead</p>
+                    <p class="hero__title">Senior Full Stack .NET Developer | AI Systems Architect | Software Architect</p>
                     <p class="hero__summary">
-                        10+ years of experience scaling high-availability systems for
-                        <strong>Turkcell</strong>, <strong>Hepsiburada</strong>, and <strong>Vodafone</strong>.
-                        Expert in .NET, Erlang, and Parallel Programming, with a focus on system performance
-                        and security (ISO 27001). Proven track record in leading cross-functional teams
-                        and managing the full SDLC to deliver robust, cost-effective enterprise solutions.
+                        Certified Senior Full Stack .NET Developer (AI-Interview Validated) and Software Architect with 12+ years of experience designing and delivering AI-enabled, high-availability enterprise systems. Expert in Clean Architecture, Microservices, .NET 10, and Event-Driven Architecture with a proven track record scaling solutions for <strong>Turkcell</strong>, <strong>Hepsiburada</strong>, and <strong>Vodafone</strong>. Specialized in AI systems integration (LLM/VLM, RAG, Deep Reinforcement Learning), high-performance computing, and aerospace-grade compliance (AS9100D, ISO 27001). Led cross-functional teams across 148+ projects spanning 13 industries.
                     </p>
                 </div>
             </div>
@@ -112,16 +117,16 @@
         <div class="container">
             <h2 class="section__title">Skills</h2>
             <div class="skills__core">
-                <span class="pill">.NET Core</span>
-                <span class="pill">Software Architecture</span>
-                <span class="pill">Team Leadership</span>
-                <span class="pill">Erlang</span>
-                <span class="pill">Parallel Programming</span>
-                <span class="pill">Multithreading</span>
+                <span class="pill">.NET 10</span>
+                <span class="pill">Clean Architecture</span>
+                <span class="pill">AI & Machine Learning</span>
                 <span class="pill">Microservices</span>
-                <span class="pill">Web API</span>
-                <span class="pill">Dapper</span>
-                <span class="pill">Data Migration</span>
+                <span class="pill">TypeScript & React</span>
+                <span class="pill">Go</span>
+                <span class="pill">Erlang</span>
+                <span class="pill">Docker & K8s</span>
+                <span class="pill">Message Brokers (Kafka/RabbitMQ)</span>
+                <span class="pill">ISO 27001 & AS9100D</span>
             </div>
             <div class="tech-radar" id="tech-radar">
                 <div class="tech-radar__chart-wrap">
@@ -157,18 +162,22 @@
                             </div>
                         </div>
                         <ul class="timeline__bullets">
-                            <li><strong>AssisTT (Outsourced):</strong> Directed end-to-end development of a resource
-                                planning module using Erlang, .NET, and AngularJS, implementing automated KPI metrics to
-                                optimize workforce planning and ensure strict compliance with national labor laws.</li>
-                            <li><strong>Turkcell (Outsourced):</strong> Engineered a high-performance .NET migration
-                                engine using Parallel Programming, Multithreading, and Dapper to seamlessly transfer
-                                150M+ rows from Drupal to PostgreSQL, significantly enhancing data integrity and
-                                database scalability.</li>
-                            <li><strong>Hepsiburada &amp; Vodafone (Outsourced):</strong> Engineered a high-performance
-                                multi-tenancy architecture for the storefront and mobile main page using GO and .NET,
-                                leveraging MongoDB and PostgreSQL to optimize data retrieval and system scalability for
-                                a NASDAQ-listed e-commerce platform.</li>
+                            <li><strong>Turkcell Data Migration:</strong> Architected a .NET 9 migration engine bridging legacy Drupal to modern PostgreSQL. Engineered a custom multithreaded pipeline that processed <strong>150M+ rows</strong>, reducing production migration time by <strong>70%</strong> with zero data loss. <em>(Evidence: 178 commits across 2 repos)</em></li>
+                            <li><strong>Hepsiburada & Vodafone (Multi-Tenancy):</strong> Tasked with scaling the NASDAQ-listed platform. Engineered a dual-stack Go + .NET architecture utilizing Kafka and MongoDB, resulting in a <strong>40% reduction in API response times</strong> for millions of daily active users. <em>(Evidence: 122 commits)</em></li>
+                            <li><strong>AssisTT Workforce Planning:</strong> Replaced manual reporting processes by designing a new workforce module from scratch. Built a distributed system (Erlang + .NET + AngularJS) that automated complex KPI calculations, <strong>eliminating 20+ hours per week</strong> of manual labor. <em>(Evidence: 207 commits across 5 repos)</em></li>
                         </ul>
+                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET 9</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Erlang</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Go</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">AngularJS</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">PostgreSQL</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">MongoDB</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Kafka</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Dapper</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Parallel Programming</span>
+                        </div>
                         <button class="timeline__toggle" type="button" aria-expanded="false">
                             <span class="timeline__toggle-text">Show more</span>
                             <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -184,7 +193,7 @@
                     <div class="timeline__content glass-card">
                         <div class="timeline__header">
                             <div>
-                                <h3 class="timeline__role">Team Lead</h3>
+                                <h3 class="timeline__role">Senior Software Developer & Team Lead</h3>
                                 <p class="timeline__company">Clockwork Agency</p>
                             </div>
                             <div class="timeline__meta">
@@ -192,18 +201,23 @@
                                 <span class="timeline__location">Istanbul, Türkiye</span>
                             </div>
                         </div>
-                        <p class="timeline__desc">Award-winning digital agency specializing in full-cycle software
-                            development.</p>
                         <ul class="timeline__bullets">
-                            <li>Directed a team of software developers in creating innovative and secure applications,
-                                achieving consistent delivery of high-quality products within tight deadlines.</li>
-                            <li>Spearheaded system vulnerability patching initiatives, identifying and addressing
-                                critical security weaknesses to enhance system robustness.</li>
-                            <li>Led the development and deployment of new features and updates, ensuring the seamless
-                                integration of enhancements into existing systems.</li>
-                            <li>Implemented best practices in coding and testing, mentoring junior developers to improve
-                                team productivity and maintain high coding standards.</li>
+                            <li><strong>Agency-Wide Technical Leadership:</strong> Architected and maintained the core Umbraco boilerplate framework utilized across <strong>100+ enterprise clients</strong> (Ziraat Bank, Hyundai, Arçelik). Standardized the development platform through 4 major version upgrades, <strong>reducing new project setup time from 2 weeks to 2 days</strong>. <em>(Evidence: 187 commits across 8 repos)</em></li>
+                            <li><strong>Enterprise Security Hardening:</strong> Led ISO 27001 security remediation across the agency portfolio. Engineered reusable security patterns (CSP, encryption pipelines, server-side CAPTCHA) and patched <strong>30+ critical vulnerabilities</strong>, ensuring successful penetration tests for top-tier banking clients.</li>
+                            <li><strong>Fiat Online Sales Platform:</strong> Architected the backend API (.NET 8) for Turkey's first multi-brand online car sales system. Built complex payment pipelines and a 12-state order lifecycle, successfully serving FIAT, Alfa Romeo, and Jeep. <em>(Evidence: ~1,000+ commits across 12 repos)</em></li>
+                            <li><strong>Multi-Country Scale (Ziraat Bank):</strong> Engineered a shared CMS core architecture running <strong>25+ banking websites across 15+ countries</strong>. Built critical features including Bankkart application validation and live fund portfolio retrieval. <em>(Evidence: 140+ commits across 25 repos)</em></li>
+                            <li><strong>Project Delivery:</strong> Managed the technical delivery of <strong>98 enterprise projects</strong> across 13 industries with <strong>zero missed deadlines</strong> over 5 years. Established CI/CD pipelines that improved team velocity by 35%.</li>
                         </ul>
+                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET 8</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Umbraco CMS</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ASP.NET MVC</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Azure</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">CI/CD</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ISO 27001</span>
+                        </div>
                         <button class="timeline__toggle" type="button" aria-expanded="false">
                             <span class="timeline__toggle-text">Show more</span>
                             <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -219,7 +233,7 @@
                     <div class="timeline__content glass-card">
                         <div class="timeline__header">
                             <div>
-                                <h3 class="timeline__role">Lead Developer</h3>
+                                <h3 class="timeline__role">Fullstack .NET Developer</h3>
                                 <p class="timeline__company">Bank Software Solutions</p>
                             </div>
                             <div class="timeline__meta">
@@ -228,13 +242,16 @@
                             </div>
                         </div>
                         <ul class="timeline__bullets">
-                            <li>Optimized legacy codebases by revising and modularizing code, reducing operational
-                                costs, and improving overall functionality.</li>
-                            <li>Conducted rigorous testing and debugging to ensure high-quality deliverables, minimizing
-                                errors and maximizing system uptime.</li>
-                            <li>Contributed to all stages of the system development lifecycle, from gathering
-                                requirements to final deployment and post-implementation support.</li>
+                            <li><strong>Maritime Automation Platform:</strong> Digitized manual port operations by architecting a 7-project solution from the ground up. Built a custom formula engine for proforma accounting and an automated document generator that produced <strong>40+ official maritime templates</strong>, streamlining agency workflows. <em>(Evidence: 272 commits)</em></li>
+                            <li><strong>Vessel Tracking Integration:</strong> Integrated real-time vessel tracking via VesselFinder and Bosphorus Strait monitoring with SignalR notifications.</li>
                         </ul>
+                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SignalR</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">JavaScript</span>
+                        </div>
                         <button class="timeline__toggle" type="button" aria-expanded="false">
                             <span class="timeline__toggle-text">Show more</span>
                             <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -261,7 +278,13 @@
                         <ul class="timeline__bullets">
                             <li>Participated in highly complex projects with customers, managers and end-users.</li>
                             <li>Analyzed, evaluated and developed new web and database applications.</li>
+                            <li>Resolved hardware and software compatibility and interface design issues.</li>
                         </ul>
+                        <div class="timeline__skills" style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ASP.NET MVC</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
+                        </div>
                     </div>
                 </div>
                 <!-- Piyasa -->
@@ -279,10 +302,9 @@
                             </div>
                         </div>
                         <ul class="timeline__bullets">
-                            <li>Developed functional databases, applications and servers to support websites on
-                                back-end.</li>
-                            <li>Provided software application engineering and maintenance for development lifecycle.
-                            </li>
+                            <li>Developed functional databases, applications and servers to support websites on back-end.</li>
+                            <li>Provided software application engineering and maintenance for development lifecycle.</li>
+                            <li>Reviewed code, debugged problems, and corrected issues.</li>
                         </ul>
                     </div>
                 </div>
@@ -301,9 +323,8 @@
                             </div>
                         </div>
                         <ul class="timeline__bullets">
-                            <li>Developed and maintained responsive, user-centric web interfaces utilizing HTML, CSS,
-                                JavaScript, and jQuery.</li>
-                            <li>Streamlined site maintenance workflows and implemented front-end updates using Git.</li>
+                            <li>Coded responsive websites using HTML, CSS, JavaScript, and jQuery.</li>
+                            <li>Troubleshot issues with websites and fixed scripting and use issues.</li>
                         </ul>
                     </div>
                 </div>
@@ -322,10 +343,27 @@
                             </div>
                         </div>
                         <ul class="timeline__bullets">
-                            <li>Monitored and optimized database performance to ensure smooth workflows and high
-                                availability.</li>
-                            <li>Diagnosed and resolved critical performance bottlenecks across both software and
-                                database layers.</li>
+                            <li>Monitored database performance to keep workflows running smoothly.</li>
+                            <li>Troubleshot and resolved performance issues for databases and software.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- İş Bankası -->
+                <div class="timeline__item" data-company="Türkiye İş Bankası">
+                    <div class="timeline__dot" aria-hidden="true">İB</div>
+                    <div class="timeline__content glass-card">
+                        <div class="timeline__header">
+                            <div>
+                                <h3 class="timeline__role">Intern</h3>
+                                <p class="timeline__company">Türkiye İş Bankası</p>
+                            </div>
+                            <div class="timeline__meta">
+                                <span class="timeline__date">Sep 2011 — Jun 2012</span>
+                                <span class="timeline__location">Kocaeli, Türkiye</span>
+                            </div>
+                        </div>
+                        <ul class="timeline__bullets">
+                            <li>Technology internship at Turkey's <strong>largest private bank</strong> — gained hands-on experience in enterprise banking systems and IT operations.</li>
                         </ul>
                     </div>
                 </div>
@@ -402,27 +440,45 @@
             <div class="edu__grid">
                 <div class="glass-card edu__card">
                     <div class="edu__icon">🎓</div>
-                    <h3>Associate's Degree — Computer Software Technology</h3>
+                    <h3>Bachelor's Degree</h3>
+                    <p class="edu__school">Anadolu Üniversitesi</p>
+                    <p class="edu__date">2020 — Present</p>
+                </div>
+                <div class="glass-card edu__card">
+                    <div class="edu__icon">🎓</div>
+                    <h3>Associate's Degree — Computer Software</h3>
                     <p class="edu__school">Kocaeli Üniversitesi</p>
                     <p class="edu__date">2012 — 2015</p>
                 </div>
                 <div class="glass-card edu__card">
-                    <div class="edu__icon">🏫</div>
-                    <h3>Master of Computer Applications (MCA)</h3>
+                    <div class="edu__icon">🏛️</div>
+                    <h3>High School Diploma — IT</h3>
                     <p class="edu__school">Kartepe Endüstri Meslek Lisesi</p>
                     <p class="edu__date">2008 — 2012</p>
+                </div>
+                <div class="glass-card edu__card">
+                    <div class="edu__icon">🏅</div>
+                    <h3>Senior Full Stack .NET Developer</h3>
+                    <p class="edu__school">micro1 (AI-Interview Validated)</p>
+                    <p class="edu__date">Mar 2026</p>
+                </div>
+                <div class="glass-card edu__card">
+                    <div class="edu__icon">🏛️</div>
+                    <h3>Software Architecture</h3>
+                    <p class="edu__school">LinkedIn Learning</p>
+                    <p class="edu__date">Apr 2026</p>
                 </div>
             </div>
             <div class="certs__grid">
                 <div class="glass-card cert__card">
                     <div class="cert__badge">🛡️</div>
-                    <h4>ISO 27001</h4>
-                    <p>Information Security Management Systems</p>
+                    <h4>ISO 27001, 37001, 22301</h4>
+                    <p>Information Security, Anti-Bribery, Business Continuity</p>
                 </div>
                 <div class="glass-card cert__card">
                     <div class="cert__badge">📋</div>
-                    <h4>ISO 37001</h4>
-                    <p>Anti-Bribery Management Systems</p>
+                    <h4>Mastership Certificate</h4>
+                    <p>Republic of Turkey (Sep 2012)</p>
                 </div>
             </div>
         </div>

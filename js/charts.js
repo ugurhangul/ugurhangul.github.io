@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function renderLanguages() {
     try {
-        const res = await fetch('data/evidence_data.json');
-        const data = await res.json();
+        const data = await getPortfolioData();
         const langData = data.languageBreakdown || [];
 
         // handle both array and object formats, top 10
