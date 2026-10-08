@@ -1,15 +1,15 @@
-# STAR — ML-Driven Algorithmic Trading Platform (Ougha.Trading)
+# STAR — ML-Driven Algorithmic Trading Research
 
-> **Company:** Personal Project
+> **Company:** Personal Research
 > **Period:** 2024 – Present
-> **Role:** Sole Architect & Developer
+> **Role:** Developer
 > **Evidence:** 45 commits (`Ougha.Trading`) + 157 commits (`Ougha.MultiStrategyTradingBot`) + 31 commits (`GoldTraderEA`) + 2 commits (`fiveMinScalperEA`) = **235 total commits** across trading projects
 
 ---
 
 ## Situation
 
-Algorithmic trading in financial markets traditionally relies on hardcoded technical indicator strategies (moving averages, RSI, Bollinger Bands) that fail to adapt to changing market conditions. My prior trading bots (`fiveMinScalperEA` in Python, `GoldTraderEA` in MQL5, `MultiStrategyTradingBot` with 157 commits) demonstrated this limitation — profitable strategies would degrade over time as market regimes shifted. The Python-based system also suffered from performance bottlenecks in backtesting and couldn't fully leverage GPU hardware acceleration. I needed a system that could **learn and adapt** rather than follow static rules.
+Algorithmic trading in financial markets traditionally relies on hardcoded technical indicator strategies (moving averages, RSI, Bollinger Bands) that fail to adapt to changing market conditions. My prior trading bots (`fiveMinScalperEA` in Python, `GoldTraderEA` in MQL5, `MultiStrategyTradingBot` with 157 commits) demonstrated the limits of static rules. The Python-based system also suffered from performance bottlenecks in backtesting and couldn't fully leverage GPU hardware acceleration. I needed a system that could **learn and adapt** rather than follow static rules.
 
 ## Task
 
@@ -18,10 +18,10 @@ I set out to:
 - Build **GPU-accelerated reinforcement learning agents** for multi-symbol, multi-timeframe trading
 - Implement both value-based (DQN) and policy-gradient (PPO) RL architectures
 - Engineer GPU-optimized training infrastructure (lazy loading, async prefetching, double-buffering)
-- Export trained models to **ONNX** for production deployment to MetaTrader
-- Migrate the entire system from Python to a high-performance **.NET 10 architecture**
+- Prepare trained models for **ONNX** export for MetaTrader research workflows
+- Migrate the Python research environment toward a high-performance **.NET 10 architecture**
 - Build a comprehensive feature engineering pipeline for market state representation
-- Create a low-latency data pipeline for real-time and historical market data
+- Create a high-performance time-series data pipeline for market data
 
 ## Action
 
@@ -82,7 +82,7 @@ I set out to:
 - Configurable reward parameters for rapid experimentation *(commit: `6011ff9`)*
 
 ### Data Pipeline & Storage
-- Built low-latency pipeline with **QuestDB** for sub-millisecond time-series retrieval
+- Integrated **QuestDB** for high-performance time-series storage and retrieval
 - Implemented **DuckDB streaming mode** with memory-efficient cursors *(commit: `cdbdb10`)*
 - Fast tick data loading with **lazy-loading** for memory efficiency *(commit: `f023242`)*
 - Consolidated repository usage and optimized QuestDB operations *(commit: `4e96476`)*
@@ -96,10 +96,11 @@ I set out to:
 - Added adaptive scheduling and enhanced replay buffer caching *(commit: `224d51a`)*
 - Extracted **DeviceManager** for streamlined GPU/CPU setup *(commit: `5cf7ca7`)*
 
-### ONNX Export & Production Deployment
+### ONNX Export & MetaTrader Integration
 - Added **ONNX readiness check** and optimized ML workflows for ONNX *(commit: `46145e3`)*
-- Enables deployment of trained agents to **MetaTrader** for live trading
-- Integrated **PythonNet** bridge for MetaTrader 5 API (order execution, tick data)
+- Prepares trained agents for use with **MetaTrader** in research workflows
+- Integrated **PythonNet** bridge for MetaTrader 5
+- Designed as an experimental research system rather than a live trading product
 
 ### Prior Trading System Evolution (Context)
 - **MultiStrategyTradingBot** (157 commits): Multi-strategy Python trading system with:
@@ -115,14 +116,15 @@ I set out to:
 
 - **235 total commits** across the full trading project evolution (Python → MQL5 → .NET/RL)
 - **Two RL architectures**: DualHeadDQN (value-based) and PPO Actor-Critic (policy-gradient)
-- GPU-optimized training pipeline: **LazyReplayBuffer → async prefetch → fused batching → double-buffered training** reduced iteration time significantly
+- GPU-optimized training pipeline: **LazyReplayBuffer → async prefetch → fused batching → double-buffered training**
 - **47-feature state representation** captures comprehensive market context across multiple timeframes
 - Custom reward function balances **profit maximization with risk management** (drawdown penalties, holding costs)
-- **ONNX model export** enables deployment to live MetaTrader trading
-- Backtesting engine achieves **sub-millisecond** data retrieval from QuestDB
+- **ONNX model export** readiness for MetaTrader research workflows
+- **QuestDB** used for high-performance time-series storage and retrieval
+- Experimental research system rather than a live trading product
 - **Optuna** hyperparameter optimization for systematic performance improvement
-- **DuckDB streaming mode** enables training on datasets larger than available RAM
-- Successfully migrated from Python to **.NET 10** with **GPU-accelerated inference** via TorchSharp/CUDA
+- **DuckDB streaming mode** with memory-efficient cursors
+- Migrating the Python research environment toward **.NET 10** with **GPU-accelerated training and inference** via TorchSharp/CUDA
 
 ---
 
@@ -132,9 +134,9 @@ I set out to:
 |----------|--------------|
 | "Tell me about a machine learning project" | PPO + DualHeadDQN for portfolio trading, 47-feature pipeline, ONNX export |
 | "How do you optimize for performance?" | LazyReplayBuffer, async prefetch, fused batching, double-buffering, Tensor Cores |
-| "Do you have ML/AI experience?" | Two RL architectures, custom reward system, Optuna HPO, ONNX deployment |
-| "How do you handle performance-critical systems?" | TorchSharp + CUDA, QuestDB sub-ms, GC pressure reduction, buffer pre-allocation |
-| "Describe migrating a system" | Python → .NET, 157-commit predecessor → 45-commit RL system |
+| "Do you have ML/AI experience?" | Two RL architectures, custom reward system, Optuna HPO, ONNX export |
+| "How do you handle performance-critical systems?" | TorchSharp + CUDA, QuestDB time-series storage, GC pressure reduction, buffer pre-allocation |
+| "Describe migrating a system" | Python → toward .NET, 157-commit predecessor → 45-commit RL system |
 | "How do you iterate on a technical problem?" | 4 projects showing evolution: scripts → EAs → bots → RL agents |
 | "How do you handle long-running computations?" | Async prefetching, double-buffering, early stopping, chunk-based episodes |
 

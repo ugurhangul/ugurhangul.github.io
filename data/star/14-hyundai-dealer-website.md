@@ -2,7 +2,7 @@
 
 > **Company:** Clockwork Agency
 > **Period:** Oct 2021 – Nov 2022
-> **Role:** Lead Developer (sole backend, CMS & integration developer)
+> **Role:** Senior Software Developer / Team Lead (sole backend, CMS & integration developer)
 > **Evidence:** 129 personal commits / 276 total in `hyundai` repository
 
 ---

@@ -1,9 +1,9 @@
 # STAR — Clockwork Umbraco Boilerplate: Agency-Wide Technical Leadership
 
 > **Company:** Clockwork Agency
-> **Period:** 2019 – 2024
-> **Role:** Technical Leader / Core Maintainer
-> **Evidence:** 187 personal commits across 8 boilerplate repositories (Umbraco v8 through v15)
+> **Period:** Oct 2019 – Sep 2024
+> **Role:** Senior Software Developer / Team Lead
+> **Evidence:** 187 personal commits across 8 boilerplate repositories (Umbraco v8 through v13)
 
 ---
 
@@ -13,17 +13,17 @@ With over **100+ active client websites** built on Umbraco CMS, starting every n
 
 ## Task
 
-Create, maintain, and evolve the agency's **core Umbraco boilerplate project** across multiple major framework versions (Umbraco 8 through 15), ensuring all new client projects start with production-ready architecture, SEO tooling, image optimization, and content sync out of the box.
+Create, maintain, and evolve the agency's **core Umbraco boilerplate project** across multiple major framework versions (Umbraco 8 through 13), ensuring all new client projects start with production-ready architecture, SEO tooling, image optimization, and content sync out of the box.
 
 ## Action
 
 ### The Boilerplate Ecosystem
 - Created **`Clockwork.Umbraco`** (the v8 foundation) with 104 personal commits
-- Maintained a parallel ecosystem of version-specific repositories to match the evolving .NET/Umbraco release cycles:
+- Maintained a parallel ecosystem of version-specific repositories (8 boilerplate repositories in total) to match the evolving .NET/Umbraco release cycles:
   - `Clockwork.Umbraco.V9` (18 commits) — Transition to .NET 5
   - `clockwork.umbraco.v10` (27 commits) — .NET 6 LTS
   - `clockwork.umbraco.v11` (28 commits) — .NET 7
-  - `clockwork.umbraco.v12` to `v15` (10 commits) — Ongoing modernization up to .NET 9
+  - Remaining boilerplate repositories, v12 through v13 (10 commits combined) — Ongoing modernization up to .NET 8
 - Ensured a unified standard where **every new agency project inherits from this boilerplate**.
 
 ### Reusable Architecture & Components
@@ -41,9 +41,9 @@ Built a suite of plug-and-play components shared across the agency:
 
 ## Result
 
-- **100+ client sites** successfully built on this consistent, well-maintained foundation (including major brands like Hyundai, Zorlu Center, Ziraat Bank).
-- Drastically reduced project spin-up time — new enterprise projects launch with SEO, sitemaps, image optimization, and content sync working **in hours instead of days**.
-- **187 personal commits** demonstrating sustained technical leadership, steering the agency's core tech stack through 7 major framework upgrades over 5 years.
+- **100+ enterprise client websites** supported by reusable architecture managed across **8 boilerplate repositories**, successfully built on this consistent, well-maintained foundation (including major brands like Hyundai, Zorlu Center, Ziraat Bank).
+- Drastically reduced project spin-up time — typical new project setup reduced from approximately **2 weeks to 2 days**, with SEO, sitemaps, image optimization, and content sync working out of the box.
+- **187 personal commits** demonstrating sustained technical leadership, leading **five major platform version upgrades** (Umbraco v8 → v13).
 - Established a unified standard where a bug fix or feature developed for the boilerplate instantly benefits all future client builds.
 
 ---
@@ -55,11 +55,11 @@ Built a suite of plug-and-play components shared across the agency:
 | "Tell me about technical leadership" | Architected and maintained the core boilerplate used by the entire agency for 100+ projects |
 | "How do you manage shared code?" | Centralized boilerplate repositories versioned alongside major framework releases |
 | "Tell me about your agency experience" | Led standardizations that reduced project spin-up time and unified quality across major enterprise clients |
-| "How do you handle framework upgrades?" | Transitioned the agency through Umbraco 8 to 15 (.NET Framework to .NET 9) with dedicated boilerplate repos |
+| "How do you handle framework upgrades?" | Transitioned the agency through Umbraco 8 to 13 (.NET Framework to .NET 8) with dedicated boilerplate repos |
 | "How do you build for scale?" | Creating plug-and-play components (WebP validator, Schema generator) used by dozens of different websites |
 
 ---
 
 ## Key Technologies
 
-`C#` · `ASP.NET Core` · `Umbraco v8-v15` · `uSync` · `WebP` · `SEO Automation` · `Multi-Language Routing` · `TeamCity` · `Architecture`
+`C#` · `ASP.NET Core` · `Umbraco v8-v13` · `uSync` · `WebP` · `SEO Automation` · `Multi-Language Routing` · `TeamCity` · `Architecture`

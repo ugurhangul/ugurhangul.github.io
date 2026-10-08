@@ -12,10 +12,12 @@ cv_extracted.txt
 # Sensitive / private org contribution data
 data/clockwork_contributions.json
 data/github_stats.json
-
+aysenur_data
+data/linkedin
 # OS
 Thumbs.db
 .DS_Store
 
 # Node
 node_modules/
+

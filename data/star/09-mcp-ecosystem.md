@@ -1,19 +1,19 @@
-# STAR — MCP Ecosystem: YouTrack MCP Server & Open-Source Contributions
+# STAR — YouTrack MCP Server
 
 > **Company:** Personal / Open Source
 > **Period:** 2025 – Present
-> **Role:** Creator (YouTrack MCP) / Contributor (Umbraco MCP)
-> **Evidence:** 18 commits (`Ougha.MCP.YouTrack`) + 1 commit (`umbraco-mcp` open-source contribution)
+> **Role:** Creator
+> **Evidence:** 18 commits (`Ougha.MCP.YouTrack`)
 
 ---
 
 ## Situation
 
-The **Model Context Protocol (MCP)** was emerging as a new standard for connecting AI assistants (Claude, Gemini, etc.) to external tools and data sources. While MCP servers existed for common services (GitHub, Slack), there was **no MCP server for JetBrains YouTrack** — my primary project management tool. This meant AI assistants couldn't help with issue creation, sprint planning, work item tracking, or project management workflows. Additionally, the Umbraco CMS ecosystem lacked MCP tooling for content management automation.
+The **Model Context Protocol (MCP)** was emerging as a new standard for connecting AI assistants (Claude, Gemini, etc.) to external tools and data sources. While MCP servers existed for common services (GitHub, Slack), there was **no MCP server for JetBrains YouTrack** — my primary project management tool. This meant AI assistants couldn't help with issue creation, sprint planning, work item tracking, or project management workflows.
 
 ## Task
 
-Build a **production-quality MCP server** for YouTrack that:
+Build an **MCP server** for YouTrack that:
 
 - Exposes YouTrack's complex API (issues, subtasks, story points, Gantt charts, work items) as AI-consumable tools
 - Handles YouTrack's **per-project custom fields** — each project has different field schemas
@@ -53,12 +53,6 @@ Build a **production-quality MCP server** for YouTrack that:
   - **Custom fields**: Dynamic field support per project
 - Issue management tools with dynamic schema generation *(commits: `452c6bb`, `0301e62`)*
 
-### Umbraco MCP — Open-Source Contribution
-
-- Contributed **template management tools** (CRUD operations + query functionality) to the community `umbraco-mcp` project *(commit: `1f11bd6`)*
-- Project has 97 total commits from 7 contributors — I added template management capability
-- The project provides MCP tools for Umbraco CMS content management automation
-
 ### Technical Design Decisions
 
 #### Rate Limiting & Retry Logic
@@ -88,9 +82,8 @@ Build a **production-quality MCP server** for YouTrack that:
 - **Published YouTrack MCP server** actively used in daily development workflow
 - **18 commits** delivering a comprehensive issue management toolset
 - **Dynamic Zod schema generation** handles any YouTrack project's custom field configuration at runtime
-- Built-in **rate limiting + retry logic** ensures production stability
+- Built-in **rate limiting + retry logic** for API stability
 - Comprehensive toolset: issue CRUD, subtasks, story points, Gantt charts, work items
-- **1 contribution** to the open-source `umbraco-mcp` project (template management tools)
 - The dynamic schema generation pattern is **reusable for any API with configurable fields**
 - Demonstrates hands-on experience with the **MCP protocol** — a rapidly growing AI integration standard
 
@@ -102,7 +95,7 @@ Build a **production-quality MCP server** for YouTrack that:
 |----------|--------------|
 | "Tell me about working with new protocols/standards" | MCP is the emerging standard for AI tooling — built a server from scratch |
 | "How do you integrate AI tooling?" | MCP server gives AI assistants structured access to project management |
-| "Tell me about an open-source contribution" | YouTrack MCP (creator) + Umbraco MCP (contributor) |
+| "Tell me about an open-source project" | YouTrack MCP (creator) |
 | "How do you handle dynamic schemas?" | Zod schema generation from API introspection at runtime |
 | "How do you design for API reliability?" | Rate limiting, retry with backoff, comprehensive error wrapping |
 | "Tell me about a tool you built for yourself" | Daily driver for AI-assisted project management |
@@ -111,4 +104,4 @@ Build a **production-quality MCP server** for YouTrack that:
 
 ## Key Technologies
 
-`TypeScript` · `Node.js` · `Model Context Protocol (MCP)` · `Zod` · `JetBrains YouTrack API` · `REST API` · `Rate Limiting` · `Retry Logic` · `Dynamic Schema Generation` · `C#` · `Umbraco CMS`
+`TypeScript` · `Node.js` · `Model Context Protocol (MCP)` · `Zod` · `JetBrains YouTrack API` · `REST API` · `Rate Limiting` · `Retry Logic` · `Dynamic Schema Generation`

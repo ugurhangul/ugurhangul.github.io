@@ -42,9 +42,10 @@ async function renderLanguages() {
             e.pct = ((e.bytes / totalBytes) * 100);
         });
 
-        renderStackedBar(entries);
-        renderLangList(entries);
-        renderDoughnut(entries);
+        // Render disabled in Bold Typography system to focus on Impact Matrix
+        // renderStackedBar(entries);
+        // renderLangList(entries);
+        // renderDoughnut(entries);
 
     } catch (err) {
         console.error('Failed to render languages:', err);

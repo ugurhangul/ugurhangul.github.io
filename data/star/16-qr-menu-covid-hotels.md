@@ -2,7 +2,7 @@
 
 > **Company:** Clockwork Agency
 > **Period:** Feb 2022 – Apr 2023
-> **Role:** Lead Developer
+> **Role:** Senior Software Developer / Team Lead
 > **Evidence:** 36 personal commits across 4 repositories + hotel site integrations
 
 | Repository | Personal Commits | Total Team | Description |

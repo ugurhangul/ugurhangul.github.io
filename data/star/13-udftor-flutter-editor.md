@@ -1,7 +1,7 @@
-# STAR — UDFtör: Flutter Mobile Document Editor with Digital Signing
+# STAR — UDFtör: UYAP Document Handling Mobile App
 
 > **Company:** Personal Project
-> **Period:** 2025 – Present
+> **Period:** 2026
 > **Role:** Sole Developer
 > **Evidence:** 15 commits in `UDF-Editor` repository, 30 Dart source files
 
@@ -9,16 +9,15 @@
 
 ## Situation
 
-**UDF (Universal Document Format)** files are used in Turkish government and institutional contexts for official documents. Existing mobile viewers could only display these files — they couldn't **edit** the content or apply **digital signatures** (TC Kimlik / national ID card signing). This forced users to use desktop software for any document editing or signing workflow. No mobile-first UDF editor existed on the market.
+**UYAP UDF legal documents** (the document format of Turkey's national judiciary system, UYAP) are used for official legal filings. Existing mobile viewers could only display these files — they couldn't **edit** the content. This forced users to use desktop software for any document editing workflow.
 
 ## Task
 
-Build a **Flutter mobile app** that:
+Build an end-to-end **Flutter mobile app** (a framework new to me, delivered with an AI-assisted development workflow) that:
 
 - Parses and renders UDF document files
 - Provides rich text editing with paragraph structure preservation
-- Integrates TC Kimlik card **digital signing** via NFC
-- Supports multiple signing methods (NFC ID card, USB OTG, Mobil İmza)
+- Evaluates mobile signature (**CAdES**) integration across Turkish operator-backed signing providers
 - Implements monetization via Pro subscription with feature gating
 - Handles edge cases in UTF-8 byte offset conversion and rendering
 
@@ -44,28 +43,10 @@ The editor went through a **deliberate evolution** — documented in commit hist
 
 **Key insight**: Replaced a buggy third-party library with a simpler custom solution when 3 attempted fixes proved insufficient.
 
-### Digital Signing Integration (TC Kimlik Card)
-Built a comprehensive **digital signing pipeline** supporting multiple signing methods:
-
-- **NFC ID Card signer** (`nfc_id_card_signer.dart`) — reads TC Kimlik card via NFC
-- **NFC Smart Card signer** (`nfc_smart_card_signer.dart`) — generic smart card support
-- **NFC bridge** (`nfc_bridge.dart`) — low-level NFC communication
-- **USB OTG signer** (`usb_otg_signer.dart`) — USB-connected card readers
-- **Mobil İmza signer** (`mobil_imza_signer.dart`) — mobile signature service integration
-- **CAdES builder** (`cades_builder.dart`) — CMS Advanced Electronic Signatures
-- **TSA client** (`tsa_client.dart`) — Timestamp Authority for signature validity
-- **Signature verifier** (`signature_verifier.dart`) — validates existing signatures
-- **Signing service** (`signing_service.dart`) — orchestrates the signing workflow
-
-#### Signing Flow Implementation
-- Built **PIN status detection** for TC Kimlik card — checks if card is ready *(commit: `3868ae3`)*
-- Fixed **stuck PIN check screen** — handled edge case where PIN check would hang *(commit: `3bb6ddc`)*
-- Implemented **signing screen** for selecting and executing digital signature processes *(commit: `04ccb57`)*
-- Integrated signing with **UDF archive pipeline** *(commit: `77f3702`)*
-- Added sign and edit buttons to reader screen app bar *(commit: `43919ac`)*
+### Digital Signing Evaluation (CAdES)
+Evaluated mobile signature (**CAdES**) integration across Turkish operator-backed signing providers.
 
 ### Monetization — Pro Subscription
-- **Gated signing behind Pro subscription** — free users can read/edit, Pro users can sign *(commit: `19a8aea`)*
 - Implemented **paywall button** in editor Pro gate *(commit: `4242680`)*
 - **Hide ads for Pro subscribers** *(commit: `4504c11`)*
 - Built `paywall_service.dart` for subscription management
@@ -85,9 +66,8 @@ Built a comprehensive **digital signing pipeline** supporting multiple signing m
 - **15 commits** delivering a complete Flutter document editor from zero
 - **Custom UDF parser/serializer** with UTF-8 byte offset handling for Turkish character support
 - **Pragmatic library decision**: 3 flutter_quill bug fixes → pivot to simpler TextField — documented evolution
-- **TC Kimlik digital signing** via NFC with CAdES signatures and TSA timestamping
-- **4 signing methods**: NFC ID card, NFC smart card, USB OTG, Mobil İmza
-- **Pro subscription** monetization with feature gating (signing behind paywall)
+- **Evaluated mobile signature (CAdES) integration** across Turkish operator-backed signing providers
+- **Pro subscription** monetization with feature gating
 - **Cloud sync** support for Google Drive and iCloud
 - **30 Dart source files** across a well-structured Flutter application
 
@@ -97,9 +77,8 @@ Built a comprehensive **digital signing pipeline** supporting multiple signing m
 
 | Question | How to Answer |
 |----------|--------------|
-| "Tell me about mobile development" | Flutter app with custom parser, NFC signing, cloud sync, monetization |
+| "Tell me about mobile development" | Flutter app with custom parser, CAdES signing evaluation, cloud sync, monetization |
 | "How do you handle third-party library issues?" | 3 flutter_quill fixes → pragmatic pivot to custom TextField solution |
-| "Tell me about working with hardware (NFC)" | TC Kimlik card via NFC, PIN detection, stuck screen edge cases |
 | "How do you handle encoding/character issues?" | UTF-8 byte offset → char offset conversion for Turkish characters |
 | "Tell me about monetization" | Pro subscription, paywall gating, ad hiding for subscribers |
 | "How do you make build-vs-buy decisions?" | flutter_quill was popular but buggy — custom solution proved better |
@@ -108,4 +87,4 @@ Built a comprehensive **digital signing pipeline** supporting multiple signing m
 
 ## Key Technologies
 
-`Flutter` · `Dart` · `NFC` · `CAdES` · `TSA` · `Digital Signatures` · `TC Kimlik` · `UDF Format` · `UTF-8 Parsing` · `Google Drive API` · `iCloud` · `In-App Purchases` · `Mobile Development`
+`Flutter` · `Dart` · `CAdES` · `UDF Format` · `UTF-8 Parsing` · `Google Drive API` · `iCloud` · `In-App Purchases` · `Mobile Development`

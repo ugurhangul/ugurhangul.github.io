@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uğurhan Gül — Senior Full Stack .NET Developer</title>
     <meta name="description"
-        content="Senior Full Stack .NET Developer & Software Architect with 12+ years of experience scaling high-availability systems for Turkcell, Hepsiburada, and Vodafone.">
+        content="Senior Full Stack .NET Developer & Software Architect with 12+ years of experience building large scale enterprise platforms for Turkcell, Hepsiburada, and Vodafone.">
     <meta name="author" content="Uğurhan Gül">
     <meta property="og:title" content="Uğurhan Gül — Senior Full Stack .NET Developer">
     <meta property="og:description" content="Portfolio & CV — 12+ years building enterprise systems.">
@@ -23,9 +23,10 @@
     <meta property="og:url" content="https://ugurhangul.github.io">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
@@ -37,106 +38,111 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav__links" id="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#github">GitHub</a></li>
+                <li><a href="#hero">Manifesto</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#experience">Evidence</a></li>
+                <li><a href="#contributions">GitHub</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="ugurhangul.pdf" target="_blank" class="nav__cta">Download CV</a></li>
+                <li><a href="data/Ugurhan_Gul_CV.pdf" target="_blank" class="nav__cta">Download CV</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
+    <section class="section hero" id="hero" style="border-top: none; padding-top: 200px;">
         <div class="container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <p class="hero__greeting">Hello, I'm</p>
-                    <h1 class="hero__name">Uğurhan <span class="accent">Gül</span></h1>
-                    <p class="hero__title">Senior Full Stack .NET Developer | AI Systems Architect | Software Architect</p>
-                    <p class="hero__summary">
-                        Certified Senior Full Stack .NET Developer (AI-Interview Validated) and Software Architect with 12+ years of experience designing and delivering AI-enabled, high-availability enterprise systems. Expert in Clean Architecture, Microservices, .NET 10, and Event-Driven Architecture with a proven track record scaling solutions for <strong>Turkcell</strong>, <strong>Hepsiburada</strong>, and <strong>Vodafone</strong>. Specialized in AI systems integration (LLM/VLM, RAG, Deep Reinforcement Learning), high-performance computing, and aerospace-grade compliance (AS9100D, ISO 27001). Led cross-functional teams across 148+ projects spanning 13 industries.
+            <div class="hero__layout">
+                <div class="hero__main">
+                    <p class="text-mono text-accent" style="margin-bottom: 24px;">Architecture Manifesto // v2.0</p>
+                    <h1 class="h1" style="margin-bottom: 40px;">
+                        UĞURHAN GÜL<br>
+                        <span class="text-accent">ARCHITECTING</span><br>
+                        AT SCALE
+                    </h1>
+                    <div class="hero__meta" style="display: flex; gap: 64px; margin-bottom: 64px;">
+                        <div>
+                            <span class="text-mono text-muted">Experience</span>
+                            <div class="h2">12+</div>
+                            <span class="text-mono text-muted">Years</span>
+                        </div>
+                        <div>
+                            <span class="text-mono text-muted">Led Up To</span>
+                            <div class="h2">13</div>
+                            <span class="text-mono text-muted">Developers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__sidebar">
+                    <p class="text-lg" style="max-width: 480px; margin-bottom: 32px;">
+                        Senior Full Stack .NET Developer and Technical Lead with 12+ years of experience designing and delivering AI-enabled, large scale enterprise systems. Strong hands-on expertise in Clean Architecture, Microservices, .NET 10, and Event-Driven Architecture, contributing to large scale platforms for <span class="text-accent">Turkcell</span>, <span class="text-accent">Hepsiburada</span>, <span class="text-accent">Vodafone</span>, <span class="text-accent">Ziraat Bank</span>, <span class="text-accent">TOFAŞ/FIAT</span>, <span class="text-accent">Hyundai</span>, <span class="text-accent">Arçelik</span>, and <span class="text-accent">AssisTT</span>. Specialized in AI systems integration (LLM/VLM, MCP servers, self-hosted AI inference, Deep Reinforcement Learning), high performance backend platforms, and aerospace compliance tooling (AS9100, EN 10204). Led frontend and backend engineering teams of up to 13 developers. Managed technical delivery across 98 enterprise projects in 13 industries.
                     </p>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <a href="mailto:ugurhangul@gmail.com" class="btn-primary" style="width: fit-content;">ugurhangul@gmail.com</a>
+                        <a href="https://github.com/ugurhangul" target="_blank" class="btn-primary" style="width: fit-content;">github.com/ugurhangul</a>
+                    </div>
                 </div>
             </div>
-            <div class="hero__contact">
-                <a href="mailto:ugurhangul@gmail.com" class="contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    ugurhangul@gmail.com
-                </a>
-                <a href="tel:+905417295700" class="contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                    +90 541 729 5700
-                </a>
-                <span class="contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Istanbul — Kocaeli
-                </span>
-                <a href="https://github.com/ugurhangul" target="_blank" class="contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-                    </svg>
-                    github.com/ugurhangul
-                </a>
-                <a href="https://linkedin.com/in/ugurhangul" target="_blank" class="contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                    linkedin.com/in/ugurhangul
-                </a>
-            </div>
         </div>
-        <div class="hero__gradient"></div>
+        <!-- Decorative 9xl Background Text -->
+        <div style="position: absolute; right: -5%; top: 20%; font-size: 30vw; font-weight: 900; color: var(--muted); opacity: 0.1; z-index: 1; pointer-events: none; letter-spacing: -0.08em; line-height: 1;">
+            12+
+        </div>
     </section>
 
-    <!-- ===== EVIDENCE STRIP ===== -->
-    <section class="evidence-strip" id="evidence-strip">
+    <!-- ===== IMPACT MATRIX ===== -->
+    <section class="section" id="impact" style="padding-top: 0;">
         <div class="container">
-            <div class="evidence-strip__grid" id="evidence-stats">
-                <!-- populated by JS from evidence_data.json -->
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Data Migrated</span>
+                    <div class="value">150M+</div>
+                    <span class="text-mono">Rows, Zero Data Loss</span>
+                </div>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Migration Time</span>
+                    <div class="value">~70%</div>
+                    <span class="text-mono">Less (Projected)</span>
+                </div>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Scale</span>
+                    <div class="value">25+</div>
+                    <span class="text-mono">Banking Sites, 10+ Countries</span>
+                </div>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Team Size</span>
+                    <div class="value">Up to 13</div>
+                    <span class="text-mono">Developers Led</span>
+                </div>
             </div>
-            <p class="evidence-strip__disclaimer">All statistics are auto-generated from GitHub API data across personal
-                and organization repositories.</p>
         </div>
     </section>
 
     <!-- ===== SKILLS ===== -->
     <section class="section" id="skills">
         <div class="container">
-            <h2 class="section__title">Skills</h2>
-            <div class="skills__core">
-                <span class="pill">.NET 10</span>
-                <span class="pill">Clean Architecture</span>
-                <span class="pill">AI & Machine Learning</span>
-                <span class="pill">Microservices</span>
-                <span class="pill">TypeScript & React</span>
-                <span class="pill">Go</span>
-                <span class="pill">Erlang</span>
-                <span class="pill">Docker & K8s</span>
-                <span class="pill">Message Brokers (Kafka/RabbitMQ)</span>
-                <span class="pill">ISO 27001 & AS9100D</span>
+            <p class="text-mono text-accent" style="margin-bottom: 16px;">Core Competencies // Stack</p>
+            <h2 class="h1" style="margin-bottom: 64px;">TECHNICAL<br>ARSENAL</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 64px;">
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">.NET 10</span>
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">Distributed Systems</span>
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">AI & LLM Integration</span>
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">Event-Driven Architecture</span>
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">Docker & CI/CD</span>
+                <span style="border: 1px solid var(--foreground); padding: 8px 20px; font-family: var(--font-mono); font-weight: 500;">Microservices</span>
             </div>
-            <div class="tech-radar" id="tech-radar">
-                <div class="tech-radar__chart-wrap">
-                    <canvas id="tech-radar-canvas" width="420" height="420"></canvas>
-                </div>
-                <div class="tech-radar__legend" id="tech-radar-legend">
-                    <!-- category pills rendered by JS -->
-                </div>
-                <div class="tech-radar__detail" id="tech-radar-detail">
-                    <!-- expanded tech list rendered by JS on pill click -->
+
+            <div style="border-top: 1px solid var(--border); padding-top: 64px;">
+                <div class="tech-radar" id="tech-radar" style="background: transparent; border: none; padding: 0;">
+                    <div class="tech-radar__chart-wrap" style="max-width: 500px;">
+                        <canvas id="tech-radar-canvas" width="500" height="500"></canvas>
+                    </div>
+                    <div class="tech-radar__legend" id="tech-radar-legend">
+                        <!-- category pills rendered by JS -->
+                    </div>
+                    <div class="tech-radar__detail" id="tech-radar-detail">
+                        <!-- expanded tech list rendered by JS on pill click -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,226 +151,223 @@
     <!-- ===== EXPERIENCE ===== -->
     <section class="section" id="experience">
         <div class="container">
-            <h2 class="section__title">Work Experience</h2>
+            <p class="text-mono text-accent" style="margin-bottom: 16px;">Professional Timeline // Engineering</p>
+            <h2 class="h1" style="margin-bottom: 64px;">BATTLE-TESTED<br>EXPERIENCE</h2>
             <div class="timeline">
-                <!-- Kafein -->
-                <div class="timeline__item" data-company="Kafein Technology Solutions">
-                    <div class="timeline__dot" aria-hidden="true">KF</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <!-- Independent -->
+                <div class="timeline__item" data-company="Self-Employed" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">SE</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Senior Full Stack .NET Developer</h3>
-                                <p class="timeline__company">Kafein Technology Solutions</p>
+                                <h3 class="h3">Independent Software Engineer / Consultant</h3>
+                                <p class="text-mono text-accent">Self-Employed</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Sep 2024 — Dec 2025</span>
-                                <span class="timeline__location">Istanbul, Türkiye</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Jan 2026 — Present</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye · Remote</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li><strong>Turkcell Data Migration:</strong> Architected a .NET 9 migration engine bridging legacy Drupal to modern PostgreSQL. Engineered a custom multithreaded pipeline that processed <strong>150M+ rows</strong>, reducing production migration time by <strong>70%</strong> with zero data loss. <em>(Evidence: 178 commits across 2 repos)</em></li>
-                            <li><strong>Hepsiburada & Vodafone (Multi-Tenancy):</strong> Tasked with scaling the NASDAQ-listed platform. Engineered a dual-stack Go + .NET architecture utilizing Kafka and MongoDB, resulting in a <strong>40% reduction in API response times</strong> for millions of daily active users. <em>(Evidence: 122 commits)</em></li>
-                            <li><strong>AssisTT Workforce Planning:</strong> Replaced manual reporting processes by designing a new workforce module from scratch. Built a distributed system (Erlang + .NET + AngularJS) that automated complex KPI calculations, <strong>eliminating 20+ hours per week</strong> of manual labor. <em>(Evidence: 207 commits across 5 repos)</em></li>
-                        </ul>
-                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET 9</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Erlang</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Go</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">AngularJS</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">PostgreSQL</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">MongoDB</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Kafka</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Dapper</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Parallel Programming</span>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
+                            <div>
+                                <h4 class="text-mono text-muted" style="margin-bottom: 16px;">Key Outcomes</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <p class="text-base"><strong>Enterprise Aerospace Compliance Platform:</strong> 13-project .NET 10 modular monolith extracting <strong>22 document types</strong>, with deterministic NRules validation across <strong>47 rule classes</strong> and <strong>2,600+ tests</strong>.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <p class="text-base"><strong>DropXML:</strong> Multi-tenant SaaS on 9 event-driven .NET services, <strong>1,047 commits</strong> across 13 repositories. Extended into Pax Mercatus, an SEO analysis backend with seven analyzers behind a multi-provider AI layer.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <p class="text-base"><strong>YouTrack MCP Server:</strong> Open source Model Context Protocol server for JetBrains YouTrack.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <button class="timeline__toggle" type="button" aria-expanded="false">
-                            <span class="timeline__toggle-text">Show more</span>
-                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9" />
-                            </svg>
-                        </button>
+                    </div>
+                </div>
+                <!-- Kafein -->
+                <div class="timeline__item" data-company="Kafein Technology Solutions" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">KF</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
+                            <div>
+                                <h3 class="h3">Senior Full Stack .NET Developer</h3>
+                                <p class="text-mono text-accent">Kafein Technology Solutions</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Sep 2024 — Dec 2025</span><br>
+                                <span class="text-mono text-muted">İstanbul, Türkiye · Hybrid</span>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
+                            <div>
+                                <h4 class="text-mono text-muted" style="margin-bottom: 16px;">Key Outcomes</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="01" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>Turkcell Data Migration:</strong> Architected a .NET 9 migration engine processing <strong>150M+ rows</strong> with zero data loss, reducing projected migration time by approximately <strong>70%</strong>.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="02" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>Hepsiburada & Vodafone:</strong> Go + .NET multi-tenant content services on Kafka and MongoDB; cut new widget onboarding from <strong>days to hours</strong>.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="03" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>AssisTT Workforce:</strong> Workforce planning module (.NET, Erlang, AngularJS) automating KPIs and eliminating <strong>20+ hours/week</strong> of manual reporting and planning work.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Clockwork -->
-                <div class="timeline__item" data-company="Clockwork Agency">
-                    <div class="timeline__dot" aria-hidden="true">CW</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <div class="timeline__item" data-company="Clockwork Agency" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">CW</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Senior Software Developer & Team Lead</h3>
-                                <p class="timeline__company">Clockwork Agency</p>
+                                <h3 class="h3">Senior Software Developer / Team Lead</h3>
+                                <p class="text-mono text-accent">Clockwork Agency</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Oct 2019 — Sep 2024</span>
-                                <span class="timeline__location">Istanbul, Türkiye</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Oct 2019 — Sep 2024</span><br>
+                                <span class="text-mono text-muted">Kocaeli / İstanbul, Türkiye · Remote</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li><strong>Agency-Wide Technical Leadership:</strong> Architected and maintained the core Umbraco boilerplate framework utilized across <strong>100+ enterprise clients</strong> (Ziraat Bank, Hyundai, Arçelik). Standardized the development platform through 4 major version upgrades, <strong>reducing new project setup time from 2 weeks to 2 days</strong>. <em>(Evidence: 187 commits across 8 repos)</em></li>
-                            <li><strong>Enterprise Security Hardening:</strong> Led ISO 27001 security remediation across the agency portfolio. Engineered reusable security patterns (CSP, encryption pipelines, server-side CAPTCHA) and patched <strong>30+ critical vulnerabilities</strong>, ensuring successful penetration tests for top-tier banking clients.</li>
-                            <li><strong>Fiat Online Sales Platform:</strong> Architected the backend API (.NET 8) for Turkey's first multi-brand online car sales system. Built complex payment pipelines and a 12-state order lifecycle, successfully serving FIAT, Alfa Romeo, and Jeep. <em>(Evidence: ~1,000+ commits across 12 repos)</em></li>
-                            <li><strong>Multi-Country Scale (Ziraat Bank):</strong> Engineered a shared CMS core architecture running <strong>25+ banking websites across 15+ countries</strong>. Built critical features including Bankkart application validation and live fund portfolio retrieval. <em>(Evidence: 140+ commits across 25 repos)</em></li>
-                            <li><strong>Project Delivery:</strong> Managed the technical delivery of <strong>98 enterprise projects</strong> across 13 industries with <strong>zero missed deadlines</strong> over 5 years. Established CI/CD pipelines that improved team velocity by 35%.</li>
-                        </ul>
-                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET 8</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Umbraco CMS</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ASP.NET MVC</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">Azure</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">CI/CD</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ISO 27001</span>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
+                            <div>
+                                <h4 class="text-mono text-muted" style="margin-bottom: 16px;">Key Outcomes</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="05" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>Technical Leadership:</strong> Led frontend and backend engineering teams of up to <strong>13 developers</strong>; managed technical delivery across 98 enterprise projects in 13 industries; architected the Umbraco/.NET framework for <strong>100+ client websites</strong> (five upgrades, v8 to v13), reducing setup time from 2 weeks to 2 days.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="19" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>Security Hardening:</strong> Led security remediation across banking and government projects, fixing <strong>30+ critical vulnerabilities</strong> (CSP, encryption, server-side CAPTCHA) in ISO 27001 scoped environments.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="04" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>TOFAŞ / FIAT Online Sales:</strong> .NET 6 to .NET 8 backend shared by FIAT, Alfa Romeo and Jeep APIs, Iyzico payments, 12-state order lifecycle.</p>
+                                    </li>
+                                    <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                        <button class="btn-primary" data-star-id="05b" style="flex-shrink: 0;">View Evidence</button>
+                                        <p class="text-base"><strong>Global Scale:</strong> Ziraat Bank core architecture running <strong>25+ banking websites across 10+ countries</strong>.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <button class="timeline__toggle" type="button" aria-expanded="false">
-                            <span class="timeline__toggle-text">Show more</span>
-                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9" />
-                            </svg>
-                        </button>
                     </div>
                 </div>
                 <!-- Bank Software -->
-                <div class="timeline__item" data-company="Bank Software Solutions">
-                    <div class="timeline__dot" aria-hidden="true">BS</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <div class="timeline__item" data-company="Bank Software Solutions" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">BS</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Fullstack .NET Developer</h3>
-                                <p class="timeline__company">Bank Software Solutions</p>
+                                <h3 class="h3">Full Stack .NET Developer</h3>
+                                <p class="text-mono text-accent">Bank Software Solutions</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Dec 2015 — Jul 2019</span>
-                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Dec 2015 — Jul 2019</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li><strong>Maritime Automation Platform:</strong> Digitized manual port operations by architecting a 7-project solution from the ground up. Built a custom formula engine for proforma accounting and an automated document generator that produced <strong>40+ official maritime templates</strong>, streamlining agency workflows. <em>(Evidence: 272 commits)</em></li>
-                            <li><strong>Vessel Tracking Integration:</strong> Integrated real-time vessel tracking via VesselFinder and Bosphorus Strait monitoring with SignalR notifications.</li>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                            <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                <button class="btn-primary" data-star-id="10" style="flex-shrink: 0;">View Evidence</button>
+                                <p class="text-base"><strong>Maritime Automation:</strong> Digitized port operations with a 7-project solution, automating <strong>30+ official maritime templates</strong>.</p>
+                            </li>
+                            <li style="display: flex; gap: 16px; align-items: flex-start;">
+                                <p class="text-base">Custom proforma formula engine, real-time vessel tracking and Bosphorus Strait monitoring with SignalR, WCF and REST integrations.</p>
+                            </li>
                         </ul>
-                        <div class="timeline__skills" style="margin-top: 16px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">.NET</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SignalR</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">JavaScript</span>
-                        </div>
-                        <button class="timeline__toggle" type="button" aria-expanded="false">
-                            <span class="timeline__toggle-text">Show more</span>
-                            <svg class="timeline__toggle-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9" />
-                            </svg>
-                        </button>
                     </div>
                 </div>
                 <!-- Pavlike -->
-                <div class="timeline__item" data-company="Pavlike Web Applications">
-                    <div class="timeline__dot" aria-hidden="true">PV</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <div class="timeline__item" data-company="Pavlike Web Applications and Solutions" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">PV</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">.NET MVC Developer</h3>
-                                <p class="timeline__company">Pavlike Web Applications &amp; Solutions</p>
+                                <h3 class="h3">.NET MVC Developer</h3>
+                                <p class="text-mono text-accent">Pavlike Web Applications and Solutions</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Apr 2015 — Nov 2015</span>
-                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Apr 2015 — Nov 2015</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li>Participated in highly complex projects with customers, managers and end-users.</li>
-                            <li>Analyzed, evaluated and developed new web and database applications.</li>
-                            <li>Resolved hardware and software compatibility and interface design issues.</li>
-                        </ul>
-                        <div class="timeline__skills" style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">ASP.NET MVC</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">C#</span>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); padding: 4px 10px; border-radius: 6px;">SQL Server</span>
-                        </div>
+                        <p class="text-base">Developed and maintained ASP.NET MVC web applications; took part in requirements analysis and resolved compatibility and integration issues.</p>
                     </div>
                 </div>
-                <!-- Piyasa -->
-                <div class="timeline__item" data-company="Piyasa Group">
-                    <div class="timeline__dot" aria-hidden="true">PG</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <!-- Piyasa Group -->
+                <div class="timeline__item" data-company="Piyasa Group" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">PG</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">.NET MVC Developer</h3>
-                                <p class="timeline__company">Piyasa Group</p>
+                                <h3 class="h3">.NET Web Developer</h3>
+                                <p class="text-mono text-accent">Piyasa Group</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Aug 2014 — Oct 2014</span>
-                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Aug 2014 — Oct 2014</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li>Developed functional databases, applications and servers to support websites on back-end.</li>
-                            <li>Provided software application engineering and maintenance for development lifecycle.</li>
-                            <li>Reviewed code, debugged problems, and corrected issues.</li>
-                        </ul>
+                        <p class="text-base">Developed backend web application components and database structures; reviewed and debugged existing code; resolved application defects and technical issues.</p>
                     </div>
                 </div>
                 <!-- LuckyEye -->
-                <div class="timeline__item" data-company="LuckyEye">
-                    <div class="timeline__dot" aria-hidden="true">LE</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <div class="timeline__item" data-company="LuckyEye" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">LE</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Webmaster</h3>
-                                <p class="timeline__company">LuckyEye</p>
+                                <h3 class="h3">Web Developer</h3>
+                                <p class="text-mono text-accent">LuckyEye</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">May 2014 — Jun 2014</span>
-                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">May 2014 — Jun 2014</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li>Coded responsive websites using HTML, CSS, JavaScript, and jQuery.</li>
-                            <li>Troubleshot issues with websites and fixed scripting and use issues.</li>
-                        </ul>
+                        <p class="text-base">Developed and maintained corporate websites with HTML, CSS, JavaScript and jQuery; resolved scripting and frontend issues.</p>
                     </div>
                 </div>
-                <!-- Revo -->
-                <div class="timeline__item" data-company="Revo Bilişim">
-                    <div class="timeline__dot" aria-hidden="true">RB</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <!-- Revo Bilişim -->
+                <div class="timeline__item" data-company="Revo Bilişim" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">RB</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Webmaster</h3>
-                                <p class="timeline__company">Revo Bilişim</p>
+                                <h3 class="h3">Junior Web Developer</h3>
+                                <p class="text-mono text-accent">Revo Bilişim</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Dec 2012 — Jun 2013</span>
-                                <span class="timeline__location">Kocaeli, Turkey</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Dec 2012 — Jun 2013</span><br>
+                                <span class="text-mono text-muted">Kocaeli, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li>Monitored database performance to keep workflows running smoothly.</li>
-                            <li>Troubleshot and resolved performance issues for databases and software.</li>
-                        </ul>
+                        <p class="text-base">Supported web application operations; monitored and investigated database and application performance issues.</p>
                     </div>
                 </div>
-                <!-- İş Bankası -->
-                <div class="timeline__item" data-company="Türkiye İş Bankası">
-                    <div class="timeline__dot" aria-hidden="true">İB</div>
-                    <div class="timeline__content glass-card">
-                        <div class="timeline__header">
+                <!-- Türkiye İş Bankası -->
+                <div class="timeline__item" data-company="Türkiye İş Bankası" style="margin-bottom: 64px;">
+                    <div class="timeline__dot" aria-hidden="true" style="border-radius: 0; border-width: 1px;">İB</div>
+                    <div class="timeline__content" style="border: none; padding: 0;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px;">
                             <div>
-                                <h3 class="timeline__role">Intern</h3>
-                                <p class="timeline__company">Türkiye İş Bankası</p>
+                                <h3 class="h3">Software Development Intern</h3>
+                                <p class="text-mono text-accent">Türkiye İş Bankası</p>
                             </div>
-                            <div class="timeline__meta">
-                                <span class="timeline__date">Sep 2011 — Jun 2012</span>
-                                <span class="timeline__location">Kocaeli, Türkiye</span>
+                            <div style="text-align: right;">
+                                <span class="text-mono">Sep 2011 — Jun 2012</span><br>
+                                <span class="text-mono text-muted">İstanbul, Türkiye</span>
                             </div>
                         </div>
-                        <ul class="timeline__bullets">
-                            <li>Technology internship at Turkey's <strong>largest private bank</strong> — gained hands-on experience in enterprise banking systems and IT operations.</li>
-                        </ul>
+                        <p class="text-base">Software development internship in an enterprise technology environment; supported software and technology operational processes.</p>
                     </div>
                 </div>
             </div>
@@ -375,49 +378,25 @@
     <section class="section" id="sectors">
         <div class="container">
             <h2 class="section__title">Industry Experience</h2>
-            <p class="section__subtitle" id="sector-subtitle">Sectors I've delivered for across 98 projects</p>
+            <p class="section__subtitle" id="sector-subtitle">Sectors I've delivered for across 98 projects in 13 industries</p>
             <div class="sector-chart" id="sector-chart">
                 <!-- populated by JS -->
             </div>
         </div>
     </section>
 
-    <!-- ===== GITHUB ===== -->
-    <section class="section" id="github">
+    <!-- ===== CONTRIBUTIONS ===== -->
+    <section class="section" id="contributions">
         <div class="container">
-            <h2 class="section__title">GitHub Activity</h2>
-            <div class="github__stats" id="github-stats">
-                <!-- populated by JS -->
-            </div>
-            <div class="glass-card heatmap-card">
-                <div class="heatmap__header">
-                    <h3>Contribution Calendar</h3>
-                    <div class="heatmap__legend">
-                        <span class="heatmap__legend-label">Less</span>
-                        <span class="heatmap__legend-box" style="background: #161b22"></span>
-                        <span class="heatmap__legend-box" style="background: #0e4429"></span>
-                        <span class="heatmap__legend-box" style="background: #006d32"></span>
-                        <span class="heatmap__legend-box" style="background: #26a641"></span>
-                        <span class="heatmap__legend-box" style="background: #39d353"></span>
-                        <span class="heatmap__legend-label">More</span>
-                    </div>
+            <p class="text-mono text-accent" style="margin-bottom: 16px;">Verified Evidence // GitHub</p>
+            <h2 class="h1" style="margin-bottom: 64px;">CONTINUOUS<br>DELIVERY</h2>
+            
+            <div style="border: 1px solid var(--border); padding: 48px;">
+                <div id="heatmap-container" style="margin-bottom: 48px;">
+                    <!-- Heatmap will be rendered here -->
                 </div>
-                <div class="heatmap__container" id="heatmap">
-                    <!-- rendered by heatmap.js -->
-                </div>
-            </div>
-            <div class="github__languages">
-                <div class="glass-card lang-bar-card">
-                    <h3>Languages</h3>
-                    <div class="lang__stacked-bar" id="lang-stacked-bar">
-                        <!-- rendered by charts.js -->
-                    </div>
-                    <div class="lang__list" id="lang-list">
-                        <!-- rendered by charts.js -->
-                    </div>
-                </div>
-                <div class="glass-card lang-chart-card">
-                    <canvas id="lang-chart" width="300" height="300"></canvas>
+                <div id="repo-grid" class="evidence-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                    <!-- GitHub repositories will be listed here by heatmap.js -->
                 </div>
             </div>
         </div>
@@ -426,8 +405,9 @@
     <!-- ===== PROJECTS ===== -->
     <section class="section" id="projects">
         <div class="container">
-            <h2 class="section__title">Projects</h2>
-            <div class="projects__grid" id="projects-grid">
+            <p class="text-mono text-accent" style="margin-bottom: 16px;">Case Studies // Projects</p>
+            <h2 class="h1" style="margin-bottom: 64px;">ENGINEERING<br>SOLUTIONS</h2>
+            <div class="evidence-grid" id="projects-grid">
                 <!-- populated by JS from evidence_data.json (public only) -->
             </div>
         </div>
@@ -436,77 +416,80 @@
     <!-- ===== EDUCATION ===== -->
     <section class="section" id="education">
         <div class="container">
-            <h2 class="section__title">Education & Certifications</h2>
-            <div class="edu__grid">
-                <div class="glass-card edu__card">
-                    <div class="edu__icon">🎓</div>
-                    <h3>Bachelor's Degree</h3>
-                    <p class="edu__school">Anadolu Üniversitesi</p>
-                    <p class="edu__date">2020 — Present</p>
+            <p class="text-mono text-accent" style="margin-bottom: 16px;">Credentials // Foundation</p>
+            <h2 class="h1" style="margin-bottom: 64px;">ACADEMIC &<br>PROFESSIONAL</h2>
+            
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">LinkedIn Learning</span>
+                    <div class="h3" style="margin: 16px 0;">Software Architecture: From Developer to Architect</div>
+                    <span class="text-mono">Certificate // 2026</span>
                 </div>
-                <div class="glass-card edu__card">
-                    <div class="edu__icon">🎓</div>
-                    <h3>Associate's Degree — Computer Software</h3>
-                    <p class="edu__school">Kocaeli Üniversitesi</p>
-                    <p class="edu__date">2012 — 2015</p>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">LinkedIn Learning</span>
+                    <div class="h3" style="margin: 16px 0;">Advanced Design Patterns: Design Principles</div>
+                    <span class="text-mono">Certificate // 2026</span>
                 </div>
-                <div class="glass-card edu__card">
-                    <div class="edu__icon">🏛️</div>
-                    <h3>High School Diploma — IT</h3>
-                    <p class="edu__school">Kartepe Endüstri Meslek Lisesi</p>
-                    <p class="edu__date">2008 — 2012</p>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Anadolu University</span>
+                    <div class="h3" style="margin: 16px 0;">Management Information Systems</div>
+                    <span class="text-mono">Undergraduate coursework // 2020 — 2024</span>
                 </div>
-                <div class="glass-card edu__card">
-                    <div class="edu__icon">🏅</div>
-                    <h3>Senior Full Stack .NET Developer</h3>
-                    <p class="edu__school">micro1 (AI-Interview Validated)</p>
-                    <p class="edu__date">Mar 2026</p>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Kocaeli University</span>
+                    <div class="h3" style="margin: 16px 0;">Computer Software Technology</div>
+                    <span class="text-mono">Associate Degree // 2012 — 2015 · GPA 3.27 / 4.00</span>
                 </div>
-                <div class="glass-card edu__card">
-                    <div class="edu__icon">🏛️</div>
-                    <h3>Software Architecture</h3>
-                    <p class="edu__school">LinkedIn Learning</p>
-                    <p class="edu__date">Apr 2026</p>
+                <div class="evidence-card">
+                    <span class="text-mono text-muted">Kartepe Industrial Vocational High School</span>
+                    <div class="h3" style="margin: 16px 0;">Computer Science</div>
+                    <span class="text-mono">2008 — 2012</span>
                 </div>
             </div>
-            <div class="certs__grid">
-                <div class="glass-card cert__card">
-                    <div class="cert__badge">🛡️</div>
-                    <h4>ISO 27001, 37001, 22301</h4>
-                    <p>Information Security, Anti-Bribery, Business Continuity</p>
+
+            <div style="margin-top: 64px; border-top: 1px solid var(--border); padding-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px;">
+                <div>
+                    <h4 class="text-mono text-accent" style="margin-bottom: 24px;">Compliance & Security</h4>
+                    <p class="text-lg">ISO 27001 (Information Security), 37001 (Anti-Bribery), 22301 (Business Continuity) — Kafein Technology Solutions, 2024</p>
                 </div>
-                <div class="glass-card cert__card">
-                    <div class="cert__badge">📋</div>
-                    <h4>Mastership Certificate</h4>
-                    <p>Republic of Turkey (Sep 2012)</p>
+                <div>
+                    <h4 class="text-mono text-accent" style="margin-bottom: 24px;">Mastership Certificate</h4>
+                    <p class="text-lg">Mastership Certificate — Computer Programming</p>
+                </div>
+                <div>
+                    <h4 class="text-mono text-accent" style="margin-bottom: 24px;">Languages</h4>
+                    <p class="text-lg">Turkish: Native · English: Professional Working Proficiency (C1)</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" style="padding: 120px 0 64px 0; border-top: 2px solid var(--foreground);">
         <div class="container">
-            <div class="footer__inner">
-                <div class="footer__brand">
-                    <span class="footer__logo">UG</span>
-                    <p>Uğurhan Gül — Senior Full Stack .NET Developer</p>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 64px;">
+                <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
+                    <h2 class="h1">LET'S BUILD<br>THE FUTURE.</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+                        <a href="mailto:ugurhangul@gmail.com" class="h3 link-hover">Email</a>
+                        <a href="https://github.com/ugurhangul" target="_blank" class="h3 link-hover">GitHub</a>
+                        <a href="https://linkedin.com/in/ugurhangul" target="_blank" class="h3 link-hover">LinkedIn</a>
+                        <a href="data/Ugurhan_Gul_CV.pdf" target="_blank" class="h3 link-hover text-accent">Download CV</a>
+                    </div>
                 </div>
-                <div class="footer__links">
-                    <a href="mailto:ugurhangul@gmail.com">Email</a>
-                    <a href="https://github.com/ugurhangul" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/ugurhangul" target="_blank">LinkedIn</a>
-                    <a href="ugurhangul.pdf" target="_blank">Download CV</a>
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; padding-top: 64px; border-top: 1px solid var(--border);">
+                    <p class="text-mono text-muted">© 2026 UĞURHAN GÜL // ARCHITECTURE MANIFESTO</p>
+                    <p class="text-mono text-muted">BUILT WITH .NET 10 PHILOSOPHY</p>
                 </div>
             </div>
-            <p class="footer__copy">&copy; 2026 Uğurhan Gül. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <script src="js/evidence-engine.js"></script>
     <script src="js/main.js"></script>
     <script src="js/heatmap.js"></script>
     <script src="js/charts.js"></script>
 </body>
 
-</html>
+</html>

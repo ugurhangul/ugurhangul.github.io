@@ -2,8 +2,8 @@
 
 > **Company:** Clockwork Agency (client: TOFAŞ)
 > **Period:** Oct 2019 – Sep 2024
-> **Role:** Senior Software Developer → Lead Developer
-> **Evidence:** ~1,000+ unique personal commits across 12 repositories
+> **Role:** Senior Software Developer / Team Lead
+> **Evidence:** Personal commits across the repositories below
 
 | Repository | Personal Commits | Description |
 |------------|-----------------|-------------|
@@ -21,19 +21,19 @@
 
 ## Situation
 
-TOFAŞ — Turkey's largest automotive group and Fiat's manufacturing partner — wanted to **sell cars online for the first time in the Turkish market**. Three separate brands (Fiat, Jeep, Alfa Romeo) needed a unified platform where customers could configure vehicles, see real-time pricing, apply promotions, complete payments (credit card, wire transfer, auto financing), and get matched with a dealer. This was a **first-of-its-kind** platform in Turkey's automotive industry. The system needed to integrate with TOFAŞ's existing Datacord CRM, stock management systems, and pricing webservices while serving consumers, dealers, and admins through separate interfaces.
+TOFAŞ wanted to **sell cars online**. Three separate brands (Fiat, Jeep, Alfa Romeo) needed a unified platform where customers could configure vehicles, see real-time pricing, apply promotions, complete payments (credit card, wire transfer, auto financing), and get matched with a dealer. The system needed to integrate with TOFAŞ's existing Datacord CRM, stock management systems, and pricing webservices while serving consumers, dealers, and admins through separate interfaces.
 
 ## Task
 
-As the **Lead Backend Developer**, I was responsible for:
+I **architected the backend API infrastructure** and was responsible for:
 
-- Architecting and building the entire backend API platform serving 3 brands
-- Implementing the complete payment pipeline (credit card, wire transfer/havale, auto loans)
+- Architecting and building the backend API platform serving 3 brands
+- Implementing the payment pipeline (credit card, wire transfer/havale, auto loans)
 - Building the coupon/promotion system, stock management, and pricing engine
-- Designing and implementing a 12+ state order lifecycle
+- Designing and implementing a 12-state order lifecycle
 - Creating separate API surfaces for consumers, dealers, and administrators
 - Replicating the platform for Jeep (130 commits) and Alfa Romeo (136 commits) with brand-specific customizations
-- Migrating the entire codebase from .NET 6 → .NET 8
+- Migrating the backend from .NET 6 → .NET 8
 - Building the TOFAŞ CRM integration (Datacord) separately (74 commits)
 
 ## Action
@@ -55,7 +55,7 @@ As the **Lead Backend Developer**, I was responsible for:
 - Created lead-based payment tracking with PaymentId history *(commit: `a3c6883`)*
 
 ### Coupon & Promotion System
-- Built complete **`CouponService`** — create, validate, cache, prevent double-use *(commit: `fda4020` "Coupon.cs done")*
+- Built **`CouponService`** — create, validate, cache, prevent double-use *(commit: `fda4020` "Coupon.cs done")*
 - Implemented coupon usability checks and cache management *(commits: `9072918`, `011cc9d`, `b5be9c4`)*
 - Added coupon code inclusion in customer notification emails *(commit: `32d3638`)*
 - Prevented empty coupon submissions *(commit: `6bc65e4`)*
@@ -80,7 +80,7 @@ As the **Lead Backend Developer**, I was responsible for:
 - Price legitimacy validation before order creation *(commit: `0ae9969`)*
 
 ### 12-State Order Lifecycle
-- Designed **12+ order states** with full history tracking:
+- Designed **12 order states** with full history tracking:
   - Created `OrderStatusHistory` with descriptions and timestamps *(commits: `3dde825`, `11e6e92`, `a7e93f3`)*
   - Built `OrderStatusDefinitions` with caching *(commits: `9ab16d3`, `fc773a5`)*
   - Implemented status-based order filtering *(commit: `a2dcfeb`)*
@@ -98,7 +98,7 @@ As the **Lead Backend Developer**, I was responsible for:
 - Image download for exterior color variants *(commit: `1789f68`)*
 
 ### Multi-Brand Replication
-- Replicated entire platform for **Alfa Romeo** (136 commits) with brand-specific customizations
+- Replicated the platform for **Alfa Romeo** (136 commits) with brand-specific customizations
 - Replicated for **Jeep** (130 commits) including:
   - Memory cache clearing for price services *(commit: `21eb895`)*
   - Bulk `numordespl` processing *(commit: `469e0a0`)*
@@ -106,7 +106,7 @@ As the **Lead Backend Developer**, I was responsible for:
   - Campaign and activity code support *(commit: `b250813`)*
 
 ### .NET Migration & Optimization
-- Migrated from **.NET 6 → .NET 8** across all API projects *(commit: `892a252` "cleaning and dotnet 8 optimization")*
+- Migrated from **.NET 6 → .NET 8** across the API projects *(commit: `892a252` "cleaning and dotnet 8 optimization")*
 - Optimized middleware pipeline *(commit: `e4f716f` "dotnet 8, middleware optimized")*
 - Simplified constructors for service classes *(commit: `635d70d`)*
 - Added `ReferenceHandler.IgnoreCycles` for JSON serialization *(commit: `fd1f0ae`)*
@@ -119,7 +119,7 @@ As the **Lead Backend Developer**, I was responsible for:
   - Import controller for data feeds *(commit: `631bb7d`)*
 
 ### Dealer Integration
-- Built complete dealer portal API with claims-based authorization *(commits: `c30822d`, `72e2930`)*
+- Built dealer portal API with claims-based authorization *(commits: `c30822d`, `72e2930`)*
 - Dealer address, area, and contact information management *(commits: `85a2158`, `6d539ad`, `a67be20`)*
 - Dealer-specific mail notifications *(commit: `9455032`)*
 - Dealer pricing display *(commit: `d389d23`)*
@@ -127,16 +127,14 @@ As the **Lead Backend Developer**, I was responsible for:
 
 ## Result
 
-- **~1,000+ unique personal commits** — the largest single project in the portfolio
-- **First online car sales platform** in the Turkish automotive market
+- Personal commits across the Fiat, Jeep and Alfa Romeo repositories
 - Served **3 automotive brands** (Fiat, Jeep, Alfa Romeo) under TOFAŞ
-- Complete **payment pipeline**: credit card (Iyzico), wire transfer (havale), auto financing (PreApplyLoan)
+- **Payment pipeline**: credit card (Iyzico), wire transfer (havale), auto financing (PreApplyLoan)
 - **Coupon/promotion engine** with cache management and double-use prevention
 - **Stock management** with feature flags, live inventory sync, and color-level tracking
-- **12+ state order lifecycle** with full audit trail via HistoryKey
+- **12-state order lifecycle** with full audit trail via HistoryKey
 - Multi-API architecture sharing an Infrastructure layer across consumer, dealer, and admin interfaces
-- Successfully migrated from **.NET 6 → .NET 8** with middleware optimization
-- Platform operated for **2+ years** processing real vehicle purchases
+- Migrated from **.NET 6 → .NET 8** with middleware optimization
 - Separately built **TOFAŞ CRM** (74 commits) with Datacord integration and subscription management
 
 ---
@@ -147,8 +145,8 @@ As the **Lead Backend Developer**, I was responsible for:
 |----------|--------------|
 | "Tell me about a complex e-commerce system" | Full story — 3 brands, payment pipeline, stock mgmt, 12-state orders |
 | "Tell me about payment integration" | Iyzico CC, havale verification, auto loans, refund processing |
-| "Your most impactful project?" | First online car sales in Turkey, ~1,000+ commits, 3 brands |
-| "How do you handle state machines?" | 12+ order states, history tracking, status transitions, audit trail |
+| "Tell me about an online sales platform" | 3-brand online car sales backend |
+| "How do you handle state machines?" | 12 order states, history tracking, status transitions, audit trail |
 | "How do you manage stock/inventory?" | Feature flags, real-time TOFAŞ sync, color-level tracking, cache |
 | "Tell me about a .NET migration" | .NET 6 → .NET 8, middleware optimization, constructor simplification |
 | "How do you scale across multiple products?" | Shared Infrastructure layer, brand-specific API deployments |
@@ -158,4 +156,4 @@ As the **Lead Backend Developer**, I was responsible for:
 
 ## Key Technologies
 
-`C#` · `.NET 6/8` · `ASP.NET Core` · `Entity Framework Core` · `SQL Server` · `Iyzico Payment Gateway` · `Redis Cache` · `Datacord CRM` · `React` · `Redux` · `Feature Flags` · `MVSS` · `OAuth` · `Swagger` · `wkhtmltopdf`
+`C#` · `.NET 6/8` · `ASP.NET Core` · `Entity Framework Core` · `SQL Server` · `Iyzico Payment Gateway` · `Datacord CRM` · `Feature Flags` · `MVSS` · `Swagger`

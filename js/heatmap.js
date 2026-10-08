@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function renderHeatmap() {
-    const container = document.getElementById('heatmap');
+    const container = document.getElementById('heatmap-container');
     if (!container) return;
 
     try {
