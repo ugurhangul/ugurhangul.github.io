@@ -1,5 +1,8 @@
 # IDE / tooling
 .agent/
+.claude/
+.codegraph/
+.playwright-mcp/
 .idea/
 .vs/
 *.DotSettings
@@ -12,8 +15,10 @@ cv_extracted.txt
 # Sensitive / private org contribution data
 data/clockwork_contributions.json
 data/github_stats.json
-aysenur_data
-data/linkedin
+aysenur_data/
+data/linkedin/
+cv_data.zip
+
 # OS
 Thumbs.db
 .DS_Store
