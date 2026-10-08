@@ -1,7 +1,7 @@
 {
   "stats": {
     "yearsExperience": "12+",
-    "totalProjects": 148,
+    "totalProjects": 98,
     "industries": 13,
     "totalCommits": 4199,
     "sources": {
@@ -22,13 +22,13 @@
   "heroStats": {
     "calendarContributions": 2302,
     "yearsActive": 12,
-    "totalProjects": 148
+    "totalProjects": 98
   },
   "skills": {
-    "CMS & Web Platforms": [
+    "Backend & API": [
       {
-        "name": "Umbraco CMS",
-        "projects": 55
+        "name": "ASP.NET Core",
+        "projects": 66
       },
       {
         "name": "ASP.NET MVC",
@@ -45,12 +45,6 @@
       {
         "name": "ASP.NET Identity",
         "projects": 1
-      }
-    ],
-    "Backend & API": [
-      {
-        "name": "ASP.NET Core",
-        "projects": 66
       },
       {
         "name": "AutoMapper",
@@ -65,7 +59,7 @@
         "projects": 4
       },
       {
-        "name": "Moq",
+        "name": "Hangfire",
         "projects": 3
       },
       {
@@ -81,23 +75,15 @@
         "projects": 1
       },
       {
-        "name": "xUnit",
-        "projects": 1
-      },
-      {
-        "name": "NUnit",
-        "projects": 1
-      },
-      {
-        "name": "FluentAssertions",
-        "projects": 1
-      },
-      {
         "name": "LDAP",
         "projects": 1
       }
     ],
     "Frontend": [
+      {
+        "name": "Umbraco CMS",
+        "projects": 55
+      },
       {
         "name": "React",
         "projects": 12
@@ -131,7 +117,7 @@
         "projects": 2
       },
       {
-        "name": "Angular",
+        "name": "AngularJS",
         "projects": 1
       },
       {
@@ -139,15 +125,11 @@
         "projects": 1
       },
       {
-        "name": "Angular Material",
-        "projects": 1
-      },
-      {
         "name": "ApexCharts",
         "projects": 1
       }
     ],
-    "Data & Databases": [
+    "Data & Messaging": [
       {
         "name": "Entity Framework",
         "projects": 16
@@ -161,6 +143,10 @@
         "projects": 13
       },
       {
+        "name": "MassTransit",
+        "projects": 7
+      },
+      {
         "name": "PostgreSQL",
         "projects": 7
       },
@@ -169,11 +155,23 @@
         "projects": 3
       },
       {
+        "name": "RabbitMQ",
+        "projects": 2
+      },
+      {
+        "name": "Redis",
+        "projects": 2
+      },
+      {
+        "name": "Kafka",
+        "projects": 2
+      },
+      {
         "name": "Elasticsearch",
         "projects": 1
       }
     ],
-    "DevOps & Infrastructure": [
+    "DevOps & Cloud": [
       {
         "name": "Serilog",
         "projects": 19
@@ -187,10 +185,6 @@
         "projects": 10
       },
       {
-        "name": "MassTransit",
-        "projects": 7
-      },
-      {
         "name": "Swagger",
         "projects": 6
       },
@@ -200,10 +194,6 @@
       },
       {
         "name": "GitHub Actions",
-        "projects": 3
-      },
-      {
-        "name": "Hangfire",
         "projects": 3
       },
       {
@@ -231,19 +221,11 @@
         "projects": 2
       },
       {
-        "name": "RabbitMQ",
-        "projects": 2
-      },
-      {
-        "name": "Redis",
-        "projects": 2
-      },
-      {
-        "name": "Kafka",
-        "projects": 2
+        "name": "NLog",
+        "projects": 1
       }
     ],
-    "ML & Trading": [
+    "AI & ML Research": [
       {
         "name": "Algorithmic Trading",
         "projects": 3
@@ -253,17 +235,25 @@
         "projects": 1
       },
       {
-        "name": "MQL5",
+        "name": "MCP",
         "projects": 1
       }
     ],
-    "Other": [
+    "Testing": [
       {
-        "name": "NLog",
+        "name": "Moq",
+        "projects": 3
+      },
+      {
+        "name": "xUnit",
         "projects": 1
       },
       {
-        "name": "MCP",
+        "name": "NUnit",
+        "projects": 1
+      },
+      {
+        "name": "FluentAssertions",
         "projects": 1
       }
     ]
@@ -288,7 +278,6 @@
       "topTechs": [
         "Umbraco CMS",
         "ASP.NET Core",
-        "SQL Server",
         "ASP.NET MVC"
       ],
       "color": "#FF7043"
@@ -299,8 +288,6 @@
       "commits": 1729,
       "topTechs": [
         "ASP.NET Core",
-        "Entity Framework Core",
-        "Serilog",
         "Docker"
       ],
       "color": "#E64A19"
@@ -311,9 +298,7 @@
       "commits": 99,
       "topTechs": [
         "ASP.NET Core",
-        "Umbraco CMS",
-        "SQL Server",
-        "Hangfire"
+        "Umbraco CMS"
       ],
       "color": "#FF9800"
     },
@@ -322,10 +307,9 @@
       "projects": 11,
       "commits": 1065,
       "topTechs": [
-        "React",
-        "Redux",
-        "Sass",
-        "Styled Components"
+        ".NET 6-8",
+        "ASP.NET Core Web API",
+        "Iyzico"
       ],
       "color": "#FF5722"
     },
@@ -336,8 +320,7 @@
       "topTechs": [
         "ASP.NET Core",
         "Umbraco CMS",
-        "Entity Framework Core",
-        "Entity Framework"
+        "SQL Server"
       ],
       "color": "#FF8A65"
     },
@@ -347,8 +330,7 @@
       "commits": 48,
       "topTechs": [
         "ASP.NET Core",
-        "Umbraco CMS",
-        "Docker"
+        "Umbraco CMS"
       ],
       "color": "#FFB74D"
     },
@@ -358,9 +340,7 @@
       "commits": 11,
       "topTechs": [
         "Umbraco CMS",
-        "ASP.NET Core",
-        "SQL Server",
-        "Docker"
+        "ASP.NET Core"
       ],
       "color": "#FFB300"
     },
@@ -369,9 +349,10 @@
       "projects": 3,
       "commits": 0,
       "topTechs": [
-        "Algorithmic Trading",
-        "Python",
-        "MQL5"
+        ".NET 10",
+        "TorchSharp",
+        "CUDA",
+        "QuestDB"
       ],
       "color": "#F4511E"
     },
@@ -381,9 +362,7 @@
       "commits": 114,
       "topTechs": [
         "Umbraco CMS",
-        "ASP.NET MVC",
-        "ASP.NET Web API",
-        "Entity Framework"
+        "ASP.NET MVC"
       ],
       "color": "#FFAB91"
     },
@@ -393,9 +372,7 @@
       "commits": 122,
       "topTechs": [
         "Umbraco CMS",
-        "ASP.NET MVC",
-        "ASP.NET Web API",
-        "Entity Framework"
+        "ASP.NET MVC"
       ],
       "color": "#FFA726"
     },
@@ -421,10 +398,10 @@
       "projects": 1,
       "commits": 0,
       "topTechs": [
-        "ASP.NET MVC",
-        "Entity Framework",
-        "SQL Server",
-        "jQuery"
+        ".NET 9",
+        "PostgreSQL",
+        "Kafka",
+        "MongoDB"
       ],
       "color": "#FF9E80"
     }
@@ -433,58 +410,37 @@
     {
       "name": "Ougha.MCP.YouTrack",
       "lang": "TypeScript",
-      "desc": "MCP Server for YouTrack",
+      "desc": "Open source Model Context Protocol (MCP) server for JetBrains YouTrack",
       "public": true,
       "url": "https://github.com/ugurhangul/Ougha.MCP.YouTrack"
     },
     {
-      "name": "passivbot_configs",
-      "lang": null,
-      "desc": "Passivbot trading configs (most starred)",
-      "public": true,
-      "url": "https://github.com/ugurhangul/passivbot_configs"
-    },
-    {
-      "name": "DictionaryToExcel",
+      "name": "DropXML – Multi-Tenant AI-Powered E-Commerce SaaS",
       "lang": "C#",
-      "desc": "NuGet published library",
-      "public": true,
-      "url": "https://github.com/ugurhangul/DictionaryToExcel"
-    },
-    {
-      "name": "fiveminScalper",
-      "lang": "Python",
-      "desc": "Algorithmic trading bot",
-      "public": true,
-      "url": "https://github.com/ugurhangul/fiveminScalper"
-    },
-    {
-      "name": "GoldTraderEA",
-      "lang": "MQL5",
-      "desc": "Gold trading expert advisor",
-      "public": true,
-      "url": "https://github.com/ugurhangul/GoldTraderEA"
-    },
-    {
-      "name": "akillikobi",
-      "lang": "JavaScript",
-      "desc": "SaaS application (private)",
+      "desc": "9 event driven .NET services (MassTransit, RabbitMQ) with PostgreSQL, MongoDB and Redis; 1,047 commits across 13 repositories (private)",
       "public": false,
-      "url": "https://github.com/ugurhangul/akillikobi"
+      "url": ""
     },
     {
-      "name": "project-qop",
-      "lang": "HTML",
-      "desc": "DropXML platform (private)",
+      "name": "Enterprise Aerospace Compliance Platform",
+      "lang": "C#",
+      "desc": "13-project .NET 10 modular monolith: 22 document types, 47 NRules rule classes against AS9100 and EN 10204, 2,600+ tests (private)",
       "public": false,
-      "url": "https://github.com/ugurhangul/project-qop"
+      "url": ""
     },
     {
-      "name": "innova_birarada",
-      "lang": "HTML",
-      "desc": "Turkcell/Innova enterprise project (private)",
+      "name": "UDFtör – UYAP Document Handling Mobile App",
+      "lang": "Dart",
+      "desc": "Flutter mobile application for working with UYAP UDF legal documents (personal project, 2026)",
       "public": false,
-      "url": "https://github.com/ugurhangul/innova_birarada"
+      "url": ""
+    },
+    {
+      "name": "ML-Driven Algorithmic Trading Research",
+      "lang": "C#",
+      "desc": "Experimental .NET 10 deep reinforcement learning research environment (TorchSharp, CUDA, QuestDB), not a live trading product (personal research)",
+      "public": false,
+      "url": ""
     }
   ],
   "languageBreakdown": [
@@ -507,16 +463,6 @@
       "name": "TypeScript",
       "bytes": 2636587,
       "color": "#3178c6"
-    },
-    {
-      "name": "MQL5",
-      "bytes": 527890,
-      "color": "#4A76B8"
-    },
-    {
-      "name": "MQL4",
-      "bytes": 367596,
-      "color": "#62A8D6"
     },
     {
       "name": "Jupyter Notebook",
@@ -544,29 +490,14 @@
       "color": "#427819"
     },
     {
-      "name": "PHP",
-      "bytes": 26717,
-      "color": "#4F5D95"
-    },
-    {
       "name": "ASP.NET",
       "bytes": 14106,
       "color": "#9400ff"
     },
     {
-      "name": "ASP",
-      "bytes": 9608,
-      "color": "#6a40fd"
-    },
-    {
       "name": "Batchfile",
       "bytes": 986,
       "color": "#C1F12E"
-    },
-    {
-      "name": "ApacheConf",
-      "bytes": 114,
-      "color": "#d12127"
     }
   ]
 }

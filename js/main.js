@@ -5,12 +5,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     initNav();
     initScrollReveal();
-    initTimeline();
-    loadHeroStats();
-    loadEvidenceStrip();
     loadTechRadar();
-    loadSectorBreakdown();
     loadProjects();
+    loadSectors();
 });
 
 let cachedDataPromise = null;
@@ -165,7 +162,7 @@ function initScrollReveal() {
         observer.observe(section);
 
         // Stagger child cards within each section
-        section.querySelectorAll('.glass-card').forEach((card, i) => {
+        section.querySelectorAll('.evidence-card, .timeline__item').forEach((card, i) => {
             card.classList.add('reveal');
             card.style.setProperty('--delay', `${i * 80}ms`);
             observer.observe(card);
@@ -514,129 +511,85 @@ function initTimeline() {
     updateProgressBar();
 }
 
-/* ===== PROJECTS (public only) ===== */
+/* ===== PROJECTS (GitHub) ===== */
 async function loadProjects() {
     try {
         const data = await getPortfolioData();
-
         const container = document.getElementById('projects-grid');
-        const projects = data.personalHighlights || [];
+        if (!container) return;
 
-        // filter: only explicitly public repos
-        const publicProjects = projects.filter(p => p.public === true);
+        // GitHub Highlights
+        const githubProjects = data.personalHighlights || [];
+        
+        const allProjects = githubProjects.map(gp => ({
+            name: gp.name,
+            desc: gp.desc || gp.description,
+            url: gp.url,
+            lang: gp.lang,
+            isPublic: !!gp.public,
+            source: gp.public ? 'Open Source' : 'Private'
+        }));
 
-        if (publicProjects.length === 0) {
-            container.innerHTML = '<p style="color: var(--text-muted);">Public projects coming soon.</p>';
+        if (allProjects.length === 0) {
+            container.innerHTML = '<p style="color: var(--text-muted);">Engineering portfolio loading...</p>';
             return;
         }
 
-        // language color map from languageBreakdown
-        const langColors = {};
-        (data.languageBreakdown || []).forEach(l => {
-            langColors[l.name] = l.color;
-        });
-
-        container.innerHTML = publicProjects.map(p => {
-            const lang = p.lang || p.language;
-            const langColor = langColors[lang] || '#8b8b8b';
-            const langDot = lang
-                ? `<span class="project-card__lang"><span class="project-card__lang-dot" style="background: ${langColor}"></span>${lang}</span>`
-                : '';
-
-            const url = p.url || `https://github.com/ugurhangul/${p.name}`;
-            const desc = p.desc || p.description || 'No description provided.';
+        container.innerHTML = allProjects.map(p => {
+            const meta = p.lang || p.source || 'Project';
+            const url = p.url || '#';
+            const desc = p.desc || 'No description provided.';
+            const isClickable = p.isPublic && url !== '#';
 
             return `
-                <div class="glass-card project-card">
-                    <div class="project-card__header">
-                        <div class="project-card__name"><a href="${url}" target="_blank">${p.name}</a></div>
-                        <span class="project-card__visibility">public</span>
-                    </div>
-                    <p class="project-card__desc">${desc}</p>
-                    <div class="project-card__footer">
-                        ${langDot}
-                    </div>
+                <div class="evidence-card" style="padding: 32px; border: 1px solid var(--border);">
+                    <span class="text-mono text-muted">${meta}</span>
+                    <h3 class="h3" style="margin: 16px 0;">
+                        ${isClickable ? `<a href="${url}" target="_blank" class="link-hover">${p.name}</a>` : p.name}
+                    </h3>
+                    <p class="text-base" style="margin-bottom: 24px; color: var(--text-muted); line-height: 1.6;">${desc}</p>
+                    ${isClickable ? `<a href="${url}" target="_blank" class="text-mono text-accent">View Project // ${p.source || 'External'}</a>` : `<span class="text-mono text-muted">// Private</span>`}
                 </div>
             `;
         }).join('');
+
     } catch (err) {
-        console.error('Failed to load projects:', err);
+        console.error('Failed to load combined projects:', err);
     }
 }
 
-/* ===== SECTOR BREAKDOWN (enhanced with tech pills) ===== */
-async function loadSectorBreakdown() {
+/* ===== SECTOR BREAKDOWN ===== */
+async function loadSectors() {
     try {
         const data = await getPortfolioData();
-        const sectors = data.sectors || [];
-
         const container = document.getElementById('sector-chart');
-        if (!container || sectors.length === 0) {
-            if (container) container.innerHTML = '<p style="color: var(--text-muted);">Sector data coming soon.</p>';
-            return;
-        }
+        if (!container) return;
 
-        // Update subtitle with actual count
-        const subtitle = document.getElementById('sector-subtitle');
-        if (subtitle) {
-            const totalProjects = sectors.reduce((sum, s) => sum + s.projects, 0);
-            subtitle.textContent = `Sectors I've delivered for across ${totalProjects} projects`;
-        }
+        const sectors = (data.sectors || []).filter(s => s.sector !== 'Other');
+        if (sectors.length === 0) return;
 
-        // Filter out "Other" for cleaner display, sort by project count
-        const displaySectors = sectors
-            .filter(s => s.sector !== 'Other')
-            .sort((a, b) => b.projects - a.projects);
+        // Sort by project count
+        const sortedSectors = [...sectors].sort((a, b) => b.projects - a.projects);
+        const totalCount = sectors.reduce((sum, s) => sum + s.projects, 0);
 
-        const maxProjects = displaySectors[0]?.projects || 1;
-
-        container.innerHTML = displaySectors.map(s => {
-            const pct = (s.projects / maxProjects) * 100;
-            const isNarrow = pct < 25;
-            const countInside = !isNarrow
-                ? `<span class="sector-row__count">${s.projects} projects</span>`
-                : '';
-            const countOutside = isNarrow
-                ? `<span class="sector-row__count--outside">${s.projects}</span>`
-                : '';
-
-            const techPills = (s.topTechs || []).map(t =>
-                `<span class="sector-row__tech-pill">${t}</span>`
-            ).join('');
-
-            return `
-                <div class="sector-row__wrapper">
-                    <div class="sector-row">
-                        <span class="sector-row__label">${s.sector}</span>
-                        <div class="sector-row__bar-wrap">
-                            <div class="sector-row__bar-fill" style="width: 0%; background: ${s.color};" data-width="${pct}%">
-                                ${countInside}
-                            </div>
-                        </div>
-                        ${countOutside}
+        container.innerHTML = sortedSectors.map(s => `
+            <div class="evidence-card" style="padding: 32px; border: 1px solid var(--border);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+                    <div>
+                        <span class="text-mono text-accent">${s.projects} repos</span>
+                        <h3 class="h3" style="margin-top: 8px;">${s.sector}</h3>
                     </div>
-                    ${techPills ? `<div class="sector-row__techs">${techPills}</div>` : ''}
+                    <span class="text-mono text-muted" style="font-size: 0.8em;">// ${((s.projects / totalCount) * 100).toFixed(0)}%</span>
                 </div>
-            `;
-        }).join('');
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    ${(s.topTechs || []).slice(0, 4).map(t => `
+                        <span class="text-mono" style="font-size: 0.75em; border: 1px solid var(--muted); padding: 2px 8px;">${t}</span>
+                    `).join('')}
+                </div>
+            </div>
+        `).join('');
 
-        // animate bars on scroll into view
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bars = container.querySelectorAll('.sector-row__bar-fill');
-                    bars.forEach((bar, i) => {
-                        setTimeout(() => {
-                            bar.style.width = bar.dataset.width;
-                        }, i * 80);
-                    });
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.2 });
-
-        observer.observe(container);
     } catch (err) {
-        console.error('Failed to load sector breakdown:', err);
+        console.error('Failed to load sectors:', err);
     }
 }

@@ -1,8 +1,8 @@
 # STAR — Pax Mercatus: AI-Powered SEO Analysis Platform
 
-> **Company:** HAUS Technology (personal venture)
-> **Period:** 2025 – Present
-> **Role:** Founder & Sole Architect
+> **Company:** Self-Employed (extension of DropXML)
+> **Period:** Jan – May 2026
+> **Role:** Software Architect / Full Stack Developer
 > **Evidence:** 69 commits, 28 PRs in `project-pax-mercatus` repository
 
 | PR # | Feature | Ticket |
@@ -34,11 +34,11 @@
 
 ## Situation
 
-Small and medium-sized businesses in Turkey lack affordable SEO tooling. Enterprise tools like Ahrefs and SEMrush are **expensive** ($99–$449/month) and **English-first** — they don't optimize for Turkish language nuances, character sets, or local search behavior. Turkish businesses struggle to improve their organic search visibility without dedicated SEO specialists. No affordable, **AI-powered, Turkish-focused** SEO platform existed in the market.
+Small and medium-sized businesses in Turkey lack affordable SEO tooling. Enterprise tools like Ahrefs and SEMrush are **expensive** ($99–$449/month) and **English-first** — they don't optimize for Turkish language nuances, character sets, or local search behavior. Turkish businesses struggle to improve their organic search visibility without dedicated SEO specialists.
 
 ## Task
 
-I set out to build a **complete SEO analysis platform** from scratch as a solo founder:
+I extended the DropXML work into Pax Mercatus, an **SEO analysis backend** with seven analyzers behind a multi-provider AI layer (Gemini primary, automatic OpenAI fallback):
 
 - Web crawling with intelligent content analysis
 - AI-powered SEO issue detection and fix suggestions (in Turkish)
@@ -143,7 +143,7 @@ I set out to build a **complete SEO analysis platform** from scratch as a solo f
 
 ## Result
 
-- **69 commits across 28 PRs** delivering a full SEO platform from zero
+- **69 commits across 28 PRs** extending DropXML into an SEO analysis backend
 - **Multi-AI provider** architecture with Strategy pattern: Gemini primary, OpenAI fallback
 - **7 independent SEO analyzers** with weighted scoring algorithm
 - **AI-powered Quick-Win Generator** prioritizing fixes by business impact
@@ -155,7 +155,6 @@ I set out to build a **complete SEO analysis platform** from scratch as a solo f
 - **Subscription tiers** with premium gating for monetization
 - **Competitor analysis AI** and **category mapping AI** for advanced insights
 - **Sitemap health validation** cross-checking crawled pages against declared URLs
-- Clean Architecture with full separation of concerns across 5 backend projects
 
 ---
 
@@ -165,7 +164,7 @@ I set out to build a **complete SEO analysis platform** from scratch as a solo f
 |----------|--------------|
 | "Tell me about working with AI/ML" | Multi-AI Strategy pattern (Gemini + OpenAI), Turkish SEO prompts, keyword NLP |
 | "How do you integrate third-party APIs?" | Google OAuth + Search Console + Merchant Center, AI providers, Lighthouse |
-| "Tell me about a product you built end-to-end" | 69 commits, 28 PRs, crawling → analysis → AI → reports → subscription |
+| "Tell me about extending an existing product" | 69 commits, 28 PRs, crawling → analysis → AI → reports → subscription |
 | "Tell me about event-driven architecture" | MassTransit consumers for crawl orchestration, SignalR for real-time UX |
 | "How do you handle long-running processes?" | Async crawl pipeline with per-page consumers, progress events, Zustand state |
 | "How do you design for extensibility?" | Strategy pattern for AI, modular analyzers, Clean Architecture layers |

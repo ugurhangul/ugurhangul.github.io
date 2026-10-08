@@ -15,7 +15,7 @@
 
 ## Situation
 
-**Turkcell Geleceği Yazanlar (GY)** — Turkey's leading telecom operator's youth mentorship and social networking platform — was being **rewritten from scratch** on a modern .NET Aspire microservices architecture. The platform hosts blogs, Q&A, social pages, job listings, gamification, and career resources for young technology professionals. Three critical gaps needed addressing:
+**Turkcell Geleceği Yazanlar (GY)** — Turkcell's youth mentorship and social networking platform — was being **rewritten from scratch** on a modern .NET Aspire microservices architecture. The platform hosts blogs, Q&A, social pages, job listings, gamification, and career resources for young technology professionals. Three critical gaps needed addressing:
 
 1. **No SEO strategy**: All content used numeric IDs in URLs (`/question/12345`), hurting search engine visibility and user experience
 2. **No content moderation**: A youth-facing platform with no centralized mechanism to prevent inappropriate content across multiple microservices
@@ -24,7 +24,7 @@
 
 ## Task
 
-As a Senior .NET Developer on the GY team, I was responsible for:
+As a Senior Full Stack .NET Developer on the GY team, I was responsible for:
 
 - Implementing a cross-cutting SEO slug system across all microservices
 - Building content moderation middleware for forbidden words filtering

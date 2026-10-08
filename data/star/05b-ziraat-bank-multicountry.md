@@ -2,14 +2,14 @@
 
 > **Company:** Clockwork Agency (client: Ziraat Bankası)
 > **Period:** Oct 2019 – Sep 2024
-> **Role:** Senior Software Developer
-> **Evidence:** 140+ personal commits across 25 repositories
+> **Role:** Senior Software Developer / Team Lead
+> **Evidence:** Personal commits across the repositories below
 
 | Repository Group | Personal Commits | Repos |
 |-----------------|-----------------|-------|
 | `clockwork.ziraat` (core) | **36** | Core shared CMS (865 total team commits) |
 | `ziraat-teknoloji-umbraco` | 7 | Ziraat Technology subsidiary |
-| Country sites (15+) | 73 | Germany, Azerbaijan, Bahrain, Bosnia, Georgia, Iraq, Kosovo, Russia, Turkmenistan, Uzbekistan |
+| Country sites (10+) | 73 | Germany, Azerbaijan, Bahrain, Bosnia, Georgia, Iraq, Kosovo, Russia, Turkmenistan, Uzbekistan |
 | Subsidiaries | 51 | Yatırım (11), Filo (16), GSYO (8), GYO (3), Portföy (6), Spor Kulübü (6), FX |
 | Shared infrastructure | 5 | `zfg-cms-api`, `zfg-cms-app`, `zfg-management-domain`, `zfg-management-models`, `zfg-montenegro` |
 
@@ -17,21 +17,20 @@
 
 ## Situation
 
-Ziraat Bankası — **Turkey's largest state-owned bank** — operates subsidiaries in **15+ countries** including Germany, Azerbaijan, Bahrain, Bosnia, Georgia, Iraq, Kosovo, Russia, Turkmenistan, and Uzbekistan, plus domestic subsidiaries (Ziraat Yatırım, Portföy, GYO, GSYO, FX, Filo, Spor Kulübü). Each entity needed a **corporate website** with country-specific content, localized currency displays, fund portfolio data, Bankkart application flows, and regulatory compliance — all while sharing a common CMS infrastructure to keep development costs manageable. The bank required strict security controls: encrypted configuration, CAPTCHA-protected content, user approval workflows, and bot detection across all sites.
+Ziraat Bankası operates subsidiaries in **10+ countries** including Germany, Azerbaijan, Bahrain, Bosnia, Georgia, Iraq, Kosovo, Russia, Turkmenistan, and Uzbekistan, plus domestic subsidiaries (Ziraat Yatırım, Portföy, GYO, GSYO, FX, Filo, Spor Kulübü). Each entity needed a **corporate website** with country-specific content, localized currency displays, fund portfolio data, and Bankkart application flows — all while sharing a common CMS infrastructure. Security controls included encrypted configuration, user approval workflows, and server-side CAPTCHA bot detection on several sites.
 
 ## Task
 
 As the developer responsible for the Ziraat account, I was tasked with:
 
-- Building and maintaining the **shared CMS core** (`clockwork.ziraat`) used across all 25+ deployments
+- Building and maintaining the **shared CMS core** (`clockwork.ziraat`) supporting 25+ banking websites
 - Creating custom Umbraco backoffice plugins for content management
 - Implementing Bankkart application flows with validation
 - Building user approval workflows for content editors
 - Integrating fund portfolio data retrieval and display
 - Managing environment-specific encrypted SMTP configurations
-- Deploying and customizing 15+ country-specific sites
-- Implementing bot detection (CAPTCHA) across all properties
-- Ensuring regulatory compliance for banking websites across jurisdictions
+- Deploying and customizing country-specific sites across 10+ countries
+- Implementing server-side bot detection (CAPTCHA) for the sites listed below
 
 ## Action
 
@@ -77,7 +76,7 @@ As the developer responsible for the Ziraat account, I was tasked with:
 - Cleaned up obsolete career days form configurations *(commit: `3c0d01c`)*
 - Enabled untrusted certificate allowance for deployment *(commit: `e27115a`)*
 
-### Multi-Country Deployments (15+ countries)
+### Multi-Country Deployments (10+ countries)
 
 #### Bot Detection & Security
 - Deployed **ZiraatBotDetect** (CAPTCHA) across multiple country sites:
@@ -120,22 +119,21 @@ As the developer responsible for the Ziraat account, I was tasked with:
 - **GYO** (3 commits): Address and configuration updates
 
 ### Shared Infrastructure
-- Contributed to `zfg-cms-api` — the shared content API consumed by all country sites *(2 commits)*
+- Contributed to `zfg-cms-api` — the shared content API for the country sites *(2 commits)*
 - Maintained `zfg-management-domain` and `zfg-management-models` — shared domain models *(2 commits)*
 
 ## Result
 
-- **25+ banking websites** running on shared Umbraco CMS infrastructure across **15+ countries**
-- **140+ personal commits** across 25 repositories maintaining the entire Ziraat ecosystem
-- **ClockworkUploader plugin** enabled content editors to manage documents directly in Umbraco backoffice
-- **User approval workflow** ensured only verified editors could publish content on banking sites
-- **Encrypted SMTP** protected sensitive email credentials across all environments
-- **ZiraatBotDetect** (CAPTCHA) deployed across 5+ properties to prevent automated attacks
-- **Fund portfolio integration** connected CMS to live financial data feeds
-- **Bankkart application flow** with validation served online banking product applications
-- Shared CMS core **reduced per-country development cost** — new country sites inherited all shared components
-- **Payten payment integration** enabled online payments for Ziraat Filo fleet services
-- Maintained compliance with banking regulations across 15+ jurisdictions
+- **25+ banking websites** running on shared Umbraco CMS infrastructure across **10+ countries**
+- Personal commits across the Ziraat repositories listed above
+- **ClockworkUploader plugin** for managing documents in the Umbraco backoffice
+- **User approval workflow** for content editors
+- **Encrypted SMTP** configuration for sensitive credentials across environments
+- **ZiraatBotDetect** (CAPTCHA) deployed on multiple country and subsidiary sites
+- **Fund portfolio integration** with live fund portfolio retrieval
+- **Bankkart application flow** with validation
+- Shared core architecture **improved maintainability** across the sites
+- **Payten payment integration** for Ziraat Filo
 
 ---
 
@@ -143,15 +141,15 @@ As the developer responsible for the Ziraat account, I was tasked with:
 
 | Question | How to Answer |
 |----------|--------------|
-| "Tell me about multi-tenant architecture" | 25+ banking sites on shared CMS core, 15+ countries, shared API |
+| "Tell me about multi-tenant architecture" | 25+ banking sites on shared CMS core, 10+ countries, shared API |
 | "How do you handle localization at scale?" | Country-specific repos inheriting shared infrastructure, currency filtering, address localization |
 | "Banking experience?" | Bankkart application, fund portfolio, user approval workflows, encrypted config |
 | "How do you handle security in web apps?" | Encrypted SMTP, CAPTCHA/BotDetect, user approval states, CSP headers |
 | "Tell me about building reusable components" | ClockworkUploader plugin, shared CMS core, per-country inheritance model |
-| "How do you manage many deployments?" | 25 repos with shared infrastructure layer, environment-specific configuration |
+| "How do you manage many deployments?" | Many repos with shared infrastructure layer, environment-specific configuration |
 
 ---
 
 ## Key Technologies
 
-`C#` · `Umbraco CMS` · `ASP.NET Core` · `MediatR` · `Entity Framework` · `SQL Server` · `SignalR` · `Payten Payment` · `CAPTCHA/BotDetect` · `SMTP Encryption` · `Docker` · `Kestrel` · `Multi-Country Deployment` · `Fund Portfolio API`
+`C#` · `Umbraco CMS` · `ASP.NET Core` · `MediatR` · `Entity Framework` · `SQL Server` · `Payten Payment` · `CAPTCHA/BotDetect` · `SMTP Encryption` · `Kestrel` · `Multi-Country Deployment` · `Fund Portfolio API`

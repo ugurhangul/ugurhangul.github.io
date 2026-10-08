@@ -3,7 +3,7 @@
 > **Company:** Kafein Technology Solutions (outsourced to Hepsiburada / Vodafone)
 > **Period:** Sep 2024 – Dec 2025
 > **Role:** Senior Full Stack .NET Developer
-> **Evidence:** 122 personal commits across 4 repositories
+> **Evidence:** 79 personal commits on Hydra (`hydra-core`, `hydra-api`), 22 on `mobile-mw`
 
 | Repository | Personal Commits | Total Team | Description |
 |------------|-----------------|------------|-------------|
@@ -16,22 +16,22 @@
 
 ## Situation
 
-**Hepsiburada** — Turkey's largest e-commerce platform with millions of daily users — manages its homepage content (banners, campaigns, product recommendations, swimlane carousels, feature grids) through an internal platform called **Hydra**. The system was scaling to serve more content types and surfaces (web, iOS, Android) but had **three critical gaps**:
+**Hepsiburada** manages its homepage content (banners, campaigns, product recommendations, swimlane carousels, feature grids) through an internal platform called **Hydra**. The work covered backend content-processing services in Go and .NET, with Kafka and MongoDB in the distributed architecture, and addressed **three gaps**:
 
-1. **No observability**: When content rendering failed or showed stale data, engineers guessed which pipeline stage was at fault — content import, binding, export, or event handling. No structured tracing existed across the 5-stage pipeline.
-2. **Rigid content architecture**: Every new widget type (swimlane carousels, feature grids, vertical features) required custom wiring code, making the content team bottleneck engineers for simple content additions.
-3. **No audit trail**: Multiple team members and automated systems modified homepage content, but there was no record of who changed what — making regulatory compliance and incident investigation impossible.
+1. **Observability**: The 5-stage content pipeline (import, binding, export, event handling) needed structured tracing.
+2. **Rigid content architecture**: Every new widget type (swimlane carousels, feature grids, vertical features) required custom wiring code.
+3. **Audit trail**: Homepage content changes needed to be attributable to a user.
 
-Additionally, **Vodafone Turkey** operated as a multi-tenant client on the same platform, requiring tenant-specific personalization.
+Additionally, **Vodafone** was served as a tenant, requiring tenant-specific personalization.
 
 ## Task
 
-As a Senior .NET Developer embedded in Hepsiburada's content team, I was responsible for:
+As a Senior Full Stack .NET Developer on the Hepsiburada and Vodafone content platform, I was responsible for:
 
-- Adding distributed tracing across the entire content pipeline without impacting performance
+- Adding distributed tracing across the content pipeline
 - Designing an extensible content binder pipeline for rapid widget onboarding
 - Building mobile campaign rendering BFF features for iOS/Android cross-platform delivery
-- Implementing a content audit trail for regulatory compliance
+- Implementing a content audit trail
 - Supporting Vodafone multi-tenant integration with persona-based personalization
 
 ## Action
@@ -95,7 +95,7 @@ Built mobile BFF (Backend-For-Frontend) features for campaign pages:
 #### Product Badge
 - Added **`HydraHomeProductBadgeSize`** support *(commits: `0cf69efe0`, `f5e91a391`)*
 
-### Content Audit Trail for Compliance (VAN-2309)
+### Content Audit Trail (VAN-2309)
 
 - Added **`LastModifiedBy`** and **`UpdatedDateTime`** tracking to all content mutations *(commit: `74a19383`)*
 - Included audit fields in **component list API** response *(commit: `2fe9c750`)*
@@ -105,7 +105,7 @@ Built mobile BFF (Backend-For-Frontend) features for campaign pages:
 - Handled **timezone normalization** (`ToLocalTime`) for consistent display *(commit: `189f05b3`)*
 - Iterated naming `lastUpdatedBy` → `lastModifiedBy` based on team convention review *(commit: `68228c14`)*
 - Removed unnecessary fields and added updatedDateTime *(commit: `e573c0d4`)*
-- **Result**: Full audit trail for all content changes — both synchronous (API) and asynchronous (event consumers)
+- **Result**: Audit trail for content changes — both synchronous (API) and asynchronous (event consumers)
 
 ### Vodafone Multi-Tenant Integration (VAN-2380)
 
@@ -128,14 +128,13 @@ Built mobile BFF (Backend-For-Frontend) features for campaign pages:
 
 ## Result
 
-- **79 personal commits** on Hydra (core + API) contributing to Turkey's **largest e-commerce content platform** (1,826+ team commits on hydra-core alone)
-- **22 commits** on mobile-mw (4,500+ team commits) powering campaign rendering across iOS/Android
-- **End-to-end content pipeline tracing** reduced mean-time-to-debug for content rendering issues
+- **79 personal commits** on Hydra (core + API) contributing to Hepsiburada's **content platform** (1,826+ team commits on hydra-core alone)
+- **22 commits** on mobile-mw (4,500+ team commits) used for campaign rendering across iOS/Android
+- **End-to-end content pipeline tracing** added across the content pipeline stages
 - **Generic ContentBinderPipeline** reduced new widget onboarding from **days to hours**
-- **Full audit trail** for content changes — regulatory compliance for Hepsiburada's homepage content
+- **Audit trail** for content changes to Hepsiburada's homepage content
 - **Cross-platform campaign rendering** with iOS version gating and payload optimization
 - **Vodafone multi-tenant** integration with persona-based content targeting
-- Contributed to a platform serving **millions of daily users** on Turkey's #2 e-commerce site
 
 ---
 
@@ -145,7 +144,7 @@ Built mobile BFF (Backend-For-Frontend) features for campaign pages:
 |----------|--------------|
 | "Tell me about improving system reliability" | 5-stage pipeline tracing, ILoggerFactory for DI, incremental PR strategy |
 | "How do you debug production issues?" | Distributed tracing across import → event → query → bind → export stages |
-| "Tell me about a large-scale system" | Hydra serves millions of users, 1,826+ team commits, multi-platform |
+| "Tell me about a large-scale system" | Hydra content platform, 1,826+ team commits, multi-platform |
 | "How do you design extensible systems?" | ContentBinderPipeline + typed contexts, new widgets in hours not days |
 | "Tell me about working on a mobile-facing API" | BFF campaign rendering, iOS version gating, platform-specific handling |
 | "How do you implement audit/compliance?" | LastModifiedBy on sync + async paths, timezone normalization, BannerAutomation |
@@ -156,4 +155,4 @@ Built mobile BFF (Backend-For-Frontend) features for campaign pages:
 
 ## Key Technologies
 
-`C#` · `.NET` · `Go` · `MongoDB` · `Kafka` · `RabbitMQ` · `Redis` · `JWT` · `ILoggerFactory` · `OpenTelemetry` · `Jaeger` · `SignalR` · `Unit Testing` · `BFF Pattern` · `Multi-Tenant` · `Content Pipeline` · `CQRS`
+`C#` · `.NET` · `Go` · `MongoDB` · `Kafka` · `ILoggerFactory` · `Unit Testing` · `BFF Pattern` · `Multi-Tenant` · `Content Pipeline`

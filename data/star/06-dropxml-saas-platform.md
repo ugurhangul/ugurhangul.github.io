@@ -1,9 +1,9 @@
 # STAR — DropXML Platform: Multi-Tenant AI-Powered SaaS
 
-> **Company:** HAUS Technology (personal venture)
-> **Period:** 2024 – Present
-> **Role:** Sole Architect & Developer
-> **Evidence:** 1,047 commits across 13 service repositories + infrastructure
+> **Company:** Self-Employed (Independent Software Engineer / Consultant)
+> **Period:** Jan – May 2026
+> **Role:** Software Architect / Full Stack Developer
+> **Evidence:** 1,047 commits across 13 repositories
 
 | Service | Commits |
 |---------|---------|
@@ -25,7 +25,7 @@
 
 ## Situation
 
-Turkish e-commerce sellers managing products across multiple marketplaces (Trendyol, Hepsiburada, N11) face a massive operational burden: each marketplace has different XML feed formats, different category trees, different pricing rules, and different API contracts. Sellers spend hours manually mapping product data, updating prices, and synchronizing inventory. No affordable, AI-powered solution existed in the Turkish market to automate this end-to-end workflow from raw supplier XML to live marketplace listings.
+Turkish e-commerce sellers managing products across multiple marketplaces (Trendyol, Hepsiburada, N11) face a massive operational burden: each marketplace has different XML feed formats, different category trees, different pricing rules, and different API contracts. Sellers spend hours manually mapping product data, updating prices, and synchronizing inventory. DropXML aims to automate this end-to-end workflow from raw supplier XML to live marketplace listings.
 
 ## Task
 
@@ -48,7 +48,7 @@ I set out to **design and build a complete multi-tenant SaaS platform from scrat
   - **XML Service** (168 commits): Feed ingestion, parsing, variant detection
   - **Marketplace Service** (148 commits): Trendyol, Hepsiburada, N11 API integrations
   - **Order Service** (57 commits): Order lifecycle management
-  - **Payment Service** (31 commits): Stripe + Iyzico integration
+  - **Payment Service** (31 commits)
   - **Notification Service** (73 commits): Email, webhook, push notifications
   - **Admin Service** (67 commits): Platform administration
 
@@ -125,7 +125,6 @@ I set out to **design and build a complete multi-tenant SaaS platform from scrat
 - **Next.js Dockerization:** Built Dockerfiles with **standalone output** for minimal image size *(commit: `b8f7aea`)*
 - Managed **13 independent repositories** in a polyrepo architecture with Git submodules *(commits: `bf16b4b`, `8d192b3`)*
 - Infrastructure scripts: **backup/restore** (`backup.sh`, `restore.sh`), **cron scheduling** (`setup-cron-backups.sh`), **clone-all** (`clone-all.ps1`)
-- Documented zero-downtime deployment procedures with RTO (4h) and RPO (24h) targets
 
 ### Engineering Practices
 - Authored **6 Architecture Decision Records (ADRs)**: event-driven messaging, state management, Minimal API pattern, Result pattern, polyrepo architecture, service boundary design
@@ -134,13 +133,13 @@ I set out to **design and build a complete multi-tenant SaaS platform from scrat
 
 ## Result
 
-- **1,047 commits** across 13 services — a production-grade microservices SaaS platform built from zero
+- **1,047 commits** across 13 repositories — a microservices SaaS platform built from scratch
 - **9 microservices** communicating via event-driven architecture with full observability
 - AI-powered XML schema detection **eliminates manual per-supplier configuration**
 - Marketplace integrations enable **automated product listing** across 3 platforms
-- Multi-tenant architecture supports unlimited tenants with complete data isolation
+- Multi-tenant architecture with tenant data isolation
 - 3-tier cascade pricing engine provides **flexible price management** at every level
-- Full DevOps pipeline: Docker, CI/CD, monitoring, backup, disaster recovery
+- Docker-based deployment, CI/CD, and Prometheus/Grafana/Loki observability
 - **6 ADRs** documenting every major architectural decision for team scalability
 
 ---
@@ -150,7 +149,7 @@ I set out to **design and build a complete multi-tenant SaaS platform from scrat
 | Question | How to Answer |
 |----------|--------------|
 | "Tell me about a complex system you designed" | 9-service microservices, dual DB strategy, event-driven, multi-tenant |
-| "How did you use AI in production?" | OpenAI for XML schema detection and product categorization |
+| "How did you use AI in your systems?" | OpenAI for XML schema detection and product categorization |
 | "How do you handle multi-tenancy?" | Dual-layer product model, route-level auth, middleware scoping |
 | "What's your approach to DevOps?" | TeamCity DSL (Kotlin) → GitHub Actions, Docker Compose profiles, backup scripts |
 | "How do you manage deployments?" | 13-repo polyrepo, Git submodules for version pinning, main-branch-only deploys |

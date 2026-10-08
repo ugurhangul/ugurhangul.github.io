@@ -1,7 +1,6 @@
 # Uğurhan Gül — CV Source of Truth
 
-> **Last Updated:** 2026-05-04
-> **Target Roles:** Senior Full Stack .NET Developer | AI Systems Architect | Software Architect
+> **Headline:** Senior Full Stack .NET Developer | Technical Lead | Software Architecture
 
 ---
 
@@ -12,266 +11,386 @@
 | **Full Name** | Uğurhan Gül |
 | **Email** | ugurhangul@gmail.com |
 | **Phone** | +90 541 729 5700 |
-| **Location** | Istanbul – Kocaeli, Türkiye |
+| **Location** | İstanbul, Türkiye |
 | **GitHub** | [github.com/ugurhangul](https://github.com/ugurhangul) |
 | **LinkedIn** | [linkedin.com/in/ugurhangul](https://linkedin.com/in/ugurhangul) |
-| **Portfolio** | [ugurhangul.github.io](https://ugurhangul.github.io) |
 
 ---
 
 ## Professional Summary
 
-Certified Senior Full Stack .NET Developer (AI-Interview Validated) and Software Architect with 12+ years of experience designing and delivering AI-enabled, high-availability enterprise systems. Expert in Clean Architecture, Microservices, .NET 10, and Event-Driven Architecture with a proven track record scaling solutions for **Turkcell**, **Hepsiburada**, and **Vodafone**. Specialized in AI systems integration (LLM/VLM, RAG, Deep Reinforcement Learning), high-performance computing, and aerospace-grade compliance (AS9100D, ISO 27001). Led cross-functional teams across 148+ projects spanning 13 industries.
+Senior Full Stack .NET Developer and Technical Lead with 12+ years of professional software development experience, specializing in enterprise applications, distributed systems, microservices, event driven architectures, high volume data processing, and software architecture.
+
+Delivered and led nearly 100 enterprise projects across 13 industries, contributing to large scale platforms for organizations including Turkcell, Hepsiburada, Vodafone, Ziraat Bank, TOFAŞ/FIAT, Hyundai, Arçelik, and AssisTT.
+
+Strong hands on expertise in C#, .NET, ASP.NET Core, Web API, Entity Framework Core, PostgreSQL, SQL Server, Kafka, RabbitMQ, MongoDB, Redis, Docker, CI/CD, and distributed system architecture.
+
+Experienced in both hands on software engineering and technical leadership, including architecture design, performance optimization, code review, engineering standards, mentoring, security remediation, and end to end technical delivery.
+
+Recent work also includes integrating LLM and vision language technologies, AI assisted document processing, Model Context Protocol servers, self hosted AI inference, and intelligent automation into production oriented .NET systems.
+
+### Career Highlights
+
+- Migrated 150M+ records with zero data loss using a custom .NET migration engine
+- Reduced projected enterprise migration time by approximately 70%
+- Led engineering teams of up to 13 developers
+- Delivered 98 enterprise projects across 13 industries
+- Designed architecture supporting 25+ banking websites across 10+ countries
+- Developed reusable platforms used across 100+ enterprise client websites
+- Remediated 30+ critical security vulnerabilities
+- Built event driven and multi tenant systems using .NET, Kafka, RabbitMQ, PostgreSQL, MongoDB, and Redis
 
 ---
 
-## Core Competencies Matrix
+## Technical Skills
 
-| Domain / Project | Languages & Frameworks | Architecture & AI | Data, Messaging & DevOps |
-|------------------|------------------------|-------------------|--------------------------|
-| **DropXML SaaS** | C#, TypeScript, Next.js | .NET 10, Clean Arch., Microservices | PostgreSQL, MongoDB, RabbitMQ, MassTransit, Docker |
-| **Algo Trading Engine** | C#, Python, MQL5 | TorchSharp, CUDA, DQN, PPO | QuestDB, PythonNet, MetaTrader 5 |
-| **Aerospace Classifier** | C# | .NET 8, NRules, RAG, VLM | Ollama, Docling |
-| **Hepsiburada / Vodafone**| Go, C# | .NET, Microservices | MongoDB, PostgreSQL, Kafka, Elasticsearch |
-| **Turkcell Data Migration**| C#, SQL | Parallel Programming, Dapper | PostgreSQL |
-| **Clockwork CMS (55+ Sites)**| C# | Umbraco CMS, ASP.NET MVC | SQL Server, Azure, GitHub Actions |
-| **Fiat Vehicle Configurator**| TypeScript, C# | React, Redux, ASP.NET Core | Sass, Styled Components |
-| **AssisTT Workforce** | Erlang, C#, JavaScript | .NET, AngularJS | — |
-| **YouTrack MCP Server** | TypeScript | Model Context Protocol, Zod | REST API |
-| **Observability Pipeline** | — | — | Prometheus, Grafana, Loki, Docker, Kubernetes, Nginx |
-
-**Quality & Compliance:**
-ISO 27001 (ISMS) · ISO 37001 (Anti-Bribery) · ISO 22301 (Business Continuity) · AS9100D Aerospace · Unit Testing · TDD · Code Review
-
-**Programming Languages:**
-C# (12+ years) · Go · Python · Erlang · TypeScript · JavaScript · Dart · MQL4/5
+- **Backend Development:** C# · .NET 8/9/10 · .NET Core · .NET Framework · ASP.NET Core · ASP.NET Core Web API · ASP.NET MVC · Entity Framework Core · Entity Framework · Dapper · LINQ · Minimal APIs · RESTful APIs · WCF · SOAP Web Services · SignalR · Go · Python
+- **Software Architecture:** Microservices · Distributed Systems · Event Driven Architecture · Clean Architecture · Domain Driven Design (DDD) · CQRS · MediatR · Modular Monolith · Multi Tenancy · SOLID Principles · Design Patterns · Dependency Injection · Architecture Decision Records
+- **Data & Messaging:** PostgreSQL · SQL Server · MongoDB · Redis · QuestDB · Apache Kafka · RabbitMQ · MassTransit · Large Scale Data Migration · Query Optimization
+- **DevOps & Observability:** Docker · Docker Compose · GitHub Actions · TeamCity · CI/CD · Nginx · Prometheus · Grafana · Loki · Serilog · Git
+- **Cloud:** Microsoft Azure (App Service, SQL Database, Blob Storage) · Azure DevOps (basic) · On Premises Deployment · Visual Studio Online / VSTS lineage since 2015
+- **AI & LLM Integration:** LLM and Vision Language Model Integration · Self Hosted AI Models · OpenAI API · Google Gemini API · Model Context Protocol (MCP) · AI Assisted Workflows · Document Classification · Deterministic Rule Engines (NRules)
+- **Frontend:** React 19 · Next.js · TypeScript · JavaScript · AngularJS · Tailwind CSS · HTML/CSS · Umbraco CMS
+- **Testing & Engineering Practices:** xUnit · FluentAssertions · Playwright · axe core · Code Review · SDLC · Performance Optimization · Multithreading · Parallel Programming · Technical Documentation
 
 ---
 
-## Work Experience
+## Professional Experience
+
+### Independent Software Engineer / Consultant
+**Self-Employed** · Kocaeli, Türkiye | Remote · Jan 2026 – Present
+
+Provide independent software engineering, architecture, and product development services focused on enterprise .NET systems, AI integrated applications, distributed architectures, and high performance backend platforms.
+
+**Enterprise Aerospace Compliance Platform**
+
+- Designed and developed a 13-project .NET 10 modular monolith organised into bounded contexts
+- Engineered a document ingestion and classification pipeline extracting 22 document types with bounding box evidence
+- Implemented AI assisted extraction and classification workflows for regulated aerospace documentation
+- Integrated self hosted AI inference to support confidential and fully air gapped environments, with no CDN, cloud model or telemetry
+- Developed deterministic compliance and validation workflows using NRules across 47 rule classes against AS9100 and EN 10204
+- Separated concerns so that models extract and locate while the rules engine alone judges, keeping audit verdicts reproducible and pinning every finding to its source page coordinates
+- Implemented supply chain document traceability across purchase orders, material documentation, and shipping records
+- Implemented PostgreSQL persistence on EF Core 10 with insert only findings and an append only audit log enforced by database triggers
+- Built automated testing infrastructure of 2,600+ xUnit and FluentAssertions tests, alongside 31 architecture decision records
+- Developed a React 19 / TypeScript operator interface with Playwright end to end and axe core accessibility suites
+
+**DropXML / Pax Mercatus – AI-Powered SaaS**
+
+- Architected a multi tenant SaaS ecosystem based on 9 event driven .NET services
+- Implemented asynchronous messaging using MassTransit and RabbitMQ
+- Designed distributed persistence using PostgreSQL, MongoDB, and Redis
+- Developed tenant scoping middleware and multi tenant authorization architecture
+- Integrated AI services for XML schema detection, product categorization, and content processing
+- Developed marketplace integrations for Trendyol, Hepsiburada, and N11
+- Designed configurable cascade pricing and product management workflows
+- Developed frontend applications using Next.js, React, and TypeScript
+- Created shared NuGet infrastructure implementing the Result pattern for reusable application capabilities
+- Implemented Docker based deployment environments with Prometheus, Grafana and Loki observability
+- Migrated CI/CD workflows from TeamCity to GitHub Actions
+- Produced 1,047 commits across 13 repositories
+- Extended the work into Pax Mercatus, an SEO analysis backend with seven analyzers behind a multi provider AI layer, Gemini primary with automatic OpenAI fallback
+
+**ML-Driven Algorithmic Trading Research**
+
+- Migrated a multi strategy Python research environment toward a high performance .NET 10 architecture
+- Integrated TorchSharp and CUDA for GPU accelerated machine learning workloads
+- Implemented reinforcement learning research workflows using PPO actor critic and dual head DQN agents
+- Developed a 47 feature market state building pipeline across multiple timeframes
+- Designed custom reward functions evaluating equity curves and drawdown penalties
+- Integrated QuestDB for high performance time series storage and retrieval
+- Integrated MetaTrader 5 through PythonNet
+- Designed the platform as an experimental research system rather than a live trading product
+
+**YouTrack MCP Server – Open Source**
+
+- Developed an open source Model Context Protocol (MCP) server
+- Integrated the platform with the JetBrains YouTrack REST API
+- Exposed issue, project, and user management capabilities to AI assistants
+- Implemented Zod validation schemas generated at runtime from per project custom field introspection, with rate limiting and exponential backoff retry
+- Designed the solution for AI assisted software development workflows
+
+---
 
 ### Senior Full Stack .NET Developer
-**Kafein Technology Solutions** · Istanbul, Türkiye · Sep 2024 – Dec 2025
+**Kafein Technology Solutions** · İstanbul, Türkiye | Hybrid · Sep 2024 – Dec 2025
 
-- **Turkcell Data Migration:** Architected a .NET 9 migration engine bridging legacy Drupal to modern PostgreSQL. Engineered a custom multithreaded pipeline that processed **150M+ rows**, reducing production migration time by **70%** with zero data loss. *(Evidence: 178 commits across 2 repos)*
-- **Hepsiburada & Vodafone (Multi-Tenancy):** Tasked with scaling the NASDAQ-listed platform. Engineered a dual-stack Go + .NET architecture utilizing Kafka and MongoDB, resulting in a **40% reduction in API response times** for millions of daily active users. *(Evidence: 122 commits)*
-- **AssisTT Workforce Planning:** Replaced manual reporting processes by designing a new workforce module from scratch. Built a distributed system (Erlang + .NET + AngularJS) that automated complex KPI calculations, **eliminating 20+ hours per week** of manual labor. *(Evidence: 207 commits across 5 repos)*
+Worked on large scale enterprise projects for Turkcell, Hepsiburada, Vodafone, and AssisTT, focusing on distributed applications, backend engineering, high volume data processing, multi tenancy, and performance optimization.
 
-**Tech Stack:** .NET 9, C#, Erlang, Go, AngularJS, PostgreSQL, MongoDB, Kafka, Dapper, Parallel Programming
+**Turkcell – Large-Scale Data Migration**
+
+- Designed and developed a custom .NET 9 migration engine
+- Migrated 150M+ rows of user generated content from legacy Drupal/MySQL infrastructure to PostgreSQL
+- Completed migration processes with zero data loss
+- Implemented configurable multithreaded processing for large volume workloads
+- Used Dapper on the bulk path to bypass Entity Framework Core overhead
+- Designed PostgreSQL trigger management mechanisms for high volume inserts
+- Implemented data validation, fault handling, logging, and migration monitoring
+- Reduced projected production migration duration by approximately 70%
+
+**Hepsiburada & Vodafone**
+
+- Developed multi tenant and content processing services using Go and .NET
+- Worked with Kafka and MongoDB within distributed architectures
+- Developed a generic ContentBinderPipeline abstraction for content processing pipelines
+- Improved scalability and maintainability of backend services
+- Cut new widget onboarding from days to hours
+- Supported platforms designed for high volume enterprise traffic
+
+**AssisTT – Workforce Planning**
+
+- Designed a workforce resource planning module from scratch
+- Developed CRUD, approval, forecasting, and planning workflows
+- Worked across .NET, Erlang, and AngularJS with Entity Framework Core
+- Automated complex operational reporting processes
+- Automated KPI and workforce planning calculations
+- Eliminated more than 20 hours of manual reporting and planning work per week
+
+**Additional Contributions**
+
+- Developed REST APIs and enterprise middleware components
+- Implemented request interception and SEO slug generation services on Turkcell’s .NET Aspire microservices platform
+- Contributed to performance optimization and scalable application architecture
+- Supported enterprise production environments and integration processes
 
 ---
 
-### Senior Software Developer & Team Lead
-**Clockwork Agency** · Istanbul, Türkiye · Oct 2019 – Sep 2024
+### Senior Software Developer / Team Lead
+**Clockwork Agency** · Kocaeli / İstanbul, Türkiye | Remote · Oct 2019 – Sep 2024
 
-- **Agency-Wide Technical Leadership:** Architected and maintained the core Umbraco boilerplate framework utilized across **100+ enterprise clients** (Ziraat Bank, Hyundai, Arçelik). Standardized the development platform through 4 major version upgrades, **reducing new project setup time from 2 weeks to 2 days**. *(Evidence: 187 commits across 8 repos)*
-- **Enterprise Security Hardening:** Led ISO 27001 security remediation across the agency portfolio. Engineered reusable security patterns (CSP, encryption pipelines, server-side CAPTCHA) and patched **30+ critical vulnerabilities**, ensuring successful penetration tests for top-tier banking clients.
-- **Fiat Online Sales Platform:** Architected the backend API (.NET 8) for Turkey's first multi-brand online car sales system. Built complex payment pipelines and a 12-state order lifecycle, successfully serving FIAT, Alfa Romeo, and Jeep. *(Evidence: ~1,000+ commits across 12 repos)*
-- **Multi-Country Scale (Ziraat Bank):** Engineered a shared CMS core architecture running **25+ banking websites across 15+ countries**. Built critical features including Bankkart application validation and live fund portfolio retrieval. *(Evidence: 140+ commits across 25 repos)*
-- **Project Delivery:** Managed the technical delivery of **98 enterprise projects** across 13 industries with **zero missed deadlines** over 5 years. Established CI/CD pipelines that improved team velocity by 35%.
+Led technical architecture and software delivery for enterprise applications across banking, automotive, retail, hospitality, and other industries.
 
-**Tech Stack:** .NET 8, C#, Umbraco CMS, ASP.NET MVC, SQL Server, Azure, CI/CD, ISO 27001
+**Technical Leadership**
+
+- Led frontend and backend engineering teams of up to 13 developers
+- Managed technical delivery across 98 enterprise projects in 13 industries
+- Mentored junior and mid level developers
+- Established structured code review practices, with every pull request reviewed before merge
+- Defined engineering standards based on SOLID principles and maintainable architecture
+- Supported architecture decisions, technical estimations, and project planning
+- Established and maintained CI/CD processes
+- Coordinated technical delivery across multiple simultaneous enterprise projects
+
+**Enterprise Platform Architecture**
+
+- Architected and maintained the agency’s reusable Umbraco/.NET framework
+- Supported adoption across 100+ enterprise client websites
+- Managed reusable architecture across 8 boilerplate repositories
+- Led five major platform version upgrades from Umbraco v8 through v13
+- Standardized common application capabilities and development practices
+- Reduced typical new project setup time from approximately 2 weeks to 2 days
+
+**TOFAŞ / FIAT Online Sales Platform**
+
+- Architected backend API infrastructure for online automotive sales, .NET 6 through .NET 8
+- Developed shared .NET infrastructure consumed by three brand APIs
+- Supported FIAT, Alfa Romeo, and Jeep
+- Integrated Iyzico online payment processes
+- Designed a 12 state order lifecycle
+- Implemented end to end transaction and audit tracking
+- Developed reusable backend services and API components
+
+**Ziraat Bank**
+
+- Owned technical development and architecture for a shared banking CMS ecosystem on SQL Server
+- Supported 25+ banking websites across 10+ countries
+- Developed reusable Umbraco/.NET components
+- Implemented MediatR based request handling
+- Developed Payten payment and banking related integrations
+- Implemented Bankkart application validation
+- Integrated live fund portfolio retrieval
+- Improved maintainability through shared core architecture
+
+**Security & Compliance**
+
+- Led security remediation activities across banking and government projects
+- Remediated 30+ critical vulnerabilities
+- Developed reusable Content Security Policy implementations
+- Implemented encryption and anonymization components
+- Developed server side CAPTCHA mechanisms
+- Supported penetration testing remediation
+- Contributed to applications operating within ISO 27001 scoped environments
+
+**DevOps & Engineering Standards**
+
+- Established TeamCity CI/CD pipelines
+- Improved deployment standardization
+- Introduced systematic pull request and code review processes
+- Improved development consistency through reusable engineering standards
+- Supported developer mentoring and knowledge sharing
 
 ---
 
-### Fullstack .NET Developer
+### Full Stack .NET Developer
 **Bank Software Solutions** · Kocaeli, Türkiye · Dec 2015 – Jul 2019
 
-- **Maritime Automation Platform:** Digitized manual port operations by architecting a 7-project solution from the ground up. Built a custom formula engine for proforma accounting and an automated document generator that produced **40+ official maritime templates**, streamlining agency workflows. *(Evidence: 272 commits)*
-- **Vessel Tracking Integration:** Integrated real-time vessel tracking via VesselFinder and Bosphorus Strait monitoring with SignalR notifications.
-
-**Tech Stack:** .NET, C#, SignalR, SQL Server, JavaScript
+- Designed and developed enterprise web applications in C# on the Microsoft .NET Framework stack
+- Owned development of a maritime agency automation platform from architecture through delivery
+- Architected a 7-project C# / .NET modular monolith organised by business capability, covering operations, proforma accounting and document generation, over a shared Entity Framework code first data layer
+- Developed RESTful APIs for external system integrations
+- Built and consumed WCF services for system to system integration across the platform
+- Implemented SQL Server based data architectures
+- Implemented OAuth secured endpoints
+- Designed a custom formula engine for proforma accounting
+- Developed automated document generation functionality
+- Automated the production of 30+ official maritime templates
+- Supported customs, port authority, crew, cargo, and maritime operational workflows
+- Integrated real time vessel tracking services
+- Developed Bosphorus Strait monitoring capabilities
+- Implemented real time notifications using SignalR
+- Reduced reliance on manual operational status tracking
 
 ---
 
 ### .NET MVC Developer
-**Pavlike Web Applications & Solutions** · Kocaeli, Türkiye · Apr 2015 – Nov 2015
+**Pavlike Web Applications and Solutions** · Kocaeli, Türkiye · Apr 2015 – Nov 2015
 
-- Participated in highly complex projects with customers, managers and end-users.
-- Analyzed, evaluated and developed new web and database applications.
-- Resolved hardware and software compatibility and interface design issues.
+- Developed and maintained web applications using ASP.NET MVC
+- Developed backend and database components
+- Participated in requirements analysis with customers, managers, and end users
+- Investigated and resolved software compatibility and integration issues
+- Supported application debugging and maintenance
+- Contributed to production issue resolution
 
-**Tech Stack:** ASP.NET MVC, C#, SQL Server
+**Technologies:** C#, ASP.NET MVC, Entity Framework, SQL Server, JavaScript, HTML, CSS
 
 ---
 
-### .NET MVC Developer
+### .NET Web Developer
 **Piyasa Group** · Kocaeli, Türkiye · Aug 2014 – Oct 2014
 
-- Developed functional databases, applications and servers to support websites on back-end.
-- Provided software application engineering and maintenance for development lifecycle.
-- Reviewed code, debugged problems, and corrected issues.
+- Developed backend web application components
+- Developed and maintained database structures
+- Reviewed and debugged existing code
+- Resolved application defects and technical issues
+- Supported application engineering throughout the software development lifecycle
+
+**Technologies:** C#, ASP.NET MVC, Entity Framework, SQL Server, JavaScript
 
 ---
 
-### Webmaster
+### Web Developer
 **LuckyEye** · Kocaeli, Türkiye · May 2014 – Jun 2014
 
-- Coded responsive websites using HTML, CSS, JavaScript, and jQuery.
-- Troubleshot issues with websites and fixed scripting and use issues.
+- Developed and maintained corporate websites
+- Resolved scripting and frontend issues
+- Developed interfaces using HTML, CSS, JavaScript, and jQuery
+- Supported website maintenance and technical troubleshooting
 
 ---
 
-### Webmaster
+### Junior Web Developer
 **Revo Bilişim** · Kocaeli, Türkiye · Dec 2012 – Jun 2013
 
-- Monitored database performance to keep workflows running smoothly.
-- Troubleshot and resolved performance issues for databases and software.
+- Supported web application operations
+- Monitored database and application performance
+- Investigated software and database performance issues
+- Performed technical maintenance and troubleshooting
 
 ---
 
-### Intern
-**Türkiye İş Bankası** · Kocaeli, Türkiye · Sep 2011 – Jun 2012
+### Software Development Intern
+**Türkiye İş Bankası** · İstanbul, Türkiye · Sep 2011 – Jun 2012
 
-- Technology internship at Turkey's **largest private bank** — gained hands-on experience in enterprise banking systems and IT operations.
-
----
-
-## Key Projects
-
-### DropXML Platform — Multi-Tenant AI-Powered SaaS · 2024–Present
-
-> **Role:** Sole Architect & Developer · **Evidence:** 1,047 commits across 13 repos
-
-- Architected a **9-service microservices system** using .NET 10 and MassTransit/RabbitMQ for event-driven messaging.
-- Integrated **OpenAI APIs** for intelligent XML schema detection and automated product categorization.
-- Designed a **dual-layer product model** (Global Catalog vs. Tenant Overlay) with multi-tenant data isolation and route-level authorization.
-- Engineered API connectors for **Trendyol, Hepsiburada, and N11** with a 3-tier cascade pricing engine.
-- Full observability: Prometheus + Grafana + Loki + Serilog. Authored **6 Architecture Decision Records (ADRs)**.
-
-**Stack:** .NET 10, React, Next.js, TypeScript, PostgreSQL, MongoDB, MassTransit, RabbitMQ, Redis, Docker, OpenAI
+- Gained professional experience within an enterprise technology environment
+- Supported technology and software related operational processes
+- Developed foundational knowledge of enterprise systems and software development practices
 
 ---
 
-### Enterprise Aerospace Compliance Platform *(Confidential Client)* · 2026
+## Selected Projects
 
-> **Role:** Sole Architect & Developer · **Evidence:** 8-project .NET solution
+### DropXML – Multi-Tenant AI-Powered E-Commerce SaaS
 
-- Engineered a **3-stage cascade AI classifier** (Keyword → LLM → VLM) utilizing Ollama to automate categorization of 12 aerospace document types.
-- Built a deterministic **NRules engine** for supply chain traceability (PO ↔ MTR ↔ Shipping) against ASTM and DIN EN 10204 standards.
-- Config-driven pipeline orchestration with SHA-256 content-addressed caching.
+> **Role:** Software Architect / Full Stack Developer · Jan – May 2026
 
-**Stack:** .NET 8, Ollama, Docling, NRules, Clean Architecture, AS9100D
+Multi tenant SaaS platform designed to automate e commerce operations for Turkish marketplace sellers.
 
----
+- Architected 9 event driven .NET services with MassTransit and RabbitMQ messaging
+- Used PostgreSQL, MongoDB, and Redis with multi tenant isolation mechanisms
+- Integrated AI powered XML schema detection and product categorization
+- Developed integrations for Trendyol, Hepsiburada, and N11
+- Developed React and Next.js interfaces, Docker based deployment and CI/CD
+- Implemented Prometheus, Grafana, and Loki observability
+- Produced 1,047 commits across 13 repositories
 
-### ML-Driven Algorithmic Trading Platform · 2025–Present
-
-> **Role:** Sole Architect & Developer · **Evidence:** 235 commits
-
-- Migrated multi-strategy Python trading environment to highly optimized **.NET 10 architecture**.
-- Integrated **TorchSharp with CUDA** for hardware-accelerated Deep Reinforcement Learning inference.
-- Built low-latency data pipeline with **QuestDB** for sub-millisecond time-series retrieval and PythonNet for MetaTrader 5 API integration.
-- Developed 47-feature state-building pipeline and custom reward functions (**DQN Rainbow, PPO**).
-
-**Stack:** .NET 10, TorchSharp, CUDA, QuestDB, Python, MetaTrader 5
+**Technologies:** .NET 10 · C# · Microservices · RabbitMQ · MassTransit · PostgreSQL · MongoDB · Redis · OpenAI API · React · Next.js · Docker
 
 ---
 
-### YouTrack MCP Server · 2026
+### Enterprise Aerospace Compliance Platform
 
-> **Role:** Creator · **Evidence:** 19 commits (MCP ecosystem)
+> **Role:** Software Architect / Senior .NET Developer · Apr 2026 – Present
 
-- Built a **Model Context Protocol (MCP)** server integrating with JetBrains YouTrack REST API for AI-powered issue tracking and project management.
-- Engineered **dynamic Zod schema generation** that introspects per-project custom fields at runtime to create typed AI tool parameters.
+- Developed a 13-project .NET 10 modular monolith in bounded contexts
+- Designed AI assisted document classification across 22 document types with bounding box evidence
+- Integrated self hosted LLM and vision language inference for air gapped operation
+- Developed deterministic NRules validation across 47 rule classes against AS9100 and EN 10204
+- Implemented document traceability and an append only audit log enforced by database triggers
+- Built 2,600+ xUnit and FluentAssertions tests and 31 architecture decision records
 
-**Stack:** TypeScript, MCP Protocol, Zod, REST API
-
----
-
-### Pax Mercatus — AI-Powered SEO SaaS · 2025–Present
-
-> **Role:** Founder & Sole Architect · **Evidence:** 69 commits, 28 PRs
-
-- Architected an SEO analysis platform from scratch using **Clean Architecture** (5-project .NET backend) and React/Zustand frontend.
-- Engineered a **7-analyzer SEO Issue Detection Engine** and an AI-powered Quick-Win Generator.
-- Implemented **Multi-AI Provider Strategy** (Gemini 1.5 primary, OpenAI fallback) for generating Turkish-localized SEO content and performing competitor analysis.
-- Built a real-time web crawling pipeline using **MassTransit, RabbitMQ, and SignalR** to stream progress to users.
-
-**Stack:** .NET, Clean Architecture, MassTransit, SignalR, Google Gemini, OpenAI, React
+**Technologies:** .NET 10 · C# · PostgreSQL · EF Core 10 · NRules · Hangfire · LLM · VLM · React 19 · TypeScript · xUnit · Playwright
 
 ---
 
-### Ziraat Bank Multi-Country Infrastructure · 2019–2024 (Clockwork Agency)
+### YouTrack MCP Server
 
-> **Role:** Senior Software Developer · **Evidence:** 140+ personal commits across 25 repos
+> **Open Source Project** · 2025 – Present
 
-- Engineered a shared CMS core architecture for Turkey's largest state-owned bank, running **25+ banking websites across 15+ countries**.
-- Built complex integrations including Bankkart application validation, user approval workflows, and live fund portfolio retrieval.
-- Implemented high-security features like encrypted SMTP configurations, CSP headers, and cross-property CAPTCHA/Bot detection.
+- Developed a Model Context Protocol server for JetBrains YouTrack
+- Integrated issue, project, and user management APIs
+- Designed the server for AI assisted software engineering workflows
+- Implemented runtime validation, retry, and rate limiting mechanisms
 
-**Stack:** C#, ASP.NET Core, Umbraco CMS, MediatR, SQL Server
-
----
-
-### UDFtör — Mobile Digital Signing Editor · 2025–Present
-
-> **Role:** Sole Developer · **Evidence:** 15 commits, 30 Dart source files
-
-- Developed a first-of-its-kind mobile app capable of parsing, rendering, and editing Turkish government UDF documents.
-- Engineered a complete **digital signing pipeline** using NFC to read TC Kimlik (National ID) cards and generate valid CAdES signatures with TSA timestamping.
-- Pragmatically resolved third-party editor crashes by pivoting to a custom TextField-based rich text editor that preserves document paragraph structure.
-
-**Stack:** Flutter, Dart, NFC, CAdES Digital Signatures, UTF-8 Parsing
+**Technologies:** MCP · REST API · TypeScript · Zod · AI Integration · Docker
 
 ---
 
-### AkıllıKobi — SME Business Platform · 2021–Present
+### UDFtör – UYAP Document Handling Mobile App
 
-> **Role:** Co-founder & Developer · **Evidence:** 1,700 commits
+> **Personal Project** · 2026
 
-- Built a comprehensive SaaS platform for Turkish SMEs with multi-tenancy, invoice management, and business analytics.
+- Built an end to end Flutter mobile application for working with UYAP UDF legal documents
+- Delivered it in a framework new to me, using an AI assisted development workflow
+- Evaluated mobile signature (CAdES) integration across Turkish operator backed signing providers
 
-**Stack:** JavaScript, Node.js, Multi-Tenant SaaS
-
----
-
-### Maritime Shipping Agency Platform · 2015–2019
-
-> **Role:** Sole Developer · **Evidence:** 272 commits, 7-project architecture
-
-- Digitized entire port operations workflow — vessel tracking, customs documentation, proforma accounting, and crew management.
-- Built document engine generating **40+ official maritime templates** and custom formula-based disbursement accounting.
-
-**Stack:** C#, ASP.NET MVC, Entity Framework, SQL Server, SignalR, Web API
+**Technologies:** Flutter · Dart · Android · AI Assisted Development · Document Processing
 
 ---
 
-### Fiat Online Sales Platform · 2022–2024 (Clockwork Agency)
+### ML-Driven Algorithmic Trading Research
 
-> **Role:** Lead Backend Developer · **Evidence:** ~1,000+ commits across 12 repos
+> **Personal Research** · 2024 – Present
 
-- Architected the backend platform for **3 automotive brands** (FIAT, Alfa Romeo, Jeep) across Turkey.
-- Built the complete payment pipeline (credit card, wire transfer, auto loans) and 12-state order lifecycle.
-- Integrated real-time pricing, dynamic stock tracking, and coupon engines.
+- Developed a .NET based deep reinforcement learning research environment
+- Implemented PPO actor critic and dual head DQN research workflows
+- Integrated TorchSharp and CUDA for GPU accelerated training and inference
+- Developed multi timeframe market feature processing across a 47 feature state
+- Used QuestDB for time series storage and MetaTrader 5 through PythonNet
 
-**Stack:** .NET 8, ASP.NET Core, Entity Framework Core, SQL Server, Redis, Iyzico, React
+**Technologies:** .NET 10 · C# · TorchSharp · CUDA · QuestDB · Python · PythonNet · Deep Reinforcement Learning
 
 ---
 
 ## Education
 
-| Degree | Institution | Period | Status |
-|--------|-------------|--------|--------|
-| **Bachelor's Degree** | Anadolu Üniversitesi | 2020 – Present | In Progress |
-| **Associate's Degree** — Computer Software Technology | Kocaeli Üniversitesi | 2012 – 2015 | Completed |
-| **High School Diploma** — Information Technologies | Kartepe Endüstri Meslek Lisesi | 2008 – 2012 | Completed |
+| Degree | Institution | Period |
+|--------|-------------|--------|
+| **Management Information Systems** (undergraduate coursework) | Anadolu University | 2020 – 2024 |
+| **Associate Degree** — Computer Software Technology (GPA 3.27 / 4.00) | Kocaeli University | 2012 – 2015 |
+| **Computer Science** | Kartepe Industrial Vocational High School | 2008 – 2012 |
 
 ---
 
 ## Certifications
 
-| Certification | Issuer | Date |
+| Certification | Issuer | Year |
 |--------------|--------|------|
-| **Senior Full Stack .NET Developer** (AI-Interview Validated) | micro1 | Mar 2026 |
-| **Software Architecture: From Developer to Architect** | LinkedIn Learning | Apr 2026 |
-| **Advanced Design Patterns: Design Principles** | LinkedIn Learning | Apr 2026 |
-| **Visual Design Principles and User Experience** | BT Akademi | Nov 2025 |
-| **ISO 27001** — Information Security Management Systems | Kafein Technology Solutions | Dec 2024 |
-| **ISO 37001** — Anti-Bribery Management Systems | Kafein Technology Solutions | Dec 2024 |
-| **ISO 22301** — Business Continuity Management | Kafein Technology Solutions | Dec 2024 |
-| **Mastership Certificate** | Republic of Turkey | Sep 2012 |
-| **Practical Entrepreneurship** | Kocaeli Chamber of Commerce | Oct 2015 |
+| **Software Architecture: From Developer to Architect** | LinkedIn Learning | 2026 |
+| **Advanced Design Patterns: Design Principles** | LinkedIn Learning | 2026 |
+| **ISO 27001** — Information Security Management Systems | Kafein Technology Solutions | 2024 |
+| **ISO 37001** — Anti-Bribery Management Systems | Kafein Technology Solutions | 2024 |
+| **ISO 22301** — Business Continuity Management | Kafein Technology Solutions | 2024 |
 
 ---
 
@@ -280,58 +399,16 @@ C# (12+ years) · Go · Python · Erlang · TypeScript · JavaScript · Dart · 
 | Language | Proficiency |
 |----------|-------------|
 | Turkish | Native |
-| English | Professional Working Proficiency |
+| English | Professional Working Proficiency (C1) |
 
 ---
 
-## Volunteering
+## Core Keywords
 
-| Role | Organization | Period |
-|------|-------------|--------|
-| IT Coordinator | AIESEC Kocaeli Üniversitesi | Nov 2014 – Sep 2015 |
-| Social Services | Kartepe Amatör Spor Kulüpleri Birliği | Dec 2011 – Sep 2012 |
+C# · .NET · .NET Core · ASP.NET Core · Web API · Microservices · Software Architecture · Technical Leadership · Distributed Systems · Event Driven Architecture · Modular Monolith · Kafka · RabbitMQ · MassTransit · PostgreSQL · SQL Server · MongoDB · Redis · Entity Framework Core · Dapper · REST API · WCF · .NET Framework · Domain Driven Design · CQRS · Clean Architecture · Docker · CI/CD · React · Next.js · TypeScript · AI Integration · LLM · MCP · Microsoft Azure · Flutter · Performance Optimization · Multithreading
 
 ---
 
-## GitHub Statistics *(Refreshed: May 2026)*
+## References
 
-| Metric | Value |
-|--------|-------|
-| Public Repos | 27 (personal) + 108 (org) = **135+ total** |
-| Total Commits | 4,199+ (across all orgs) |
-| Industries Covered | 13 |
-| Years Active | 12+ (since Sep 2014) |
-| Followers | 17 |
-| Organizations | Clockwork-Agency (98 repos), HAUS-Technology (10 repos) |
-| Top Languages | C#, TypeScript, Python, Go, JavaScript, MQL4/5 |
-| Key Public Repos | Ougha.MCP.YouTrack, fiveMinScalperEA (★1), DictionaryToExcel (★1, NuGet), kafein_case_study, SeoToolkit.Umbraco |
-
----
-
-## Professional Recommendation
-
-> *"Uğurhan was a great team lead for junior devs and has a balanced approach between two edges of problem solving and facilitating the solution. He adopted AI well in development, I recommend Uğurhan for complex migrations, new developments and new technologies requires research."*
->
-> — **Berhan Soylu**, Director of Technology, Clockwork Agency *(Feb 2026)*
-
----
-
-## Data Sources
-
-This file is the **single source of truth** for all CV/portfolio content. It was synthesized from:
-
-| Source | Path / URL | Last Checked |
-|--------|-----------|--------------|
-| LinkedIn Profile Export | `data/linkedin/Profile.csv` | 2026-05-04 |
-| LinkedIn Positions | `data/linkedin/Positions.csv` | 2026-05-04 |
-| LinkedIn Skills (73) | `data/linkedin/Skills.csv` | 2026-05-04 |
-| LinkedIn Certifications | `data/linkedin/Certifications.csv` | 2026-05-04 |
-| LinkedIn Education | `data/linkedin/Education.csv` | 2026-05-04 |
-| LinkedIn Projects | `data/linkedin/Projects.csv` | 2026-05-04 |
-| LinkedIn Recommendations | `data/linkedin/Recommendations_Received.csv` | 2026-05-04 |
-| LinkedIn Volunteering | `data/linkedin/Volunteering.csv` | 2026-05-04 |
-| LinkedIn Endorsements | `data/linkedin/Endorsement_Received_Info.csv` | 2026-05-04 |
-| GitHub API | `api.github.com/users/ugurhangul` | 2026-05-04 |
-| Evidence Data (GitHub scrape) | `data/evidence_data.json` | 2026-05-04 |
-| Previous CV PDF | `cv_extracted.txt` | 2026-05-04 |
-| **STAR Documents (21)** | `data/star/*.md` | 2026-05-04 |
+References are available upon request.

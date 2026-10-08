@@ -2,7 +2,7 @@
 
 > **Company:** Clockwork Agency
 > **Period:** Jan 2020 – Sep 2022
-> **Role:** Lead Developer
+> **Role:** Senior Software Developer / Team Lead
 > **Evidence:** 67 personal commits / 421 total in `zorlucenter` repository
 
 ---
@@ -84,7 +84,7 @@ Integrate the Zorlu Center Umbraco website with **Salesforce CRM** for automated
 - **WebP image plugin** — modern image format support with validation
 - **Campaign management** — fully CMS-managed, no developer needed for new campaigns
 - **Virtual node routing** — SEO-friendly URLs for stores and content
-- **4 progressive Umbraco upgrades** (8.5 → 8.10) without downtime
+- **4 progressive Umbraco upgrades** (8.5 → 8.10)
 - Delivered for one of **Istanbul's most premium commercial properties**
 
 ---

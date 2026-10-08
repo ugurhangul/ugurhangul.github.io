@@ -2,35 +2,35 @@
 
 > **Company:** Kafein Technology Solutions (outsourced to Turkcell)
 > **Period:** Sep 2024 – Dec 2025
-> **Role:** Senior Full Stack .NET Developer (Sole Architect)
-> **Evidence:** ~178 commits across 5 repositories (`gy_win_be`, `gy_win_be_migration`)
+> **Role:** Senior Full Stack .NET Developer
+> **Evidence:** Repositories `gy_win_be`, `gy_win_be_migration`
 
 ---
 
 ## Situation
 
-Turkcell — Turkey's largest mobile operator — needed to migrate its legacy Drupal-based content platform ("Geleceği Yazanlar" community portal) to a modern .NET + PostgreSQL stack. The existing system held **150M+ rows** of user-generated content (blog posts, Q&A threads, social cards, comments, media) spread across an aging MySQL/Drupal database. Migration had to happen with **zero data loss** and **zero downtime** for millions of active users. The legacy data had inconsistent slugs, broken relationships, and no SEO-friendly URLs.
+Turkcell needed to migrate its legacy Drupal-based content platform to a modern .NET + PostgreSQL stack. The existing system held **150M+ rows** of user-generated content (blog posts, Q&A threads, social cards, comments, media) spread across an aging MySQL/Drupal database. Migration had to happen with **zero data loss**. The legacy data needed SEO-friendly slug generation.
 
 ## Task
 
-I was assigned as the **sole architect** of the migration engine. My responsibilities included:
+I designed and developed a custom **.NET 9** migration engine. My responsibilities included:
 
 - Design and build a high-performance data migration pipeline from Drupal/MySQL → PostgreSQL
 - Implement SEO slug generation for all content entities (blogs, questions, social cards, job details)
 - Add content moderation middleware (forbidden words, user suspension)
-- Ensure data integrity across 150M+ rows with referential constraints
+- Migrate 150M+ rows with zero data loss
 - Optimize the existing .NET backend APIs for the new data layer
 
 ## Action
 
 ### Migration Engine Architecture
-- Built a parallel processing migration engine using **Dapper** for raw SQL performance, bypassing EF Core overhead for bulk operations
+- Built a custom .NET 9 parallel processing migration engine using **Dapper** for raw SQL performance, bypassing EF Core overhead for bulk operations
 - Implemented **Multithreading** with configurable batch sizes to maximize throughput while respecting database connection limits
 - Created an incremental migration mode with shared DB context, allowing partial migrations and resume-on-failure capability
 - *(Commit: `912744d` — "Add incremental migration support and shared DB context")*
 
 ### SEO Slug System
-- Designed and implemented a comprehensive slug generation system across all content types:
+- Designed and implemented a slug generation system across content types:
   - Blog entities with caching for collision detection *(commit: `ef4dfd9b`)*
   - Social cards with slug retrieval *(commit: `f5ec2a97`)*
   - Social pages with caching layer *(commit: `6fb710f4`)*
@@ -51,11 +51,10 @@ I was assigned as the **sole architect** of the migration engine. My responsibil
 ## Result
 
 - **150M+ rows** migrated successfully from Drupal/MySQL to PostgreSQL with **zero data loss**
-- Migration time **reduced by 70%** compared to initial estimates through parallel processing optimization
-- SEO slug system generated clean URLs for **all content types**, improving organic search discoverability
-- Content moderation middleware blocked malicious content in real-time across the platform
-- The migration engine became reusable — designed for horizontal scalability with incremental batch support
-- System served **millions of daily active users** on the new stack without performance degradation
+- Projected production migration duration **reduced by approximately 70%** 
+- SEO slug generation implemented for the content types listed above (blogs, social cards, social pages, job details, questions)
+- Content moderation middleware (forbidden words, user suspension) added to the backend
+- The migration engine supports incremental batch processing
 
 ---
 
@@ -65,8 +64,8 @@ I was assigned as the **sole architect** of the migration engine. My responsibil
 |----------|--------------|
 | "Tell me about a large-scale data migration" | Full story — 150M rows, Drupal → PostgreSQL, parallel processing |
 | "How do you handle performance at scale?" | Dapper over EF Core, multithreading, batch processing, incremental mode |
-| "Describe a time you improved SEO" | Slug generation system across 6 content types with caching |
-| "How do you ensure data integrity?" | Incremental migration with resume-on-failure, referential constraint validation |
+| "Describe a time you improved SEO" | Slug generation system across 5 content types with caching |
+| "How do you ensure data integrity?" | Incremental migration with resume-on-failure, data validation, fault handling, logging and migration monitoring |
 
 ---
 

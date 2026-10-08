@@ -1,15 +1,15 @@
 # STAR — İnci Akü: Battery Finder Tool & Long-Term Client Engagement
 
 > **Company:** Clockwork Agency
-> **Period:** Mar 2020 – Jan 2025
-> **Role:** Lead Developer
+> **Period:** Mar 2020 – Sep 2024
+> **Role:** Senior Software Developer / Team Lead
 > **Evidence:** 175 commits in `inciaku.com`, 116 in `easaku.com`, 35 in `AkumGelsin` (326 total across İnci Holding projects)
 
 ---
 
 ## Situation
 
-**İnci Akü** (Turkey's largest battery manufacturer and exporter) needed a central feature for their corporate website: an **"Akünü Bul" (Find Your Battery)** product configuration tool. Users needed to enter their vehicle's make, model, and year to receive exact battery recommendations. Because the automotive catalog is massive and constantly changing, the tool required complex filtering logic, data deduplication, category-based dealer routing, and robust SEO infrastructure to capture organic search traffic for specific vehicle battery queries. The project evolved into a long-term, 5-year relationship encompassing multiple brand websites (İnci Akü, EAS Akü, Aküm Gelsin).
+**İnci Akü** (Turkey's largest battery manufacturer and exporter) needed a central feature for their corporate website: an **"Akünü Bul" (Find Your Battery)** product configuration tool. Users needed to enter their vehicle's make, model, and year to receive exact battery recommendations. Because the automotive catalog is massive and constantly changing, the tool required complex filtering logic, data deduplication, category-based dealer routing, and robust SEO infrastructure to capture organic search traffic for specific vehicle battery queries. The project evolved into a long-term client engagement encompassing multiple brand websites (İnci Akü, EAS Akü, Aküm Gelsin).
 
 ## Task
 
@@ -49,7 +49,7 @@ The architecture established for `inciaku.com` (175 personal commits) was subseq
 
 ## Result
 
-- Maintained a continuous, **5-year technical relationship** with Turkey's largest battery manufacturer (2020–2025)
+- Maintained a continuous, **long-term technical engagement** with Turkey's largest battery manufacturer (2020–2024)
 - Delivered **326 personal commits** across 3 distinct brand repositories
 - The **Battery Finder tool** successfully handles the entire, evolving automotive product catalog with smart start/stop filtering and unique result deduplication
 - **Dynamic dealer routing** successfully connects users from the configuration tool directly to the appropriate regional service branch
@@ -62,7 +62,7 @@ The architecture established for `inciaku.com` (175 personal commits) was subseq
 | Question | How to Answer |
 |----------|--------------|
 | "Tell me about building a product configuration tool" | AkünüBul — vehicle make/model/year filtering, start/stop logic, deduplication |
-| "Tell me about a long-term client relationship" | 5-year relationship (2020-2025) maintaining 3 brand repositories for İnci Holding |
+| "Tell me about a long-term client relationship" | Long-term engagement (2020-2024) maintaining 3 brand repositories for İnci Holding |
 | "How do you handle messy underlying data?" | Unique result deduplication and null handling in the AkunuBul controller |
 | "How do you optimize an application for SEO?" | Hreflang tags, duplicate title resolution, dynamic content routing for catalog pages |
 | "Tell me about location-based routing" | Category-aware dealer routing connecting search results to physical service centers |
